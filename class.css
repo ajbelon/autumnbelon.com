@@ -635,7 +635,7 @@ footer img {
 
 /*--large desktop display--*/
 @media screen and (min-width: 1251px) and (max-width:1559px) {
-    .topprojects #article {
+    .topprojects .article {
         width: 35%;
         float: right;
         margin-right: 40px;
@@ -716,7 +716,7 @@ footer img {
 
 /*--extra large desktop display--*/
 @media screen and (min-width:1560px) {
-    .topprojects #article {
+    .topprojects .article {
         width: 44%;
         float: right;
         margin-right: 40px;
