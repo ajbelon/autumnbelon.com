@@ -24,7 +24,7 @@
                 </div>
                 </header>
                 <nav class="navigation">
-                <ul id="menu">
+                <ul id="menu" name="menu">
                     <li class="currentpage"><a href="index.html" >Home</a></li> 
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -45,6 +45,8 @@
                     <article><p><a href="#">True North Weather is a meteorology and fire-weather consulting firm located in Edmonton, Alberta, Canada. True North is seeking a fresh, informative, functional advertising website redesign. This site redesign is currently a work in progress.  Working with the brand’s existing assets, I will be making some updates to outdated technology and updating the accessibility to provide a unified user experience across multiple devices.  <br><br>The redesign is one that will provide True North Weather with a fresh approach to digital marketing that is sure to bring return clients many times over.   Visit the project page by clicking here or on the accompanying image to follow along with the design process.</a></p></article>
                     </section>
                     
+
+                    
                     <section class="topprojects">
                     <a href="#"><img src="Wok.png" alt="Wok Asian Cuisine"></a>
                     <a href="#"><h2>Wok Asian Cuisine</h2></a>
@@ -62,7 +64,29 @@
                     
                 </section>   
                 </div>
-                </div>   
+                </div>  
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Return to Top</button>
+                <script>
+                //Get the button:
+                mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0; // For Safari
+                  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+                </script>
                 </main>
             
             <footer role="contentinfo">
