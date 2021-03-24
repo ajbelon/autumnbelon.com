@@ -356,33 +356,35 @@ template {
     background-color: #282828;
     color: white;
     font-family: "verdana", arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
 }
 
 a, a:visited {
     text-decoration: none;
 }
 .header {
-    width: 100%;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    align-content:center;
+    align-self:auto;
+    justify-content:center;
 }
 
-.logo  {
-    width: 38%;
-    float: left;
-    margin: auto;
-    text-align: right;
-    padding-top: 15px;
-}
-
-.logo img {
-    margin: auto;
+.header img {
+    margin: 15px 0 0 0;
     width: 85px;
+    text-align: right;
+    float: left;
 }
 
 .name {
-    width: 40%;
     text-align: center;
-    float: none;
     margin: auto;
 }
 
@@ -412,11 +414,16 @@ a, a:visited {
 #menu {
     clear: both;
     background-color: rgba(255, 255, 255, 0.25);
-    height: 55px;
-    width: 100%;
+    height: 45px;
     float: none;
     padding-bottom: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
 }
 
 #menu ul {
@@ -427,17 +434,17 @@ a, a:visited {
     list-style-type: none;
     display: inline-block;
     text-align: center;
-    width: 23%;
+    width: 19%;
     font-size: 1.75em;
     font-weight: bold;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 7px;
+    padding-bottom: 6px;
     padding-left: 0;
     padding-right: 0;
 }
 
 #menu li:hover {
-    background-color: rgba(252,155,86,0.15);
+    background-color: rgba(252,155,86,0.10);
     border: 1px ;
     border-radius: 15px;
 }
@@ -458,7 +465,7 @@ a, a:visited {
 
 #content {
     clear: both;
-    width: 80%;
+    width: 70%;
     background-color: rgba(255, 255, 255, 0.25);
     margin-left: auto;
     margin-right: auto;
@@ -497,14 +504,14 @@ a, a:visited {
 }
 
 .topprojects article {
-    width: 55%;
+    width: 45%;
     float: right;
     margin-right: 40px;
     margin-top: 0;
     padding-top: 0;
     color: white;
     font-family: "Nirmala UI", sans-serif;
-    font-size: 1.15em;
+    font-size: 1em;
 }
 
 .topprojects a {
@@ -591,7 +598,7 @@ a, a:visited {
     padding-bottom: 25px;
 }
 
-#about h2, #resume h2 {
+#about h2, #resume h2, #contact h2 {
     color: RGBA(44,167,178,1); 
     font-weight: bold;
     font-size: 2.5em;
@@ -634,11 +641,6 @@ a, a:visited {
 
 #resume h5 {
     margin-top: 2px;
-}
-
-#contact {
-    display: block;
-    height: 825px;
 }
 
 #contact p {
