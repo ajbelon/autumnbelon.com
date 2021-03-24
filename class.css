@@ -503,17 +503,6 @@ a, a:visited {
     width: 500px;
 }
 
-.topprojects article {
-    width: 45%;
-    float: right;
-    margin-right: 40px;
-    margin-top: 0;
-    padding-top: 0;
-    color: white;
-    font-family: "Nirmala UI", sans-serif;
-    font-size: 1em;
-}
-
 .topprojects a {
     color: white;   
 }
@@ -521,70 +510,9 @@ a, a:visited {
 .heading {
    color: RGBA(44,167,178,1); 
 }
-.topprojects h2 {
-    text-align: center;
-    color: RGBA(44,167,178,1);
-    font-weight: bold;
-    font-size: 3em;
-    text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
-    padding-top: 3px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-}
 
 .topprojects p {
-    font-size: 1.25em;
-}
-
-#lowerprojects {
-    height: 335px;
-}
-
-#lowerprojects img {
-    height:225px;
-    margin-top: 15px;
-    padding-bottom: 0;
-    border: 1px ;
-    border-radius: 15px;
-}
-
-#secondlevelproject1 {
-    background-color: rgba(252,155,86,0.25);
-    width: 45%;
-    height: 325px;
-    display: inline;
-    text-align: center;
-    margin: 5px 2px 0 35px;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px ;
-    border-radius: 15px;
-}
-
-#secondlevelproject2 {
-    background-color: rgba(252,155,86,0.25);
-    width: 45%;
-    height: 325px;
-    display: inline;
-    text-align: center;
-    margin: 5px 35px 0 2px;
-    float: right;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px ;
-    border-radius: 15px;
-}
-
-#secondlevelproject1 h2 ,#secondlevelproject2 h2 {
-    text-align: center;
-    color: RGBA(44,167,178,1);
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow: 3px 3px rgba(0,0,0,0.5);
-    padding-top: 5px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+    font-size: 1em;
 }
 
 #about, #resume, #contact {
@@ -703,4 +631,166 @@ footer {
 
 footer img {
     padding: 0 50px 0 50px;
+}
+
+/*--large desktop display--*/
+@media screen and (min-width: 1251px) and (max-width:1559px) {
+    .topprojects #article {
+        width: 35%;
+        float: right;
+        margin-right: 40px;
+        margin-top: 0;
+        padding-top: 0;
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        font-size: 1em;
+    }
+
+    .topprojects h2 {
+        text-align: center;
+        color: RGBA(44,167,178,1);
+        font-weight: bold;
+        font-size: 2.15em;
+        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+        padding-top: 3px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .topprojects p {
+        font-size: 1em;
+    }
+    
+    #secondlevelproject1 {
+    background-color: rgba(252,155,86,0.25);
+    width: 44%;
+    height: 325px;
+    display: inline;
+    text-align: center;
+    margin: 5px 2px 0 35px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px ;
+    border-radius: 15px;
+    }
+
+    #secondlevelproject2 {
+        background-color: rgba(252,155,86,0.25);
+        width: 44%;
+        height: 325px;
+        display: inline;
+        text-align: center;
+        margin: 5px 35px 0 2px;
+        float: right;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px ;
+        border-radius: 15px;
+    }
+
+    #secondlevelproject1 h2 ,#secondlevelproject2 h2 {
+        text-align: center;
+        color: RGBA(44,167,178,1);
+        font-weight: bold;
+        font-size: 1.5em;
+        text-shadow: 3px 3px rgba(0,0,0,0.5);
+        padding-top: 5px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+    }
+    
+    #lowerprojects {
+    height: 325px;
+    }
+
+    #lowerprojects img {
+        height:200px;
+        margin-top: 15px;
+        padding-bottom: 0;
+        border: 1px ;
+        border-radius: 15px;
+    }
+
+}
+
+/*--extra large desktop display--*/
+@media screen and (min-width:1560px) {
+    .topprojects #article {
+        width: 44%;
+        float: right;
+        margin-right: 40px;
+        margin-top: 0;
+        padding-top: 0;
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        font-size: 1em;
+    }
+
+    .topprojects h2 {
+        text-align: center;
+        color: RGBA(44,167,178,1);
+        font-weight: bold;
+        font-size: 3em;
+        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+        padding-top: 3px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .topprojects p {
+        font-size: 1.25em;
+    }
+    
+    #secondlevelproject1 {
+    background-color: rgba(252,155,86,0.25);
+    width: 45%;
+    height: 325px;
+    display: inline;
+    text-align: center;
+    margin: 5px 2px 0 35px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px ;
+    border-radius: 15px;
+    }
+
+    #secondlevelproject2 {
+        background-color: rgba(252,155,86,0.25);
+        width: 45%;
+        height: 325px;
+        display: inline;
+        text-align: center;
+        margin: 5px 35px 0 2px;
+        float: right;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px ;
+        border-radius: 15px;
+    }
+
+    #secondlevelproject1 h2 ,#secondlevelproject2 h2 {
+        text-align: center;
+        color: RGBA(44,167,178,1);
+        font-weight: bold;
+        font-size: 2em;
+        text-shadow: 3px 3px rgba(0,0,0,0.5);
+        padding-top: 5px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+    }
+    
+    #lowerprojects {
+    height: 335px;
+    }
+
+    #lowerprojects img {
+        height:225px;
+        margin-top: 15px;
+        padding-bottom: 0;
+        border: 1px ;
+        border-radius: 15px;
+    }
+
 }
