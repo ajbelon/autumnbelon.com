@@ -367,7 +367,7 @@ a, a:visited {
 }
 
 .logo  {
-    width: 25%;
+    width: 38%;
     float: left;
     margin: auto;
     text-align: right;
@@ -376,10 +376,11 @@ a, a:visited {
 
 .logo img {
     margin: auto;
+    width: 85px;
 }
 
 .name {
-    width: 75%;
+    width: 40%;
     text-align: center;
     float: none;
     margin: auto;
@@ -387,30 +388,31 @@ a, a:visited {
 
 .name h1 {
     color: white;
-    font-size: 5em;
-    padding: 25px 0 0 0;
+    font-size: 3em;
+    padding: 15px 0 0 0;
     margin: 0;
 }
 
 .name h2 {
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0;
-    padding: 0;
+    padding: 0 0 15px 0;
 }
 
 .name h3 {
-    color: #fc9b56;
+    color: white;
     font-family: "Nirmala UI", sans-serif;
-    margin: 25px 0 25px 0;
+    margin: 15px 0 25px 0;
     padding: 0;
-    font-size: 1.75em;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
 }
 
 #menu {
     clear: both;
     background-color: rgba(255, 255, 255, 0.25);
-    height: 90px;
+    height: 55px;
     width: 100%;
     float: none;
     padding-bottom: 0;
@@ -426,16 +428,16 @@ a, a:visited {
     display: inline-block;
     text-align: center;
     width: 23%;
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: bold;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 0;
     padding-right: 0;
 }
 
 #menu li:hover {
-    background-color: rgba(252,155,86,0.25);
+    background-color: rgba(252,155,86,0.15);
     border: 1px ;
     border-radius: 15px;
 }
@@ -450,6 +452,8 @@ a, a:visited {
     background-color: rgba(252,155,86,0.25);
     border: 1px ;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    pointer-events: none;
 }
 
 #content {
@@ -464,37 +468,43 @@ a, a:visited {
     text-decoration: none;
 }
 
-#content img:hover {
+#content img:hover, #lowerprojects img:hover {
     border-width: 1px;
     border: 2px solid;
+    border-color: rgba(252,155,86,1);
 }
 
 .topprojects {
     background-color: rgba(252,155,86,0.25);
     width: 97%;
-    height: 525px;
+    height: 465px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    margin-bottom: 15px;
-    padding-top: 15px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px ;
+    border-radius: 15px;
 }
 
 .topprojects img {
     border: 1px ;
     border-radius: 15px;
-    margin: 15px;
+    margin: 10px;
     float: left;
-    width: 525px;
+    width: 500px;
 }
 
 .topprojects article {
-    width: 50%;
+    width: 55%;
     float: right;
-    margin-right: 50px;
+    margin-right: 40px;
     margin-top: 0;
     padding-top: 0;
     color: white;
+    font-family: "Nirmala UI", sans-serif;
+    font-size: 1.15em;
 }
 
 .topprojects a {
@@ -508,11 +518,12 @@ a, a:visited {
     text-align: center;
     color: RGBA(44,167,178,1);
     font-weight: bold;
-    font-size: 3.5em;
-    text-shadow: 3px 3px rgba(0,0,0,0.5);
-    padding-top: 15px;
+    font-size: 3em;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+    padding-top: 3px;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .topprojects p {
@@ -520,44 +531,53 @@ a, a:visited {
 }
 
 #lowerprojects {
-    height: 400px;
+    height: 335px;
 }
 
 #lowerprojects img {
     height:225px;
-    padding-top: 15px;
+    margin-top: 15px;
     padding-bottom: 0;
+    border: 1px ;
+    border-radius: 15px;
 }
 
 #secondlevelproject1 {
     background-color: rgba(252,155,86,0.25);
     width: 45%;
-    height: 375px;
+    height: 325px;
     display: inline;
     text-align: center;
     margin: 5px 2px 0 35px;
     float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px ;
+    border-radius: 15px;
 }
 
 #secondlevelproject2 {
     background-color: rgba(252,155,86,0.25);
     width: 45%;
-    height: 375px;
+    height: 325px;
     display: inline;
     text-align: center;
     margin: 5px 35px 0 2px;
     float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px ;
+    border-radius: 15px;
 }
 
 #secondlevelproject1 h2 ,#secondlevelproject2 h2 {
     text-align: center;
     color: RGBA(44,167,178,1);
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2em;
     text-shadow: 3px 3px rgba(0,0,0,0.5);
     padding-top: 5px;
     padding-bottom: 0;
     margin-bottom: 0;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
 }
 
 #about, #resume, #contact {
@@ -589,6 +609,7 @@ a, a:visited {
     margin: 25px;
     border: 1px ;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #resume h3, h4, h5, p{
@@ -617,7 +638,7 @@ a, a:visited {
 
 #contact {
     display: block;
-    height: 625px;
+    height: 825px;
 }
 
 #contact p {
@@ -637,7 +658,7 @@ a, a:visited {
     float: left;
     padding: 15px;
     margin: 15px;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
