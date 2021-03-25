@@ -515,9 +515,15 @@ a, a:visited {
     100% {left:150px; top:0px;}
 }
 
-#aboutprojects a, #content a{
+#aboutprojects a {
     text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
     color: white;
+}
+
+#aboutprojects h4 {
+    font-family: 'Charmonman', cursive;
+    font-size: 3em;
+    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
 }
 
 .topprojects {
@@ -656,6 +662,16 @@ a, a:visited {
 
 #myBtn:hover {
     background-color: #555;
+}
+
+#aboutprojects img {
+    width: 250px;
+    border: 1px ;
+    border-radius: 15px;
+    margin-left: 45px;
+}
+#aboutprojects img:hover {
+    width: 500px;
 }
 
 footer {
