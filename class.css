@@ -466,10 +466,11 @@ a, a:visited {
     pointer-events: none;
 }
 
-#content h1 {
+#floatingleaf h1 {
     font-size: 5em;
-    text-align: left;
+    text-align: center;
     font-family: 'Charmonman', cursive;
+    vertical-align: middle;
 }
 
 #content h2:hover {
@@ -503,23 +504,18 @@ a, a:visited {
     width: 500px;
     height: 100px;
     position: relative;
-    animation-name: example;
+    animation-name: mywork;
     animation-duration: 6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-@keyframes example {
+@keyframes mywork {
     0%   {left:0px; top:0px;}
-    100% {left:400px; top:0px;}
-
+    100% {left:325px; top:0px;}
 }
 
-#floatingleaf img {
-    width: 35px;
-    float: left;
-    padding: 0 15px 0 15px;
-}
+
 
 #aboutprojects a{
     text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
