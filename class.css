@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Ballet&family=Charmonman:wght@700&family=Sansita+Swashed:wght@600&display=swap');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -366,6 +368,7 @@ template {
 
 a, a:visited {
     text-decoration: none;
+
 }
 .header {
     display: flex;
@@ -444,13 +447,7 @@ a, a:visited {
 }
 
 #menu li:hover {
-    background-color: rgba(252,155,86,0.10);
-    border: 1px ;
-    border-radius: 15px;
-    
-}
-#menu li:a:hover {
-    transform: rotate(20deg) scale(0.2, 0.2);
+    transform: scaleY(1.25) scaleX(1.25);
 }
 
 #menu li a{
@@ -469,6 +466,21 @@ a, a:visited {
     pointer-events: none;
 }
 
+#content h1 {
+    font-size: 5em;
+    text-align: left;
+    font-family: 'Charmonman', cursive;
+}
+
+#content h2:hover {
+    color: #555;
+    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+}
+
+#content h2:hover {
+    transform: scaleY(1.01) scaleX(1.01);
+}
+
 #content {
     clear: both;
     width: 70%;
@@ -485,6 +497,33 @@ a, a:visited {
     border-width: 1px;
     border: 2px solid;
     border-color: rgba(252,155,86,1);
+}
+
+#floatingleaf {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    100% {left:400px; top:0px;}
+
+}
+
+#floatingleaf img {
+    width: 35px;
+    float: left;
+    padding: 0 15px 0 15px;
+}
+
+#aboutprojects a{
+    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+    color: white;
 }
 
 .topprojects {
