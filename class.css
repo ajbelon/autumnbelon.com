@@ -501,7 +501,7 @@ a, a:visited {
 }
 
 #floatingleaf {
-    width: 500px;
+    width: 800px;
     height: 100px;
     position: relative;
     animation-name: mywork;
@@ -511,13 +511,11 @@ a, a:visited {
 }
 
 @keyframes mywork {
-    0%   {left:0px; top:0px;}
-    100% {left:325px; top:0px;}
+    0%   {left:-200px; top:0px;}
+    100% {left:150px; top:0px;}
 }
 
-
-
-#aboutprojects a{
+#aboutprojects a, #content a{
     text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
     color: white;
 }
@@ -567,12 +565,19 @@ a, a:visited {
     padding-bottom: 25px;
 }
 
-#about h2, #resume h2, #contact h2 {
+#about h2, #resume h2, #contact h2, #content h3 {
     color: RGBA(44,167,178,1); 
     font-weight: bold;
     font-size: 2.5em;
     text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
     margin-left: 15px;
+}
+
+.projectimages img {
+    border: 1px ;
+    border-radius: 15px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about p {
