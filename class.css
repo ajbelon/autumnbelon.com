@@ -791,6 +791,14 @@ a, a:visited {
         margin: 0 15px 0 15px;
         padding: 0;
     }
+    .truenorthweathernonmobile {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .truenorthweathermobile img {
+        width: 300px;
+    }
     
     #myBtn {
         display: none;
@@ -988,6 +996,11 @@ a, a:visited {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
+    .truenorthweathermobile img {
+        display: none;
+        visibility: hidden;
+    }
+    
     footer {
         display: flex;
         flex-wrap: wrap;
@@ -1071,6 +1084,12 @@ a, a:visited {
         padding-bottom: 15px;
         text-decoration: none;
     }
+    
+    .truenorthweathermobile img {
+        display: none;
+        visibility: hidden;
+    }
+    
     #returnhome {
         width: 200px;
         height: 125px;
@@ -1367,6 +1386,11 @@ a, a:visited {
         font-size: 1em;
     }
     
+    .truenorthweathermobile img {
+        display: none;
+        visibility: hidden;
+    }
+    
     #about, #resume, #contact {
         width: 70%;
         margin-top: 0;
@@ -1466,6 +1490,11 @@ a, a:visited {
         padding-top: 15px;
         padding-bottom: 15px;
         text-decoration: none;
+    }
+    
+    .truenorthweathermobile img {
+        display: none;
+        visibility: hidden;
     }
     
     #returnhome {
