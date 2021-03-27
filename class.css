@@ -443,16 +443,12 @@ a, a:visited {
     100% {left:150px; top:0px;}
 }
 
-#content h2:hover {
+.topprojects h2:hover {
     color: #555;
     text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
 }
 
-#content h2:hover {
-    transform: scaleY(1.01) scaleX(1.01);
-}
-
-#content img:hover, #lowerprojects img:hover {
+.topprojects img:hover {
     border-width: 1px;
     border: 2px solid;
     border-color: rgba(252,155,86,1);
