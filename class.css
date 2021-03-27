@@ -356,18 +356,6 @@ template {
 
 /* class=. id=# */
 
-#page {
-    background-color: #282828;
-    color: white;
-    font-family: "verdana", arial, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
-}
-
 a, a:visited {
     text-decoration: none;
 
@@ -381,39 +369,9 @@ a, a:visited {
     justify-content:center;
 }
 
-.header img {
-    margin: 15px 0 0 35px;
-    width: 85px;
-    float: left;
-}
-
 .name {
     text-align: center;
     margin: auto;
-}
-
-.name h1 {
-    color: white;
-    font-size: 3em;
-    padding: 15px 0 0 0;
-    margin: 0;
-}
-
-.name h2 {
-    color: white;
-    font-size: 1em;
-    margin: 0;
-    padding: 0 0 15px 0;
-}
-
-.name h3 {
-    color: white;
-    font-family: "Nirmala UI", sans-serif;
-    margin: 15px 0 25px 0;
-    padding: 0;
-    font-size: 1.5em;
-    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-    text-align: center;
 }
 
 #menu {
@@ -450,14 +408,16 @@ a, a:visited {
 
 #menu li:hover {
     transform: scaleY(1.25) scaleX(1.25);
+    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
 }
 
 #menu li a{
     list-style-type: none;
     color: white;
     font-family: "Nirmala UI", sans-serif;
-    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
     text-align: center;
+    /*--text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);--*/
+    
 }
 
 .currentpage {
@@ -471,9 +431,16 @@ a, a:visited {
 #floatingleaf h1 {
     font-size: 5em;
     text-align: center;
-    font-family: 'Charmonman', cursive;
     vertical-align: middle;
-    text-shadow: 0 0 5px rgba(252,155,86,0.75), 0 0 25px rgba(252,155,86,0.5), 0 0 30px rgba(252,155,86,0.25);
+    margin: 0;
+    padding: 0;
+    /*--font-family: 'Charmonman', cursive;
+    text-shadow: 0 0 5px rgba(252,155,86,0.75), 0 0 25px rgba(252,155,86,0.5), 0 0 30px rgba(252,155,86,0.25);--*/
+}
+
+@keyframes mywork {
+    0%   {left:-200px; top:0px;}
+    100% {left:150px; top:0px;}
 }
 
 #content h2:hover {
@@ -485,48 +452,10 @@ a, a:visited {
     transform: scaleY(1.01) scaleX(1.01);
 }
 
-#content {
-    clear: both;
-    width: 70%;
-    background-color: rgba(255, 255, 255, 0.25);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-decoration: none;
-}
-
 #content img:hover, #lowerprojects img:hover {
     border-width: 1px;
     border: 2px solid;
     border-color: rgba(252,155,86,1);
-}
-
-#returnhome {
-    width: 200px;
-    height: 125px;
-    background-image: url(arrowleft.png);
-    background-repeat: no-repeat;
-    background-size: 200px 125px;
-    margin: 35px;
-    float: left;
-    text-align: center;
-    color: white;
-    font-size: 1.35em;
-}
-
-#otherlinks {
-    width: 200px;
-    height: 125px;
-    background-image: url(arrow.png);
-    background-repeat: no-repeat;
-    background-size: 200px 125px;
-    margin: 35px;
-    float: right;
-    text-align: center;
-    color: white;
-    font-size: 1.35em;
 }
 
 #otherlinks:hover, #returnhome:hover {
@@ -534,59 +463,15 @@ a, a:visited {
     box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
 }
 
-#floatingleaf {
-    width: 800px;
-    height: 100px;
-    position: relative;
-    animation-name: mywork;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#returnhome p, #returnhome h5, #otherlinks p {
-    font-family: 'Finger Paint', cursive;
-    line-height: 1.75em;
-    margin: 25px;
-    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-}
-
-@keyframes mywork {
-    0%   {left:-200px; top:0px;}
-    100% {left:150px; top:0px;}
-}
-
-#aboutprojects a {
+#aboutprojects a, #about a {
     text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
     color: white;
 }
 
 #aboutprojects h4 {
-    font-family: 'Charmonman', cursive;
-    font-size: 3em;
-    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-}
-
-.topprojects {
-    background-color: rgba(252,155,86,0.25);
-    width: 97%;
-    height: 465px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-top: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px ;
-    border-radius: 15px;
-}
-
-.topprojects img {
-    border: 1px ;
-    border-radius: 15px;
-    margin: 10px;
-    float: left;
-    width: 500px;
+    font-size: 2.55em;
+    /*--text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+    font-family: 'Charmonman', cursive;--*/
 }
 
 .topprojects a {
@@ -599,17 +484,6 @@ a, a:visited {
 
 .topprojects p {
     font-size: 1em;
-}
-
-#about, #resume, #contact {
-    width: 70%;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    background-color: rgba(255, 255, 255, 0.25);
-    padding-top: 15px;
-    padding-bottom: 25px;
 }
 
 #about h2, #resume h2, #contact h2, #content h3 {
@@ -628,9 +502,10 @@ a, a:visited {
 }
 
 #about p {
-    margin: 15px;
+    margin: 25px;
     font-size: 1.15em;
     line-height: 1.5em;
+    padding-top: 15px;
 }
 #about img {
     float: left;
@@ -638,6 +513,7 @@ a, a:visited {
     border: 1px ;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
 }
 
 #resume h3, h4, h5, p{
@@ -677,13 +553,6 @@ a, a:visited {
     color: white;
 }
 
-#contact img {
-    float: left;
-    padding: 15px;
-    margin: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 #myBtn {
     display: none;
     position: fixed;
@@ -715,31 +584,567 @@ a, a:visited {
     width: 500px;
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
-    height: 100px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.25);
-    text-align: center;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 12px;
+/*--mobile display--*/
+@media screen and (max-width:414px) {
+    #page {
+        width: 100%;
+        background-color: #282828;
+        color: white;
+        font-family: "verdana", arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header img {
+        margin: 15px 0 0 20px;
+        width: 70px;
+        float: left;
+    }
+    
+    .name h1 {
+        color: white;
+        font-size: 1.5em;
+        padding: 15px 0 5px 0;
+        margin: 0;
+    }
+
+    .name h2 {
+        color: white;
+        font-size: 1em;
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+
+    .name h3 {
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        margin: 5px 0 0 0;
+        padding: 0 3px 0 3px;
+        font-size: 1em;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        text-align: center;
+    }
+    
+    .navigation {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .mobilenav {
+        width: 90%;
+        display:grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-content: center;
+        grid-area: myArea;
+        grid-template-areas: myArea;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        padding: 0;
+       
+    }
+    
+    .mobilenav li{
+        border: 1px ;
+        border-radius: 15px;
+        font-size: 1.75em;
+        font-weight: 700;
+        text-align: center;
+        background-color: rgba(42,162,176,69);
+        margin: 5px;
+        list-style-type: none;
+        padding: 10px 35px 10px 35px;
+        margin: 15px 0 15px 0;
+        box-shadow: 0px 5px 0px #1E737D, 0px 3px 15px rgba(0,0,0,.4);
+    }
+    
+    .mobilenav a {
+        color: white;
+    }
+    
+    #content {
+        clear: both;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        border: 1px ;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        margin: 5px 0 5px 0;
+    }
+    
+    #content h1 {
+        font-size: 3em;
+    }
+    
+    #returnhome, #otherlinks {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrowleft.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: none;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+    
+    #returnhome p, #returnhome h5, #otherlinks p {
+        font-family: 'Finger Paint', cursive;
+        line-height: 1.75em;
+        margin: 15px;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        padding-top: 20px;
+    }
+
+    #aboutprojects p {
+        font-size: 1em;
+        padding: 0 15px 0 0;
+    }
+    
+    .topprojects {
+        background-color: rgba(252,155,86,0.25);
+        width: 97%;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px ;
+        border-radius: 15px;
+    }
+    
+    .article {
+        width: 95%;
+        float: none;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 0;
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        font-size: 1.10em;
+    }
+
+    .topprojects {
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        align-content:flex-start;
+        align-self: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+    
+    .topprojects img {
+        border: 1px ;
+        border-radius: 15px;
+        margin: 3px 0 0 8px;
+        padding-top: 0;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 295px;
+    }
+    .topprojects h2 {
+        text-align: center;
+        color: RGBA(44,167,178,1);
+        font-weight: bold;
+        font-size: 1.5em;
+        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .topprojects p {
+        font-size: 1em;
+        padding: 0;
+    }
+    
+    #contact img {
+        height: 100px;
+        float: none;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #contact p {
+        margin: 0 15px 0 15px;
+        padding: 0;
+    }
+    
+    #myBtn {
+        display: none;
+        visibility: hidden;
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        height: 125px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:12px;
+    }
+    
+    footer p {
+        padding-bottom: 25px;
+    }
+
+    footer img {
+        padding: 0 25px 0 25px;
+        height: 35px;
+    }
 }
 
-footer img {
-    padding: 0 50px 0 50px;
+/*--tablet display--*/
+@media screen and (min-width: 415px) and (max-width:1025px) {
+    #page {
+        background-color: #282828;
+        color: white;
+        font-family: "verdana", arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+    }
+    
+    .header img {
+        margin: 15px 0 0 35px;
+        width: 85px;
+        float: left;
+    }
+    
+    .mobilenav {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .name h1 {
+        color: white;
+        font-size: 3em;
+        padding: 15px 0 0 0;
+        margin: 0;
+    }
+
+    .name h2 {
+        color: white;
+        font-size: 1em;
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+
+    .name h3 {
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        margin: 15px 0 25px 0;
+        padding: 0;
+        font-size: 1.5em;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        text-align: center;
+    }
+    
+    #content {
+        clear: both;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+    }
+    
+    #returnhome {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrowleft.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: left;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+
+    #otherlinks {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrow.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: right;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+    
+    #returnhome p, #returnhome h5, #otherlinks p {
+        font-family: 'Finger Paint', cursive;
+        line-height: 1.75em;
+        margin: 15px;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        padding-top: 5px;
+    }
+
+    #aboutprojects p {
+        font-size: 1.35em;
+        padding: 0 10px 0 10px;
+    }
+    
+    .topprojects {
+        background-color: rgba(252,155,86,0.25);
+        width: 97%;
+        height: 465px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px ;
+        border-radius: 15px;
+    }
+    
+    .article {
+        width: 50%;
+        float: right;
+        margin-right: 0px;
+        margin-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 0;
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        font-size: 1.10em;
+    }
+
+    .topprojects img {
+        border: 1px ;
+        border-radius: 15px;
+        margin: 3px 0 0 8px;
+        float: left;
+        width: 350px;
+    }
+    .topprojects h2 {
+        text-align: center;
+        color: RGBA(44,167,178,1);
+        font-weight: bold;
+        font-size: 2em;
+        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .topprojects p {
+        font-size: 1em;
+        padding: 0;
+    }
+    
+    #contact img {
+        display: block;
+        float: left;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+    }
+
+    footer img {
+        padding: 0 10px 0 10px;
+        height: 50px;
+    }
 }
 
-/*--large desktop display--*/
-@media screen and (min-width: 1251px) and (max-width:1559px) {
+/*--in-between display--*/
+@media screen and (min-width: 1026px) and (max-width: 1250px) {
+    #page {
+        background-color: #282828;
+        color: white;
+        font-family: "verdana", arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+    }
+    
+    .header img {
+        margin: 15px 0 0 35px;
+        width: 85px;
+        float: left;
+    }
+    
+    .mobilenav {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .name h1 {
+        color: white;
+        font-size: 3em;
+        padding: 15px 0 0 0;
+        margin: 0;
+    }
+
+    .name h2 {
+        color: white;
+        font-size: 1em;
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+
+    .name h3 {
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        margin: 15px 0 25px 0;
+        padding: 0;
+        font-size: 1.5em;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        text-align: center;
+    }
+    
+    #content {
+        clear: both;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+    }
+    #returnhome {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrowleft.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: left;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+
+    #otherlinks {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrow.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: right;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;  
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+    
+    #returnhome p, #returnhome h5, #otherlinks p {
+        font-family: 'Finger Paint', cursive;
+        line-height: 1.75em;
+        margin: 15px;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        padding-top: 5px;
+    }
+    
+    #floatingleaf {
+        width: 800px;
+        height: 100px;
+        position: relative;
+        animation-name: mywork;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes mywork {
+        0%   {left:-200px; top:0px;}
+        100% {left:-55px; top:0px;}
+    }
+    
+    .topprojects {
+        background-color: rgba(252,155,86,0.25);
+        width: 97%;
+        height: 465px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px ;
+        border-radius: 15px;
+    }
+    
     .topprojects .article {
-        width: 35%;
+        width: 43%;
         float: right;
         margin-right: 40px;
         margin-top: 0;
@@ -748,7 +1153,15 @@ footer img {
         font-family: "Nirmala UI", sans-serif;
         font-size: 1em;
     }
-
+    
+    .topprojects img {
+        border: 1px ;
+        border-radius: 15px;
+        margin: 10px;
+        float: left;
+        width: 325px;
+    }
+    
     .topprojects h2 {
         text-align: center;
         color: RGBA(44,167,178,1);
@@ -765,62 +1178,366 @@ footer img {
         font-size: 1em;
     }
     
-    #secondlevelproject1 {
-    background-color: rgba(252,155,86,0.25);
-    width: 44%;
-    height: 325px;
-    display: inline;
-    text-align: center;
-    margin: 5px 2px 0 35px;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px ;
-    border-radius: 15px;
+    #contact img {
+        float: left;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
     }
 
-    #secondlevelproject2 {
-        background-color: rgba(252,155,86,0.25);
-        width: 44%;
-        height: 325px;
-        display: inline;
+    footer img {
+        padding: 0 50px 0 50px;
+    }
+
+}
+
+/*--large desktop display--*/
+@media screen and (min-width: 1251px) and (max-width:1559px) {
+    #page {
+        background-color: #282828;
+        color: white;
+        font-family: "verdana", arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+    }
+    .header img {
+        margin: 15px 0 0 35px;
+        width: 85px;
+        float: left;
+    }
+    
+    .mobilenav {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .name h1 {
+        color: white;
+        font-size: 3em;
+        padding: 15px 0 0 0;
+        margin: 0;
+    }
+
+    .name h2 {
+        color: white;
+        font-size: 1em;
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+
+    .name h3 {
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        margin: 15px 0 25px 0;
+        padding: 0;
+        font-size: 1.5em;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
         text-align: center;
-        margin: 5px 35px 0 2px;
+    }
+    
+    #content {
+        clear: both;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+    }
+    
+    #returnhome {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrowleft.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: left;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+
+    #otherlinks {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrow.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
         float: right;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+    
+    #returnhome p, #returnhome h5, #otherlinks p {
+        font-family: 'Finger Paint', cursive;
+        line-height: 1.75em;
+        margin: 15px;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        padding-top: 5px;
+    }
+    
+    #floatingleaf {
+        width: 800px;
+        height: 100px;
+        position: relative;
+        animation-name: mywork;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes mywork {
+        0%   {left:-200px; top:0px;}
+        100% {left:10px; top:0px;}
+    }
+    
+    .topprojects {
+        background-color: rgba(252,155,86,0.25);
+        width: 97%;
+        height: 465px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
         border-radius: 15px;
     }
-
-    #secondlevelproject1 h2 ,#secondlevelproject2 h2 {
+    
+    .topprojects .article {
+        width: 40%;
+        float: right;
+        margin-right: 40px;
+        margin-top: 0;
+        padding-top: 0;
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        font-size: 1em;
+    }
+    
+    .topprojects img {
+        border: 1px ;
+        border-radius: 15px;
+        margin: 10px;
+        float: left;
+        width: 450px;
+    }
+    
+    .topprojects h2 {
         text-align: center;
         color: RGBA(44,167,178,1);
         font-weight: bold;
-        font-size: 1.5em;
-        text-shadow: 3px 3px rgba(0,0,0,0.5);
-        padding-top: 5px;
+        font-size: 2.15em;
+        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+        padding-top: 3px;
         padding-bottom: 0;
         margin-bottom: 0;
-        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
-    }
-    
-    #lowerprojects {
-    height: 325px;
+        margin-top: 0;
     }
 
-    #lowerprojects img {
-        height:200px;
-        margin-top: 15px;
-        padding-bottom: 0;
-        border: 1px ;
-        border-radius: 15px;
+    .topprojects p {
+        font-size: 1em;
+    }
+    
+    #about, #resume, #contact {
+        width: 70%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.25);
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    
+    #contact img {
+        float: left;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+    }
+
+    footer img {
+        padding: 0 50px 0 50px;
     }
 
 }
 
 /*--extra large desktop display--*/
 @media screen and (min-width:1560px) {
+    #page {
+        background-color: #282828;
+        color: white;
+        font-family: "verdana", arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+    }
+    .header img {
+        margin: 15px 0 0 35px;
+        width: 85px;
+        float: left;
+    }
+    
+    .mobilenav {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .name h1 {
+        color: white;
+        font-size: 3em;
+        padding: 15px 0 0 0;
+        margin: 0;
+    }
+
+    .name h2 {
+        color: white;
+        font-size: 1em;
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+
+    .name h3 {
+        color: white;
+        font-family: "Nirmala UI", sans-serif;
+        margin: 15px 0 25px 0;
+        padding: 0;
+        font-size: 1.5em;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        text-align: center;
+    }
+    
+    #content {
+        clear: both;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+    }
+    
+    #returnhome {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrowleft.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: left;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+
+    #otherlinks {
+        width: 200px;
+        height: 125px;
+        background-image: url(arrow.png);
+        background-repeat: no-repeat;
+        background-size: 200px 125px;
+        margin: 35px;
+        float: right;
+        text-align: center;
+        color: white;
+        font-size: 1.35em;
+        border: 1px ;
+        border-radius: 15px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+    
+    #returnhome p, #returnhome h5, #otherlinks p {
+        font-family: 'Finger Paint', cursive;
+        line-height: 1.75em;
+        margin: 15px;
+        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        padding-top: 5px;
+    }
+    
+    #floatingleaf {
+        width: 800px;
+        height: 100px;
+        position: relative;
+        animation-name: mywork;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    
+    .topprojects {
+        background-color: rgba(252,155,86,0.25);
+        width: 97%;
+        height: 465px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px ;
+        border-radius: 15px;
+    }
+    
     .topprojects .article {
-        width: 44%;
+        width: 55%;
         float: right;
         margin-right: 40px;
         margin-top: 0;
@@ -830,6 +1547,14 @@ footer img {
         font-size: 1em;
     }
 
+    .topprojects img {
+        border: 1px ;
+        border-radius: 15px;
+        margin: 10px;
+        float: left;
+        width: 443px;
+    }
+    
     .topprojects h2 {
         text-align: center;
         color: RGBA(44,167,178,1);
@@ -846,54 +1571,41 @@ footer img {
         font-size: 1.25em;
     }
     
-    #secondlevelproject1 {
-    background-color: rgba(252,155,86,0.25);
-    width: 45%;
-    height: 325px;
-    display: inline;
-    text-align: center;
-    margin: 5px 2px 0 35px;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px ;
-    border-radius: 15px;
-    }
-
-    #secondlevelproject2 {
-        background-color: rgba(252,155,86,0.25);
-        width: 45%;
-        height: 325px;
-        display: inline;
-        text-align: center;
-        margin: 5px 35px 0 2px;
-        float: right;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border: 1px ;
-        border-radius: 15px;
-    }
-
-    #secondlevelproject1 h2 ,#secondlevelproject2 h2 {
-        text-align: center;
-        color: RGBA(44,167,178,1);
-        font-weight: bold;
-        font-size: 2em;
-        text-shadow: 3px 3px rgba(0,0,0,0.5);
-        padding-top: 5px;
-        padding-bottom: 0;
+    #contact {
+        width: 85%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 0;
-        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+        background-color: rgba(255, 255, 255, 0.25);
+        padding: 15px 0 25px 25px;
+    }
+    #contact img {
+        float: left;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
-    #lowerprojects {
-    height: 335px;
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
     }
 
-    #lowerprojects img {
-        height:225px;
-        margin-top: 15px;
-        padding-bottom: 0;
-        border: 1px ;
-        border-radius: 15px;
+    footer img {
+        padding: 0 50px 0 50px;
     }
 
 }
