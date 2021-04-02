@@ -1098,13 +1098,13 @@ a, a:visited {
         height: 100px;
         position: relative;
         animation-name: mywork;
-        animation-duration: 6s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
     @keyframes mywork {
-        0%   {left:-200px; top:0px;}
-        100% {left:-55px; top:0px;}
+        0%   {left:0px; top:0px;}
+        100% {left:45px; top:0px;}
     }
     
     .topprojects {
@@ -1275,13 +1275,13 @@ a, a:visited {
         height: 100px;
         position: relative;
         animation-name: mywork;
-        animation-duration: 6s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
     @keyframes mywork {
-        0%   {left:-200px; top:0px;}
-        100% {left:10px; top:0px;}
+        0%   {left:0px; top:0px;}
+        100% {left:50px; top:0px;}
     }
     
     .topprojects {
@@ -1473,9 +1473,13 @@ a, a:visited {
         height: 100px;
         position: relative;
         animation-name: mywork;
-        animation-duration: 6s;
+        animation-duration:2s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+    }
+    @keyframes mywork {
+        0%   {left:75px; top:0px;}
+        100% {left:155px; top:0px;}
     }
     
     .topprojects {
