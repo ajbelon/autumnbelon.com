@@ -416,7 +416,6 @@ a, a:visited {
     color: white;
     font-family: "Nirmala UI", sans-serif;
     text-align: center;
-    /*--text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);--*/
     
 }
 
@@ -434,8 +433,6 @@ a, a:visited {
     vertical-align: middle;
     margin: 0;
     padding: 0;
-    /*--font-family: 'Charmonman', cursive;
-    text-shadow: 0 0 5px rgba(252,155,86,0.75), 0 0 25px rgba(252,155,86,0.5), 0 0 30px rgba(252,155,86,0.25);--*/
 }
 
 @keyframes mywork {
@@ -460,14 +457,12 @@ a, a:visited {
 }
 
 #aboutprojects a, #about a {
-    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-    color: white;
+    color: black;
+    font-weight: 600;
 }
 
 #aboutprojects h4 {
     font-size: 2.55em;
-    /*--text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-    font-family: 'Charmonman', cursive;--*/
 }
 
 .topprojects a {
@@ -483,10 +478,10 @@ a, a:visited {
 }
 
 #about h2, #resume h2, #contact h2, #content h3 {
-    color: RGBA(44,167,178,1); 
+    color: black; 
     font-weight: bold;
     font-size: 2.5em;
-    text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+   
     margin-left: 15px;
 }
 
@@ -519,7 +514,6 @@ a, a:visited {
 #resume h3 {
     font-weight: bold;
     font-size: 1.5em;
-    text-shadow: 3px 3px rgba(0,0,0,0.5);
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -561,8 +555,8 @@ a, a:visited {
     box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 3px;
     font-size: 18px;
 }
 
@@ -706,7 +700,6 @@ a, a:visited {
         font-family: 'Finger Paint', cursive;
         line-height: 1.75em;
         margin: 15px;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
         padding-top: 20px;
     }
 
@@ -765,10 +758,10 @@ a, a:visited {
     }
     .topprojects h2 {
         text-align: center;
-        color: RGBA(44,167,178,1);
+        color: black;
         font-weight: bold;
         font-size: 1.5em;
-        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+
         padding: 0;
         margin-bottom: 0;
         margin-top: 0;
@@ -897,41 +890,25 @@ a, a:visited {
     
     #returnhome {
         width: 200px;
-        height: 125px;
-        background-image: url(arrowleft.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: left;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
 
     #otherlinks {
         width: 200px;
-        height: 125px;
-        background-image: url(arrow.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: right;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
     
     #returnhome p, #returnhome h5, #otherlinks p {
-        font-family: 'Finger Paint', cursive;
         line-height: 1.75em;
         margin: 15px;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
         padding-top: 5px;
     }
 
@@ -976,10 +953,10 @@ a, a:visited {
     }
     .topprojects h2 {
         text-align: center;
-        color: RGBA(44,167,178,1);
+        color: black;
         font-weight: bold;
         font-size: 2em;
-        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+
         padding: 0;
         margin-bottom: 0;
         margin-top: 0;
@@ -1094,41 +1071,25 @@ a, a:visited {
     
     #returnhome {
         width: 200px;
-        height: 125px;
-        background-image: url(arrowleft.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: left;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
 
     #otherlinks {
         width: 200px;
-        height: 125px;
-        background-image: url(arrow.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: right;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;  
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
     
     #returnhome p, #returnhome h5, #otherlinks p {
-        font-family: 'Finger Paint', cursive;
         line-height: 1.75em;
         margin: 15px;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
         padding-top: 5px;
     }
     
@@ -1181,10 +1142,10 @@ a, a:visited {
     
     .topprojects h2 {
         text-align: center;
-        color: RGBA(44,167,178,1);
+        color: black;
         font-weight: bold;
         font-size: 2.15em;
-        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+
         padding-top: 3px;
         padding-bottom: 0;
         margin-bottom: 0;
@@ -1287,41 +1248,25 @@ a, a:visited {
     
     #returnhome {
         width: 200px;
-        height: 125px;
-        background-image: url(arrowleft.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: left;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
 
     #otherlinks {
         width: 200px;
-        height: 125px;
-        background-image: url(arrow.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: right;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
     
     #returnhome p, #returnhome h5, #otherlinks p {
-        font-family: 'Finger Paint', cursive;
         line-height: 1.75em;
         margin: 15px;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
         padding-top: 5px;
     }
     
@@ -1374,10 +1319,10 @@ a, a:visited {
     
     .topprojects h2 {
         text-align: center;
-        color: RGBA(44,167,178,1);
+        color: black;
         font-weight: bold;
         font-size: 2.15em;
-        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+        
         padding-top: 3px;
         padding-bottom: 0;
         margin-bottom: 0;
@@ -1501,41 +1446,25 @@ a, a:visited {
     
     #returnhome {
         width: 200px;
-        height: 125px;
-        background-image: url(arrowleft.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: left;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
 
     #otherlinks {
         width: 200px;
-        height: 125px;
-        background-image: url(arrow.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
         float: right;
         text-align: center;
         color: white;
         font-size: 1.35em;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
     }
     
     #returnhome p, #returnhome h5, #otherlinks p {
-        font-family: 'Finger Paint', cursive;
         line-height: 1.75em;
         margin: 15px;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
         padding-top: 5px;
     }
     
@@ -1584,10 +1513,10 @@ a, a:visited {
     
     .topprojects h2 {
         text-align: center;
-        color: RGBA(44,167,178,1);
+        color: black;
         font-weight: bold;
         font-size: 3em;
-        text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+
         padding-top: 3px;
         padding-bottom: 0;
         margin-bottom: 0;
