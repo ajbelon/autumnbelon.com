@@ -680,14 +680,12 @@ a, a:visited {
     
     #returnhome, #otherlinks {
         width: 200px;
-        height: 125px;
-        background-image: url(arrowleft.png);
-        background-repeat: no-repeat;
-        background-size: 200px 125px;
-        margin: 35px;
+        height: 100px;
+        background-color: white;
+        
         float: none;
         text-align: center;
-        color: white;
+        color: black;
         font-size: 1.35em;
         margin-left: auto;
         margin-right: auto;
@@ -697,10 +695,9 @@ a, a:visited {
     }
     
     #returnhome p, #returnhome h5, #otherlinks p {
-        font-family: 'Finger Paint', cursive;
         line-height: 1.75em;
-        margin: 15px;
-        padding-top: 20px;
+        margin: 10px;
+        padding-top: 15px;
     }
 
     #aboutprojects p {
