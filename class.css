@@ -719,24 +719,24 @@ a, a:visited {
     }
     
     #returnhome, #otherlinks {
-        width: 200px;
+        width: 100%;
         height: 100px;
-        background-color: white;
         float: none;
         text-align: center;
-        color: black;
+        color: white;
         font-size: 1.35em;
         margin-left: auto;
         margin-right: auto;
-        border: 1px ;
-        border-radius: 15px;
-        box-shadow: 0px 5px 0px rgba(0,0,0,0.75), 0px 3px 15px rgba(0,0,0,.4);
+    }
+    #returnhome a, #otherlinks a, #returnhome a:visited, #otherlinks a:visited,  {
+        text-decoration: underline;
     }
     
     #returnhome p, #returnhome h5, #otherlinks p {
         line-height: 1.75em;
         margin: 10px;
         padding-top: 15px;
+        text-decoration: underline;
     }
 
     #aboutprojects p {
@@ -866,6 +866,7 @@ a, a:visited {
 /*--tablet display--*/
 @media screen and (min-width: 415px) and (max-width:1025px) {
     #page {
+        width: 100%;
         background-color: #282828;
         color: white;
         font-family: "verdana", arial, sans-serif;
@@ -883,9 +884,41 @@ a, a:visited {
         float: left;
     }
     
-    .mobilenav {
+    .navigation {
         display: none;
         visibility: hidden;
+    }
+    
+    .mobilenav {
+        width: 90%;
+        display:grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-content: center;
+        grid-area: myArea;
+        grid-template-areas: myArea;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .mobilenav li{
+        border: 1px ;
+        border-radius: 15px;
+        font-size: 1.75em;
+        font-weight: 700;
+        text-align: center;
+        background-color: rgba(42,162,176,69);
+        margin: 5px;
+        list-style-type: none;
+        padding: 10px 35px 10px 35px;
+        margin: 15px 0 15px 0;
+        box-shadow: 0px 5px 0px #1E737D, 0px 3px 15px rgba(0,0,0,.4);
+    }
+    
+    .mobilenav a {
+        color: white;
     }
     
     .name h1 {
@@ -925,7 +958,7 @@ a, a:visited {
     }
     
     #returnhome {
-        width: 200px;
+        width: 49%;
         height: 100px;
         float: left;
         text-align: center;
@@ -934,7 +967,7 @@ a, a:visited {
     }
 
     #otherlinks {
-        width: 200px;
+        width: 49%;
         height: 100px;
         float: right;
         text-align: center;
@@ -946,6 +979,7 @@ a, a:visited {
         line-height: 1.75em;
         margin: 15px;
         padding-top: 5px;
+        text-decoration: underline;
     }
 
     #aboutprojects p {
@@ -954,22 +988,18 @@ a, a:visited {
     }
     
     .topprojects {
-        background-color: rgba(252,155,86,0.25);
-        width: 97%;
-        height: 465px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border: 1px ;
-        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        align-content:flex-start;
+        align-self: center;
+        justify-content: center;
+        padding-top: 0;
     }
     
     .article {
-        width: 50%;
-        float: right;
+        width: 95%;
+        float: none;
         margin-right: 0px;
         margin-left: 0;
         margin-top: 0;
@@ -1003,16 +1033,29 @@ a, a:visited {
     }
     
     #contact img {
-        display: block;
-        float: left;
+        height: 100px;
+        float: none;
         padding: 15px;
         margin: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
-    .truenorthweathermobile img {
+    #contact p {
+        margin: 0 15px 0 15px;
+        padding: 0;
+    }
+    
+    .truenorthweathernonmobile {
         display: none;
         visibility: hidden;
+    }
+    
+    .truenorthweathermobile img {
+        width: 319px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2px;
     }
     
     footer {
