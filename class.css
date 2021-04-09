@@ -358,8 +358,8 @@ template {
 
 a, a:visited {
     text-decoration: none;
-
 }
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -425,17 +425,59 @@ a, a:visited {
     text-decoration: underline;
 }
 
-#floatingleaf h1 {
+.floatin {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.fadein {
+  display: inline-block;
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  -moz-animation: fadeIn linear 4s;
+  -o-animation: fadeIn linear 4s;
+  -ms-animation: fadeIn linear 4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.fadein h1 {
     font-size: 5em;
     text-align: center;
     vertical-align: middle;
     margin: 0;
     padding: 0;
-}
-
-@keyframes mywork {
-    0%   {left:-200px; top:0px;}
-    100% {left:150px; top:0px;}
 }
 
 .topprojects h2:hover {
@@ -450,13 +492,13 @@ a, a:visited {
 }
 
 #otherlinks:hover, #returnhome:hover {
-    background-color: RGBA(44,167,178,1);
-    box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+    font-weight: bold;
 }
 
 #aboutprojects a, #about a {
-    color: black;
-    font-weight: 600;
+    text-decoration: underline;
+    font-weight: 800;
+    color: white;
 }
 
 #aboutprojects h4 {
@@ -479,7 +521,6 @@ a, a:visited {
     color: black; 
     font-weight: bold;
     font-size: 2.5em;
-   
     margin-left: 15px;
 }
 
@@ -496,6 +537,7 @@ a, a:visited {
     line-height: 1.5em;
     padding-top: 15px;
 }
+
 #about img {
     float: left;
     margin: 25px;
@@ -636,7 +678,6 @@ a, a:visited {
         margin-right: auto;
         margin: 0;
         padding: 0;
-       
     }
     
     .mobilenav li{
@@ -674,13 +715,13 @@ a, a:visited {
     
     #content h1 {
         font-size: 3em;
+        text-align: center;
     }
     
     #returnhome, #otherlinks {
         width: 200px;
         height: 100px;
         background-color: white;
-        
         float: none;
         text-align: center;
         color: black;
@@ -951,7 +992,6 @@ a, a:visited {
         color: black;
         font-weight: bold;
         font-size: 2em;
-
         padding: 0;
         margin-bottom: 0;
         margin-top: 0;
@@ -1088,20 +1128,6 @@ a, a:visited {
         padding-top: 5px;
     }
     
-    #floatingleaf {
-        width: 800px;
-        height: 100px;
-        position: relative;
-        animation-name: mywork;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-    @keyframes mywork {
-        0%   {left:0px; top:0px;}
-        100% {left:45px; top:0px;}
-    }
-    
     .topprojects {
         background-color: rgba(252,155,86,0.25);
         width: 97%;
@@ -1194,6 +1220,7 @@ a, a:visited {
         align-self: center;
         justify-content: center;
     }
+    
     .header img {
         margin: 15px 0 0 35px;
         width: 85px;
@@ -1265,20 +1292,6 @@ a, a:visited {
         padding-top: 5px;
     }
     
-    #floatingleaf {
-        width: 800px;
-        height: 100px;
-        position: relative;
-        animation-name: mywork;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-    @keyframes mywork {
-        0%   {left:0px; top:0px;}
-        100% {left:50px; top:0px;}
-    }
-    
     .topprojects {
         background-color: rgba(252,155,86,0.25);
         width: 97%;
@@ -1317,7 +1330,6 @@ a, a:visited {
         color: black;
         font-weight: bold;
         font-size: 2.15em;
-        
         padding-top: 3px;
         padding-bottom: 0;
         margin-bottom: 0;
@@ -1422,9 +1434,14 @@ a, a:visited {
         text-align: center;
     }
     
+    #aboutprojects p {
+        line-height: 1.25em;    
+    }
+    
     #content {
         clear: both;
         width: 70%;
+        height: 100%;
         background-color: rgba(255, 255, 255, 0.25);
         margin-left: auto;
         margin-right: auto;
@@ -1434,13 +1451,7 @@ a, a:visited {
         text-decoration: none;
     }
     
-    .truenorthweathermobile img {
-        display: none;
-        visibility: hidden;
-    }
-    
     #returnhome {
-        width: 200px;
         height: 100px;
         float: left;
         text-align: center;
@@ -1449,7 +1460,6 @@ a, a:visited {
     }
 
     #otherlinks {
-        width: 200px;
         height: 100px;
         float: right;
         text-align: center;
@@ -1463,24 +1473,10 @@ a, a:visited {
         padding-top: 5px;
     }
     
-    #floatingleaf {
-        width: 800px;
-        height: 100px;
-        position: relative;
-        animation-name: mywork;
-        animation-duration:2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-    @keyframes mywork {
-        0%   {left:75px; top:0px;}
-        100% {left:155px; top:0px;}
-    }
-    
     .topprojects {
         background-color: rgba(252,155,86,0.25);
-        width: 97%;
-        height: 465px;
+        width: 99%;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -1491,10 +1487,11 @@ a, a:visited {
         border-radius: 15px;
     }
     
-    .topprojects .article {
-        width: 55%;
+    .article {
+        width: 54%;
         float: right;
-        margin-right: 40px;
+        margin-right: 30px;
+        margin-left: 0;
         margin-top: 0;
         padding-top: 0;
         color: white;
@@ -1505,9 +1502,9 @@ a, a:visited {
     .topprojects img {
         border: 1px ;
         border-radius: 15px;
-        margin: 10px;
+        margin: 15px;
         float: left;
-        width: 443px;
+        width: 440px;
     }
     
     .topprojects h2 {
@@ -1515,15 +1512,20 @@ a, a:visited {
         color: black;
         font-weight: bold;
         font-size: 3em;
-
         padding-top: 3px;
-        padding-bottom: 0;
+        padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
     }
 
     .topprojects p {
         font-size: 1.25em;
+        line-height: 1.25em;
+    }
+    
+    .truenorthweathermobile img {
+        display: none;
+        visibility: hidden;
     }
     
     #contact {
@@ -1549,7 +1551,7 @@ a, a:visited {
         align-content: center;
         align-self: center;
         justify-content: center;
-        height: 100px;
+        height: 100%;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.25);
         text-align: center;
