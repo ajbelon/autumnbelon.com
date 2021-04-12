@@ -416,7 +416,6 @@ a, a:visited {
     color: white;
     font-family: "Nirmala UI", sans-serif;
     text-align: center;
-    
 }
 
 .currentpage {
@@ -440,6 +439,7 @@ a, a:visited {
 
 .fadein {
   display: inline-block;
+    float: left;
   animation: fadeIn linear 4s;
   -webkit-animation: fadeIn linear 4s;
   -moz-animation: fadeIn linear 4s;
@@ -493,6 +493,40 @@ a, a:visited {
 
 #otherlinks:hover, #returnhome:hover {
     font-weight: bold;
+}
+
+#element {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    animation-name: stretch;
+    animation-duration: 2s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(42,162,176,69);
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+      color: white;
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+    
+    100% {
+        transform: scale(1);
+        color: rgba(42,162,176,69);
+    }
 }
 
 #aboutprojects a, #about a {
@@ -642,12 +676,26 @@ a, a:visited {
     }
     
     .header img {
-        margin: 15px 0 0 20px;
-        width: 70px;
-        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .name h1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
         color: white;
         font-size: 1.5em;
         padding: 15px 0 5px 0;
@@ -655,6 +703,12 @@ a, a:visited {
     }
 
     .name h2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
         color: white;
         font-size: 1em;
         margin: 0;
@@ -662,6 +716,12 @@ a, a:visited {
     }
 
     .name h3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
         color: white;
         font-family: "Nirmala UI", sans-serif;
         margin: 5px 0 0 0;
@@ -677,37 +737,70 @@ a, a:visited {
     }
     
     .mobilenav {
-        width: 90%;
-        display:grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        align-content: center;
-        grid-area: myArea;
-        grid-template-areas: myArea;
+        position: absolute;
+        top: -50px;
+        right: 50px;
+        z-index: 1;
+        margin: 0;
+        height: 100%;
+        width: 240px;
+        color: white;  
+    }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .topnav ul {
+        list-style: none;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 3em;
+        font-weight: bold;
+        font-family: "Nirmala UI", sans-serif;
+        position: fixed;
+        z-index: 2;
+        width: 175px;
         margin-left: auto;
         margin-right: auto;
-        margin: 0;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        background: white;
+        color: rgba(42,162,176,69);
         padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
     }
-    
-    .mobilenav li{
-        border: 1px ;
-        border-radius: 15px;
-        font-size: 1.75em;
-        font-weight: 700;
-        text-align: center;
-        background-color: rgba(42,162,176,69);
-        margin: 5px;
-        list-style-type: none;
-        padding: 10px 35px 10px 35px;
-        margin: 15px 0 15px 0;
-        box-shadow: 0px 5px 0px #1E737D, 0px 3px 15px rgba(0,0,0,.4);
+
+    .topnav a.icon {
+        background-image: url(hamburgericon.png);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        background-size:100%;
+        display: block;
+        position: fixed;
+        top: 5px;
+        right: 10px;
     }
-    
-    .mobilenav a {
-        color: white;
+
+    .topnav a:hover {
+        background-color: white;
+        color: rgba(42,162,176,69);
     }
-    
+
+    .currentpage a {
+        color: black;
+        pointer-events: none;
+    }
+
     #content {
         clear: both;
         width: 100%;
@@ -717,15 +810,9 @@ a, a:visited {
         border-radius: 15px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: 3px 0 15px 0;
         text-decoration: none;
-        margin: 5px 0 5px 0;
-    }
-    
-    #content h1 {
-        font-size: 3em;
-        text-align: center;
+        margin: 15px 0 5px 0;
     }
     
     #returnhome, #otherlinks {
@@ -751,13 +838,14 @@ a, a:visited {
 
     #aboutprojects p {
         font-size: 1em;
-        padding: 0 15px 0 0;
+        padding: 10px 10px 0 10px;
+        margin: 0;
     }
     
     .topprojects {
         background-color: rgba(252,155,86,0.25);
         width: 97%;
-        height: 800px;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -769,9 +857,9 @@ a, a:visited {
     }
     
     .article {
-        width: 95%;
+        width: 100%;
         float: none;
-        margin-right: 15px;
+        margin-right: 0;
         margin-bottom: 5px;
         margin-left: 0;
         margin-top: 0;
@@ -798,6 +886,12 @@ a, a:visited {
         margin: 3px 0 0 8px;
         padding-top: 0;
         float: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        align-content:flex-start;
+        align-self: center;
+        justify-content: center;
         margin-left: auto;
         margin-right: auto;
         width: 295px;
@@ -807,15 +901,15 @@ a, a:visited {
         color: black;
         font-weight: bold;
         font-size: 1.5em;
-
-        padding: 0;
+        padding: 5px 0 5px 0;
         margin-bottom: 0;
         margin-top: 0;
     }
 
     .topprojects p {
         font-size: 1em;
-        padding: 0;
+        padding: 10px;
+        margin: 0;
     }
     
     #contact img {
@@ -894,43 +988,6 @@ a, a:visited {
         float: left;
     }
     
-    .navigation {
-        display: none;
-        visibility: hidden;
-    }
-    
-    .mobilenav {
-        width: 90%;
-        display:grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        align-content: center;
-        grid-area: myArea;
-        grid-template-areas: myArea;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .mobilenav li{
-        border: 1px ;
-        border-radius: 15px;
-        font-size: 1.75em;
-        font-weight: 700;
-        text-align: center;
-        background-color: rgba(42,162,176,69);
-        margin: 5px;
-        list-style-type: none;
-        padding: 10px 35px 10px 35px;
-        margin: 15px 0 15px 0;
-        box-shadow: 0px 5px 0px #1E737D, 0px 3px 15px rgba(0,0,0,.4);
-    }
-    
-    .mobilenav a {
-        color: white;
-    }
-    
     .name h1 {
         color: white;
         font-size: 3em;
@@ -955,9 +1012,79 @@ a, a:visited {
         text-align: center;
     }
     
+    .navigation {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .mobilenav {
+        position: absolute;
+        top: -50px;
+        right: 50px;
+        z-index: 1;
+        margin: 0;
+        height: 100%;
+        width: 240px;
+        color: white;  
+    }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .topnav ul {
+        list-style: none;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 3em;
+        font-weight: bold;
+        font-family: "Nirmala UI", sans-serif;
+        position: fixed;
+        z-index: 2;
+        width: 175px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        background: white;
+        color: rgba(42,162,176,69);
+        padding: 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background-image: url(hamburgericon.png);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        background-size:100%;
+        display: block;
+        position: fixed;
+        top: 5px;
+        right: 10px;
+    }
+
+    .topnav a:hover {
+        background-color: white;
+        color: rgba(42,162,176,69);
+    }
+
+    .currentpage a {
+        color: black;
+        pointer-events: none;
+    }
+    
     #content {
         clear: both;
-        width: 70%;
+        width: 99%;
         height: 100%;
         background-color: rgba(255, 255, 255, 0.25);
         margin-left: auto;
@@ -965,7 +1092,7 @@ a, a:visited {
         margin-top: 0;
         padding-top: 15px;
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding-bottom: 15px;
         text-decoration: none;
     }
     
@@ -996,7 +1123,7 @@ a, a:visited {
 
     #aboutprojects p {
         font-size: 1.35em;
-        padding: 0 10px 0 10px;
+        padding: 0 5px 0 5px;
     }
     
     .topprojects {
@@ -1362,7 +1489,7 @@ a, a:visited {
         margin-top: 0;
         padding-top: 15px;
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding-bottom: 15px;
         text-decoration: none;
     }
     
@@ -1551,7 +1678,8 @@ a, a:visited {
     }
     
     #aboutprojects p {
-        line-height: 1.25em;    
+        line-height: 1.25em; 
+        font-size: 1.25em;
     }
     
     #content {
@@ -1564,7 +1692,7 @@ a, a:visited {
         margin-top: 0;
         padding-top: 15px;
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding-bottom: 15px;
         text-decoration: none;
     }
     
