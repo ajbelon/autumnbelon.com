@@ -13,9 +13,9 @@
         <div id="page">
             <main role="main">
             <header class="header">
+                
                 <div class="name">
                 <a href="index.html"><img src="logo.png" alt="logo"></a>
-                
                     <a href="index.html">
                     <h1>Autumn Belon</h1>
                     <h2>UX Designer and Web Developer</h2>
@@ -26,7 +26,7 @@
                 
                 <nav class="navigation">
                 <ul id="menu">
-                    <li><a href="index.html">Designs</a></li> 
+                    <li><a href="index.html" >Designs</a></li> 
                     <li><a href="about.html">Bio</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -34,18 +34,27 @@
                     </nav>
                 
                 <section class="mobilenav">
+                    <div class="topnav">
                     <ul>
-                    <li><a href="index.html">Designs</a></li> 
+                        <div id="myLinks">
+                    <li><a href="index.html" >Designs</a></li> 
                     <li><a href="about.html">Bio</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    </ul> 
+                        
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i></a>
+                        </ul> 
+                        
+                    </div>
+                    
                 </section>
             
                 <div id="content">
-                    <h3>Autumn's Hand Crafted</h3>
+                    <div id="element"><h3>Brand Strategy</h3></div>
                     <section id="aboutprojects">
-                        <p>Autumn's Hand Crafted is a premium skin care product line created in 2012.  In addition to creating the line's skin care products, I also carefully selected the packaging and designed the brand identity, including typefaces, images, and color scheme.  No longer in operation, I am showcasing Autumn's Hand Crafted as an example of brand creation, from top to bottom.</p>
+                        <p><strong>Autumn's Hand Crafted</strong> is a premium skin care product line created in 2012.  In addition to creating the line's skin care products, I also carefully selected the packaging and designed the brand identity, including typefaces, images, and color scheme.  No longer in operation, I am showcasing Autumn's Hand Crafted as an example of brand creation, from top to bottom.</p>
                         
                         <h4>Crafting the Products</h4>
                         <p>Each item was crafted with care and precision, using only the highest quality, all-natual ingredients.  In addition to an assortment of soaps, other offerings included hand crafted lotions and lip balms, shown below.</p>
@@ -84,6 +93,17 @@
                 function topFunction() {
                   document.body.scrollTop = 0; // For Safari
                   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+                </script>
+                
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
                 }
                 </script>
                 </main>
