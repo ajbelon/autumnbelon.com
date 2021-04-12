@@ -13,6 +13,7 @@
         <div id="page">
             <main role="main">
             <header class="header">
+                
                 <div class="name">
                 <a href="index.html"><img src="logo.png" alt="logo"></a>
                     <a href="index.html">
@@ -33,21 +34,31 @@
                     </nav>
                 
                 <section class="mobilenav">
+                    <div class="topnav">
                     <ul>
+                        <div id="myLinks">
                     <li class="currentpage"><a href="index.html" >Designs</a></li> 
                     <li><a href="about.html">Bio</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    </ul> 
+                        
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i></a>
+                        </ul> 
+                        
+                    </div>
+                    
                 </section>
                 
-                    <div id="content">
+                    <section id="content">
                     <div id="aboutprojects">
                     <p><strong>Human-Centered</strong> is the main tenet of any well designed project. Whether designing websites, logos, or creating an entire brand strategy, ease of use is the top priority. As a UX/UI web developer and HTML and CSS coder, allowing the visual elements to come together in a way that is intuitive, requiring no explanations, is the goal.
                     <br><br>
                     Clicking these links will either load a project page, walking you through the design process and expanding on the intent, or will load the completed website in a new window. 
                     <br><br>
                     If you'd like to make any inquiries about these projects or about a project you need help with, please find my contact information on my <a href="contact.html">Contact Page</a>.  I'd love to hear from you.</p>
+                    <div id="element"><h1>My Designs</h1></div>
                     </div> 
                 
                 <section class="topprojects">
@@ -75,10 +86,10 @@
                     
                 <section class="topprojects">
                     <a href="autumnshandcrafted.html"><h2>Autumn's Hand Crafted</h2><div class="fadein"><img src="ProductsCard.png" alt="Autumn's Hand Crafted"></div></a>
-                    <article class="article"><p><a href="autumnshandcrafted.html">Autumn's Hand Crafted is a premium skin care product line for which I created the brand elements, including typefaces, color palette, logo, and images.  As an all natural line, Autumn's Hand Crafted needed a brand designed to let the products shine while still being visible and recognizable.  <br><br>Autumn's Hand Crafted was in operation for one year.
+                    <article class="article"><p><a href="autumnshandcrafted.html">Autumn's Hand Crafted is a premium skin care product line for which I created the brand elements, including typefaces, color palette, logo, and images.  As an all natural line, Autumn's Hand Crafted needed a brand designed to let the products shine while still being visible and recognizable.  <br>
                     </a></p></article>
                     </section>   
-                </div>
+                </section>
                   
                 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                 <script>
@@ -100,6 +111,17 @@
                 function topFunction() {
                   document.body.scrollTop = 0; // For Safari
                   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+                </script>
+                
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
                 }
                 </script>
                 </main>
