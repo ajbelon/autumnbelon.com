@@ -9,13 +9,13 @@
         <script src="modernizr.min.js"></script>
     <title>Autumn Belon - Web Design</title>
         </head>
-    <body>
+<body>
         <div id="page">
             <main role="main">
             <header class="header">
+                
                 <div class="name">
                 <a href="index.html"><img src="logo.png" alt="logo"></a>
-                
                     <a href="index.html">
                     <h1>Autumn Belon</h1>
                     <h2>UX Designer and Web Developer</h2>
@@ -34,16 +34,25 @@
                     </nav>
                 
                 <section class="mobilenav">
+                    <div class="topnav">
                     <ul>
+                        <div id="myLinks">
                     <li><a href="index.html" >Designs</a></li> 
                     <li><a href="about.html">Bio</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    </ul> 
+                        
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i></a>
+                        </ul> 
+                        
+                    </div>
+                    
                 </section>
             
                 <div id="content">
-                    <h3>True North Weather Consulting</h3>
+                    <div id="element"><h3>Web Design</h3></div>
                     <h2>Project Brief</h2>
                     <p>True North Weather, a meteorology and fire-weather consulting firm in Edmonton, Alberta, Canada, is seeking a fresh, informative, functional advertising website redesign.  This is part of an ongoing project.  This is a current work in progress.<br><br>The project brief provides a way to track progress, identify problems, state solutions, name deliverables, and identify a timeline.<br><br></p>
                     <div class="truenorthweathermobile">
@@ -97,6 +106,17 @@
                 function topFunction() {
                   document.body.scrollTop = 0; // For Safari
                   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+                </script>
+                
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
                 }
                 </script>
                 </main>
