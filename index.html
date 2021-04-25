@@ -80,8 +80,12 @@
                     </div>
                     <div class="Slide">
                         <a href="autumnshandcrafted.html"><img src="AHC.png" alt="Autumn's Hand Crafted">
-                    <div class="Caption">Autumn's Hand Crafted Health Products</div></a>
+                    <div class="Caption">Autumn's Hand Crafted</div></a>
                     </div>
+                    <div class="Slide">
+                        <a href="https://main.d3bho5hssylqwc.amplifyapp.com/index.html" target="_blank"><img src="JavaScriptingDemo.png" alt="Java Scripting Demo">
+                    <div class="Caption">Java Scripting Demo</div></a>
+                    </div> 
                     
                     <a class="prevBtn">❮</a>
                     <a class="nextBtn">❯</a>
@@ -92,6 +96,7 @@
                     <span class="Navdot" onclick="currentSlide(3)"></span>
                     <span class="Navdot" onclick="currentSlide(4)"></span>
                     <span class="Navdot" onclick="currentSlide(5)"></span>
+                    <span class="Navdot" onclick="currentSlide(6)"></span>
                     </section> 
                     
                 </section>
@@ -127,6 +132,8 @@
                   }
                 }
                 
+                
+                
                  
                     document.querySelector(".prevBtn").addEventListener("click", () => {
                        changeSlides(-1);
@@ -159,15 +166,17 @@
                        slides[slideIndex - 1].style.display = "block";
                        dots[slideIndex - 1].className += " selected";
                     }
+                    
+                
                 </script>
                 </main>
             
             <footer role="contentinfo">
                 <a href="index.html"><img src="watermark.png" alt="Logo"></a>
                 <p>&copy; 2021 - All rights reserved</p>
-                <a href="https://www.linkedin.com/in/autumn-belon/" target="blank"><img src="linkedinlogo.jpg" alt="LinkedIn" height="75"></a>
-                <a href="https://github.com/ajbelon" target="blank"><img src="github.png" alt="GitHub" height="75"> </a>
-                
+                <section id="footermenu">
+                <a href="index.html">Designs</a> | <a href="about.html">Bio</a> | <a href="resume.html">Resume</a> | <a href="contact.html">Contact</a>
+                </section>
             </footer>
         </div> 
     </body>
