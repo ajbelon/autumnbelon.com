@@ -360,6 +360,18 @@ a, a:visited {
     text-decoration: none;
 }
 
+#page {
+        background-color: #012840;
+        color: white;
+        font-family: "verdana", arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+    }
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -389,6 +401,7 @@ a, a:visited {
     align-content:flex-end;
     align-self:flex-end;
     justify-content:flex-end;
+
 }
 
 #menu ul {
@@ -483,8 +496,6 @@ a, a:visited {
     padding: 0;
 }
 
-
-
 /*--carousel styling start*/
 .Slide {
    display: none;
@@ -553,10 +564,6 @@ a, a:visited {
 }
 
 /*carousel styling end--*/
-
-.topprojects img:hover {
-    
-}
 
 #otherlinks:hover, #returnhome:hover {
     font-weight: bold;
@@ -732,25 +739,57 @@ a, a:visited {
     margin-left: auto;
     margin-right: auto;
 }
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+footer img {
+    flex: left;
+    width: 50px;
+}
+#footermenu {
+    float: right;
+    padding-left: 50px;
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+}
 
 /*--mobile display--*/
 @media screen and (max-width:414px) {
-    #page {
-        width: 100%;
-        background-color: #282828;
-        color: white;
-        font-family: "verdana", arial, sans-serif;
+    .causes {
+        float: left;
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
+    .causes img {
+        width: 50px;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
+        
+        padding: 2px;
+        border: 1px ;
+        border-radius: 10px;
     }
     
-    .header img {
+    .name img {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -880,7 +919,6 @@ a, a:visited {
         clear: both;
         width: 100%;
         height: 100%;
-        
         border: 1px ;
         border-radius: 15px;
         margin-left: auto;
@@ -918,17 +956,24 @@ a, a:visited {
     }
     
     .topprojects {
-        background-color: rgba(252,155,86,0.25);
+        background-color: rgba(255, 255, 255, 0.25);
         width: 97%;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
         margin-bottom: 10px;
-        padding-top: 5px;
+        padding-top: 0;
+        padding-bottom: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
         border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        align-content:flex-start;
+        align-self: center;
+        justify-content: center;
     }
     
     .article {
@@ -944,22 +989,13 @@ a, a:visited {
         font-family: "Nirmala UI", sans-serif;
         font-size: 1.10em;
     }
-
-    .topprojects {
-        display: flex;
-        flex-wrap: wrap;
-        align-items:flex-start;
-        align-content:flex-start;
-        align-self: center;
-        justify-content: center;
-        padding-top: 0;
-    }
     
     .topprojects img {
         border: 1px ;
         border-radius: 15px;
-        margin: 3px 0 0 8px;
+        margin:0 0 0 8px;
         padding-top: 0;
+        padding-bottom: 10px;
         float: none;
         display: flex;
         flex-wrap: wrap;
@@ -971,14 +1007,15 @@ a, a:visited {
         margin-right: auto;
         width: 295px;
     }
+    
     .topprojects h2 {
         text-align: center;
         color: black;
         font-weight: bold;
         font-size: 1.5em;
-        padding: 5px 0 5px 0;
+        padding-top: -15px;
         margin-bottom: 0;
-        margin-top: 0;
+        margin-top: -15px;
     }
 
     .topprojects p {
@@ -1014,52 +1051,31 @@ a, a:visited {
         display: none;
         visibility: hidden;
     }
-    
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        height: 125px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.25);
-        text-align: center;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        font-size:12px;
-    }
-    
-    footer p {
-        padding-bottom: 25px;
-    }
-
-    footer img {
-        padding: 0 25px 0 25px;
-        height: 35px;
-    }
 }
 
 /*--tablet display--*/
 @media screen and (min-width: 415px) and (max-width:1026px) {
-    #page {
-        width: 100%;
-        background-color: #282828;
-        color: white;
-        font-family: "verdana", arial, sans-serif;
+    .header {
+        padding-top: 35px;
+    }
+    .causes {
+        float: left;
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
+    .causes img {
+        width: 50px;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
+        padding: 2px;
+        border: 1px ;
+        border-radius: 10px;
     }
     
-    .header img {
-        margin: 15px 0 0 35px;
-        width: 85px;
+    .name img {
+        margin: 15px 0 0 45px;
+        width: 95px;
         float: left;
     }
     
@@ -1160,8 +1176,7 @@ a, a:visited {
     #content {
         clear: both;
         width: 99%;
-        height: 100%;
-        
+        height: 100%; 
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -1206,7 +1221,7 @@ a, a:visited {
     }
     
     .topprojects {
-        background-color: rgba(252,155,86,0.25);
+        background-color: rgba(255, 255, 255, 0.25);
         width: 99%;
         display: flex;
         flex-wrap: wrap;
@@ -1219,6 +1234,7 @@ a, a:visited {
         margin-top: 0;
         margin-bottom: 10px;
         padding-top: 5px;
+        padding-bottom: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
         border-radius: 15px;
@@ -1275,8 +1291,7 @@ a, a:visited {
     }
     
     #contact img {
-        height: 100px;
-        float: none;
+        float: left;
         padding: 15px;
         margin: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1299,43 +1314,11 @@ a, a:visited {
         margin-right: auto;
         margin-bottom: 2px;
     }
-    
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        height: 100px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.25);
-        text-align: center;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 10px;
-    }
 
-    footer img {
-        padding: 0 10px 0 10px;
-        height: 50px;
-    }
 }
 
 /*--in-between display--*/
 @media screen and (min-width: 1026px) and (max-width: 1251px) {
-    #page {
-        background-color: #282828;
-        color: white;
-        font-family: "verdana", arial, sans-serif;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-    }
     
     .header img {
         margin: 15px 0 0 35px;
@@ -1376,7 +1359,6 @@ a, a:visited {
         clear: both;
         width: 70%;
         height: 100%;
-        
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -1416,7 +1398,7 @@ a, a:visited {
     }
     
     .topprojects {
-        background-color: rgba(252,155,86,0.25);
+        background-color: rgba(255, 255, 255, 0.25);
         width: 99%;
         display: flex;
         flex-wrap: wrap;
@@ -1488,44 +1470,28 @@ a, a:visited {
         margin: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        height: 100px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.25);
-        text-align: center;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-    }
 
-    footer img {
-        padding: 0 50px 0 50px;
-    }
 }
 
 /*--large desktop display--*/
 @media screen and (min-width: 1251px) and (max-width:1559px) {
-    #page {
-        background-color: #282828;
-        color: white;
-        font-family: "verdana", arial, sans-serif;
+    
+    .causes {
+        float: left;
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
+    .causes img {
+        width: 85px;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
+        padding: 2px;
+        border: 1px ;
+        border-radius: 10px;
     }
     
-    .header img {
+    .name img {
         margin: 15px 0 0 35px;
         width: 85px;
         float: left;
@@ -1564,7 +1530,6 @@ a, a:visited {
         clear: both;
         width: 70%;
         height: 100%;
-
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -1599,7 +1564,7 @@ a, a:visited {
     }
     
     .topprojects {
-        background-color: rgba(252,155,86,0.25);
+        background-color: rgba(255, 255, 255, 0.25);
         width: 99%;
         display: flex;
         flex-wrap: wrap;
@@ -1686,43 +1651,10 @@ a, a:visited {
         margin: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        height: 100px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.25);
-        text-align: center;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-    }
-
-    footer img {
-        padding: 0 50px 0 50px;
-    }
-
 }
 
 /*--extra large desktop display--*/
 @media screen and (min-width:1560px) {
-    #page {
-        background-color: #012840;
-        color: white;
-        font-family: "verdana", arial, sans-serif;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-    }
     
     .causes img {
         width: 75px;
@@ -1921,28 +1853,4 @@ a, a:visited {
         margin: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.25);
-        text-align: center;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        padding-top: 0;
-        font-size: 12px;
-    }
-
-    footer img {
-        padding: 0 50px 0 50px;
-    }
-
 }
