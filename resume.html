@@ -13,7 +13,11 @@
         <div id="page">
             <main role="main">
             <header class="header">
-                
+                <div class="causes">
+                    <a href="https://blacklivesmatter.com/"><img src="blm.png"></a>
+                    <img src="beYouASU.png">
+                    <a href="https://dogranchrescue.com/about-us/"><img src="lsdrr.png"></a>
+                </div>
                 <div class="name">
                 <a href="index.html"><img src="logo.png" alt="logo"></a>
                     <a href="index.html">
@@ -26,7 +30,7 @@
                 
                 <nav class="navigation">
                 <ul id="menu">
-                    <li><a href="index.html" >Designs</a></li> 
+                    <li><a href="index.html">Designs</a></li> 
                     <li><a href="about.html">Bio</a></li>
                     <li class="currentpage"><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -103,6 +107,8 @@
                 
                     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                     <script>
+                        
+                        
                     //Get the button:
                     mybutton = document.getElementById("myBtn");
 
@@ -122,9 +128,7 @@
                       document.body.scrollTop = 0; // For Safari
                       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
                     }
-                    </script>
-                
-                    <script>
+
                     function myFunction() {
                       var x = document.getElementById("myLinks");
                       if (x.style.display === "block") {
@@ -133,15 +137,17 @@
                         x.style.display = "block";
                       }
                     }
+                        
+                
                     </script>
                     </main>
             
             <footer role="contentinfo">
                 <a href="index.html"><img src="watermark.png" alt="Logo"></a>
                 <p>&copy; 2021 - All rights reserved</p>
-                <a href="https://www.linkedin.com/in/autumn-belon/" target="blank"><img src="linkedinlogo.jpg" alt="LinkedIn" height="75"></a>
-                <a href="https://github.com/ajbelon" target="blank"><img src="github.png" alt="GitHub" height="75"> </a>
-                
+                <section id="footermenu">
+                <a href="index.html">Designs</a> | <a href="about.html">Bio</a> | <a href="resume.html">Resume</a> | <a href="contact.html">Contact</a>
+                </section>
             </footer>
         </div> 
     </body>
