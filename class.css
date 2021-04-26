@@ -370,6 +370,9 @@ a, a:visited {
     align-content: center;
     align-self: center;
     justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
@@ -381,6 +384,7 @@ a, a:visited {
     justify-content:center;
     background-color: rgba(255, 255, 255, 0.25);
     margin-bottom: 0;
+    padding-bottom: 5px;
 }
 
 .name {
@@ -562,7 +566,6 @@ a, a:visited {
         top: 75%;
    }
 }
-
 /*carousel styling end--*/
 
 #otherlinks:hover, #returnhome:hover {
@@ -775,11 +778,11 @@ footer a {
     .causes {
         float: left;
         left: 0;
-        position: fixed;
+        position: absolute;
         top: 0;
     }
     .causes img {
-        width: 50px;
+        width: 35px;
         display: flex;
         flex-wrap: wrap;
         padding: 2px;
@@ -799,6 +802,7 @@ footer a {
         width: 100px;
         margin-left: auto;
         margin-right: auto;
+
     }
     
     .name h1 {
@@ -824,7 +828,7 @@ footer a {
         color: white;
         font-size: 1em;
         margin: 0;
-        padding: 0 0 15px 0;
+        padding: 0 0 5px 0;
     }
 
     .name h3 {
@@ -851,7 +855,7 @@ footer a {
     .mobilenav {
         position: absolute;
         top: -50px;
-        right: 50px;
+        right: 0;
         z-index: 1;
         margin: 0;
         height: 100%;
@@ -869,11 +873,10 @@ footer a {
         text-align: center;
         line-height: 1.5em;
         font-size: 3em;
-        font-weight: bold;
         font-family: "Nirmala UI", sans-serif;
         position: fixed;
         z-index: 2;
-        width: 175px;
+        width: 160px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -894,13 +897,16 @@ footer a {
     .topnav a.icon {
         background-image: url(hamburgericon.png);
         background-repeat: no-repeat;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         background-size:100%;
         display: block;
         position: fixed;
-        top: 10px;
-        right: 50px;
+        top: 15px;
+        right: 20px;
+        border: 1px ;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px white, -2px -2px 10px white;
     }
 
     .topnav a:hover {
@@ -915,15 +921,21 @@ footer a {
 
     #content {
         clear: both;
-        width: 90%;
+        width: 100%;
         height: 100%;
         border: 1px ;
         border-radius: 15px;
         margin-left: auto;
         margin-right: auto;
-        padding: 3px 0 15px 0;
+
         text-decoration: none;
         margin: 15px 0 5px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
     
     #about img {
@@ -953,13 +965,13 @@ footer a {
 
     #aboutprojects p {
         font-size: 1em;
-        padding: 0px 10px 0 10px;
+        padding: 10px;
         margin: 0;
     }
     
     .topprojects {
         background-color: rgba(255, 255, 255, 0.25);
-        width: 97%;
+        width:95%;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -992,6 +1004,12 @@ footer a {
         font-size: 1.10em;
     }
     
+    .article a {
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
     .topprojects img {
         border: 1px ;
         border-radius: 15px;
@@ -1015,9 +1033,9 @@ footer a {
         color: black;
         font-weight: bold;
         font-size: 1.5em;
-        padding-top: -15px;
+        padding-top: 5px;
         margin-bottom: 0;
-        margin-top: -15px;
+        margin-top: 5px;
     }
 
     .topprojects p {
@@ -1192,7 +1210,6 @@ footer a {
         150px;
     }
     
-    
     #returnhome {
         width: 49%;
         height: 100px;
@@ -1259,6 +1276,12 @@ footer a {
         color: white;
         font-family: "Nirmala UI", sans-serif;
         font-size: 1em;
+    }
+    
+    .article a {
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
     }
 
     .topprojects img {
@@ -1436,6 +1459,11 @@ footer a {
         font-family: "Nirmala UI", sans-serif;
         font-size: 1em;
     }
+    .article a {
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
+    }
 
     .topprojects img {
         border: 1px ;
@@ -1601,6 +1629,11 @@ footer a {
         color: white;
         font-family: "Nirmala UI", sans-serif;
         font-size: 1.25em;
+    }
+    .article a {
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
     }
 
     .topprojects img {
