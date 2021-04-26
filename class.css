@@ -492,12 +492,13 @@ a, a:visited {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     vertical-align: middle;
     margin: 0;
     padding-bottom: 5px;
     margin: 25px;
     padding: 15px;
+    text-align: center;
 }
 
 /*--carousel styling start*/
@@ -1013,6 +1014,7 @@ footer a {
         font-weight: bold;
         font-size: 1.5em;
         padding-top: 5px;
+        padding-bottom: 10px;
         margin-bottom: 0;
         margin-top: 5px;
         display: flex;
