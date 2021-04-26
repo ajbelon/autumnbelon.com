@@ -405,7 +405,6 @@ a, a:visited {
     align-content:flex-end;
     align-self:flex-end;
     justify-content:flex-end;
-
 }
 
 #menu ul {
@@ -453,7 +452,7 @@ a, a:visited {
 
 @keyframes floating {
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
+    50%  { transform: translate(15px, 15px); }
     100%   { transform: translate(0, -0px); }    
 }
 
@@ -492,12 +491,13 @@ a, a:visited {
   100% {opacity:1;}
 }
 
-.fadein h1 {
-    font-size: 5em;
-    text-align: center;
+h1 {
+    font-size: 4em;
     vertical-align: middle;
     margin: 0;
-    padding: 0;
+    padding-bottom: 5px;
+    margin: 25px;
+    padding: 15px;
 }
 
 /*--carousel styling start*/
@@ -505,6 +505,10 @@ a, a:visited {
     display: none;
     margin-left: auto;
     margin-right: auto;
+}
+.Slide a:hover {
+    color: #555;
+    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
 }
 .slideContainer {
     width: 100%;
@@ -519,9 +523,14 @@ a, a:visited {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.Slide a:hover {
-    color: #555;
-    text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+.slideContainer img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    align-self: center;
 }
 .prevBtn, .nextBtn {
     position: absolute;
@@ -537,17 +546,6 @@ a, a:visited {
 .nextBtn {
     right: 0;
 }
-.Caption {
-    color: black;
-    font-weight: bold;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
 .Navdot {
     cursor: pointer;
     height: 20px;
@@ -561,7 +559,7 @@ a, a:visited {
     background-color: black;
 }
 @media only screen and (max-width: 450px) {
-    .prevBtn, .nextBtn, .Caption {
+    .prevBtn, .nextBtn, {
         font-size: 16px;
         top: 75%;
    }
@@ -570,25 +568,6 @@ a, a:visited {
 
 #otherlinks:hover, #returnhome:hover {
     font-weight: bold;
-}
-
-#element {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    animation-name: stretch;
-    animation-duration: 2s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 1;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    text-align: center;
-    font-size: 1.5em;
-    color: rgba(42,162,176,69);
-    margin: 0;
-    padding: 0;
 }
 
 @keyframes stretch {
@@ -1036,6 +1015,12 @@ footer a {
         padding-top: 5px;
         margin-bottom: 0;
         margin-top: 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
 
     .topprojects p {
@@ -1309,6 +1294,12 @@ footer a {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
 
     .topprojects p {
@@ -1488,6 +1479,12 @@ footer a {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
 
     .topprojects p {
@@ -1659,6 +1656,12 @@ footer a {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
 
     .topprojects p {
@@ -1876,6 +1879,10 @@ footer a {
         margin-top: 0;
         display: flex;
         flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
         width: 100%;
         float: none;
         margin-left: auto;
