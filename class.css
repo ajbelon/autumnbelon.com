@@ -359,7 +359,9 @@ template {
 a, a:visited {
     text-decoration: none;
 }
-
+hr {
+    width: 75%;
+}
 #page {
     background-color: #012840;
     color: white;
@@ -532,7 +534,9 @@ h1 {
     padding: 10px;
     margin: 0;
 }
-
+.topprojects h4 {
+    font-style: italic;
+}
 .topprojects a {
     color: white;   
 }
@@ -647,7 +651,7 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #content img:hover {
-    transform: scaleY(1.25) scaleX(1.25);
+    transform: scaleY(1.2) scaleX(1.2);
 }
 #myBtn {
     display: none;
