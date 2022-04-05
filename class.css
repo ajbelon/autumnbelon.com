@@ -355,6 +355,7 @@ template {
 }
 
 /* class=. id=# */
+/* universal styles */
 
 a, a:visited {
     text-decoration: none;
