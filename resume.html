@@ -36,22 +36,17 @@
                 </ul> 
                     </nav>
                 
-                <section class="mobilenav">
-                    <div class="topnav">
-                    <ul>
-                        <div id="myLinks">
-                    <li><a href="index.html" >Designs</a></li> 
+                <section id="mobilenavhome">
+                    <h2 class="sr-only">Main Navigation</h2>
+                    <div id="menuToggle">
+                    <input type ="checkbox" name="toggle" id="toggle">
+                    <label for="toggle">Menu</label>
+                    <ul id="mobilehomemnu">
                     <li><a href="about.html">Bio</a></li>
-                    <li class="currentpage"><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                        
-                        </div>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i></a>
-                        </ul> 
-                        
-                    </div>
-                    
+                    <li><a href="blog.html">Blog</a></li>
+                    </ul> 
+                    </div>    
                 </section>
             
                 <div id="content">
@@ -94,16 +89,6 @@
                       document.body.scrollTop = 0; // For Safari
                       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
                     }
-
-                    function myFunction() {
-                      var x = document.getElementById("myLinks");
-                      if (x.style.display === "block") {
-                        x.style.display = "none";
-                      } else {
-                        x.style.display = "block";
-                      }
-                    }
-                        
                 
                     </script>
                     </main>
