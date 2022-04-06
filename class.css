@@ -387,7 +387,7 @@ hr {
     align-content:center;
     align-self:auto;
     justify-content:center;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: white;
     margin-bottom: 0;
     padding-bottom: 5px;
 }
@@ -397,9 +397,30 @@ hr {
     margin: auto;
 }
 
+.name h1 {
+    color: black;
+}
+
+.name h2 {
+    color: rgba(42,162,176,69);
+}
+
+.causes img {
+        width: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        padding: 2px 15px 5px 0;
+        border: 1px ;
+        border-radius: 10px;
+    }
+
 #menu {
     clear: both;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(42,162,176,69);
     float: none;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -431,13 +452,13 @@ hr {
 
 #menu li a:hover {
     transform: scaleY(1.15) scaleX(1.15);
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
 #menu li a{
     list-style-type: none;
-    color: rgba(42,162,176,69);
+    color: white;
     font-family: "Nirmala UI", sans-serif;
     text-align: center;
 }
@@ -502,7 +523,6 @@ hr {
     background-color: white;
     padding: 1rem;
     text-align: center;
-    color: black;
     text-decoration: underline;
     font-weight: bold;
     border-radius: 0.5rem;
@@ -575,7 +595,7 @@ h1 {
 }
 
 #about h2, #resume h2, #contact h2 {
-    color: rgba(42,162,176,69); 
+    color: RGBA(42,162,176,69); 
     font-weight: bold;
     font-size: 2.5em;
     margin: 25px;
@@ -605,6 +625,9 @@ h1 {
     display: block;
     float: left;
 }
+#animals img {
+    display: inline-grid;
+}
 #resume h3, h4, h5, p{
     margin: 25px;
     padding: 15px;
@@ -625,12 +648,24 @@ h1 {
 #resume h5 {
     margin-top: 2px;
 }
+#contact {
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border: 1px;
+    border-radius: 15px;
+    display: block;
+}
 #contact p {
     font-size: 18px;   
     text-align: left;
-    vertical-align: middle;
-    padding-top: 75px;
-    padding-bottom: 45px;
 }
 #contact a {
     text-decoration: underline;
@@ -751,21 +786,7 @@ footer a {
 
 /*--mobile display--*/
 @media screen and (max-width:414px) {
-    .causes {
-        float: left;
-        left: 0;
-        position: absolute;
-        top: 0;
-    }
-    .causes img {
-        width: 35px;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2px;
-        border: 1px ;
-        border-radius: 10px;
-    }
-    
+
     .name img {
         display: flex;
         flex-wrap: wrap;
@@ -788,7 +809,6 @@ footer a {
         align-content: center;
         align-self: center;
         justify-content: center;
-        color: white;
         font-size: 1.75em;
         padding: 15px 0 5px 0;
         margin: 0;
@@ -801,25 +821,9 @@ footer a {
         align-content: center;
         align-self: center;
         justify-content: center;
-        color: white;
         font-size: 1em;
         margin: 0;
         padding: 10px;
-    }
-
-    .name h3 {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        color: white;
-        font-family: "Nirmala UI", sans-serif;
-        margin: 5px;
-        padding: 5px 20px 5px 20px;
-        font-size: 1em;
-        text-align: center;
     }
     
     .navigation {
@@ -955,8 +959,7 @@ footer a {
     align-content: flex-start;
     align-self: center;
     justify-content: center;
-    }
-    
+    }    
     
     .article {
         width: 100%;
@@ -1019,15 +1022,6 @@ footer a {
         margin: 0;
     }
     
-    #contact img {
-        display: none;
-        visibility: hidden;
-    }
-    
-    #contact p {
-        margin: 15px 15px 15px 15px;
-        padding: 0;
-    }
     .truenorthweathernonmobile {
         display: none;
         visibility: hidden;
@@ -1046,53 +1040,45 @@ footer a {
 }
 
 /*--tablet display--*/
-@media screen and (min-width: 415px) and (max-width:1026px) {
-    .header {
-        padding-top: 35px;
-    }
-    .causes {
-        float: left;
-        left: 0;
-        position: fixed;
-        top: 0;
-    }
-    .causes img {
-        width: 50px;
+@media screen and (min-width: 415px) and (max-width:1180px) {
+    
+    .name {
         display: flex;
         flex-wrap: wrap;
-        padding: 2px;
-        border: 1px ;
-        border-radius: 10px;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
     
     .name img {
-        margin: 15px 0 0 45px;
-        width: 95px;
+        margin: 0 5px 0 -85px;
+        width: 135px;
         float: left;
     }
     
     .name h1 {
-        color: white;
-        font-size: 3em;
-        padding: 15px 0 0 0;
+        font-size: 4em;
+        padding: 5px 0 0 0;
         margin: 0;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
 
     .name h2 {
-        color: white;
-        font-size: 1em;
+        font-size: 1.25em;
+        letter-spacing: 3px;
         margin: 0;
-        padding: 0 0 15px 0;
-    }
-
-    .name h3 {
-        color: white;
-        font-family: "Nirmala UI", sans-serif;
-        margin: 15px 0 25px 0;
-        padding: 0;
-        font-size: 1.5em;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        padding: 0 0 5px 0;
+        border-bottom: 1px groove white;
         text-align: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
     }
     
     .navigation {
@@ -1282,19 +1268,7 @@ footer a {
         font-size: 1.25em;
         line-height: 1.25em;
     }
-    
-    #contact img {
-        float: left;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    #contact p {
-        margin: 0 15px 0 15px;
-        padding: 0;
-    }
-    
+
     .truenorthweathernonmobile {
         display: none;
         visibility: hidden;
@@ -1311,7 +1285,7 @@ footer a {
 }
 
 /*--in-between display--*/
-@media screen and (min-width: 1026px) and (max-width: 1251px) {
+@media screen and (min-width: 1181px) and (max-width: 1250px) {
     
     .header img {
         margin: 15px 0 0 35px;
@@ -1330,27 +1304,15 @@ footer a {
     }
     
     .name h1 {
-        color: white;
         font-size: 3em;
         padding: 15px 0 0 0;
         margin: 0;
     }
 
     .name h2 {
-        color: white;
         font-size: 1em;
         margin: 0;
         padding: 0 0 15px 0;
-    }
-
-    .name h3 {
-        color: white;
-        font-family: "Nirmala UI", sans-serif;
-        margin: 15px 0 25px 0;
-        padding: 0;
-        font-size: 1.5em;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-        text-align: center;
     }
     
     #content {
@@ -1474,32 +1436,10 @@ footer a {
         line-height: 1.25em;
     }
     
-    #contact img {
-        float: left;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
 }
 
 /*--large desktop display--*/
 @media screen and (min-width: 1251px) and (max-width:1559px) {
-    
-    .causes {
-        float: left;
-        left: 0;
-        position: fixed;
-        top: 0;
-    }
-    .causes img {
-        width: 85px;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2px;
-        border: 1px ;
-        border-radius: 10px;
-    }
     
     .name img {
         margin: 15px 0 0 35px;
@@ -1518,27 +1458,15 @@ footer a {
     }
     
     .name h1 {
-        color: white;
         font-size: 3em;
         padding: 15px 0 0 0;
         margin: 0;
     }
 
     .name h2 {
-        color: white;
         font-size: 1em;
         margin: 0;
         padding: 0 0 15px 0;
-    }
-
-    .name h3 {
-        color: white;
-        font-family: "Nirmala UI", sans-serif;
-        margin: 15px 0 25px 0;
-        padding: 0;
-        font-size: 1.5em;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-        text-align: center;
     }
     
     #content {
@@ -1671,30 +1599,10 @@ footer a {
         padding-top: 15px;
         padding-bottom: 25px;
     }
-    
-    #contact img {
-        float: left;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 }
 
 /*--extra large desktop display--*/
 @media screen and (min-width:1560px) {
-    
-    .causes img {
-        width: 75px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        padding: 5px;
-        border: 1px ;
-        border-radius: 10px;
-    }
     
     #mobilenavhome {
         display: none;
@@ -1721,7 +1629,6 @@ footer a {
     }
     
     .name h1 {
-        color: white;
         font-size: 4em;
         padding: 5px 0 0 0;
         margin: 0;
@@ -1733,26 +1640,11 @@ footer a {
     }
 
     .name h2 {
-        color: white;
         font-size: 1.25em;
         letter-spacing: 3px;
         margin: 0;
         padding: 0 0 5px 0;
         border-bottom: 1px groove white;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-    }
-
-    .name h3 {
-        color: white;
-        font-family: "Nirmala UI", sans-serif;
-        margin: 5px 0 20px 0;
-        padding: 0;
-        font-size: 1.75em;
-        text-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
         text-align: center;
         align-items: center;
         align-content: center;
@@ -1892,20 +1784,5 @@ footer a {
         display: none;
         visibility: hidden;
     }
-    
-    #contact {
-        width: 85%;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0;
-        padding: 15px 0 25px 25px;
-        display: block;
-    }
-    #contact img {
-        float: left;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
+
 }
