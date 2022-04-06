@@ -510,6 +510,15 @@ hr {
     width: 100vw;
     left: -150vw;
     transition: left 0.3s ease;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+#mobilehomemnu a:visited {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
 }
     
 #menuToggle input:checked ~ ul{
@@ -1298,11 +1307,6 @@ footer a {
         visibility: hidden;
     }
     
-    .mobilenav {
-        display: none;
-        visibility: hidden;
-    }
-    
     .name h1 {
         font-size: 3em;
         padding: 15px 0 0 0;
@@ -1448,11 +1452,6 @@ footer a {
     }
     
     #mobilenavhome {
-        display: none;
-        visibility: hidden;
-    }
-    
-    .mobilenav {
         display: none;
         visibility: hidden;
     }
@@ -1608,11 +1607,7 @@ footer a {
         display: none;
         visibility: hidden;
     }
-    
-    .mobilenav {
-        display: none;
-        visibility: hidden;
-    }
+
     .name {
         display: flex;
         flex-wrap: wrap;
