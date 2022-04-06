@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="People centered design to enchant, captivate, and delight.">
+        <link rel="shortcut icon" href="watermark.png" />
+        <link rel="stylesheet" type="text/css" media="screen" href="class.css"> 
+        <script src="modernizr.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        
+    <title>Autumn Belon - Web Design</title>
+        </head>
+        <body>
+        <div id="page">
+            <main role="main">
+            <header class="header">
+                <div class="name">
+                <a href="index.html"><img src="BlackANobackground.png" alt="logo"></a>
+                    <a href="index.html">
+                    <h1>Autumn Belon</h1>
+                    <h2>Web Developer, UX Designer, <br>Social Media Strategist</h2>
+                    </a>
+                </div>
+                 <div class="causes">
+                    <a href="https://blacklivesmatter.com/" target="_blank"><img src="blm.png"></a>
+                    <a href="https://unitedhelpukraine.org/" target="_blank"><img src="unitedhelpukraine.jpg"></a>
+                    <a href="https://dogranchrescue.com/about-us/" target="_blank"><img src="lsdrr.png"></a>
+                </div>
+                </header>
+                
+                <nav class="navigation">
+                <ul id="menu">
+                    <li><a href="index.html" >Designs</a></li> 
+                    <li><a href="about.html">Bio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul> 
+                    </nav>
+                
+                <section id="mobilenavhome">
+                    <h2 class="sr-only">Main Navigation</h2>
+                    <div id="menuToggle">
+                    <input type ="checkbox" name="toggle" id="toggle">
+                    <label for="toggle">Menu</label>
+                    <ul id="mobilehomemnu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Bio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    </ul> 
+                    </div>    
+                </section>
+            
+                <div id="content">
+                     <h1><u>Short-Form Videos</u></h1>
+                    
+                    <section class="topprojects">
+                   
+                    <a href="https://www.autumnallyear.us" target="_blank"><img src="autumnallyearsidebyside.png" alt="Autumn All Year"></a>
+                    
+                    <article class="article"><p><strong>Human-Centered</strong> is the main tenet of any well designed project. Whether designing websites, logos, or creating an entire brand strategy, ease of use is the top priority. As a UX/UI web developer and HTML and CSS coder, allowing the visual elements to come together in a way that is intuitive, requiring no explanations, is the goal.<br><br>
+                    <a href="https://www.autumnallyear.us/" target="_blank">AutumnAllYear.us</a> is a recipe website designed with the user experience in mind. It cuts through all the clutter of other blog-style recipe sites, providing a simplified recipe including ingredient lists, instructions, special notes, as well as substitutions and additions. It is designed to provide a unified user experience across multiple device platforms, including desktop, tablet, and mobile. <br><br>As an avid cook and photographer by hobby, I carefully crafted these recipes, captured the images, created instructional videos, and put it all together. </p></article>              
+                    </section> 
+                    </div> 
+                    <a href="index.html"><div id="returnhome">
+                        <p>Return to Home Page</p></div></a>
+                    <a href="wokasiancuisine.html"><div id="otherlinks">
+                        <p>Visit Wok Asian Cuisine</p></div></a>   
+                
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                
+                <script>
+                //Get the button:
+                mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0; // For Safari
+                  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                    
+                
+                 document.querySelector(".prevBtn").addEventListener("click", () => {
+                       changeSlides(-1);
+                    });
+                    document.querySelector(".nextBtn").addEventListener("click", () => {
+                       changeSlides(1);
+                    });
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function changeSlides(n) {
+                       showSlides((slideIndex += n));
+                    }
+                    function currentSlide(n) {
+                       showSlides((slideIndex = n));
+                    }
+                    function showSlides(n) {
+                       var i;
+                       var slides = document.getElementsByClassName("Slide");
+                       var dots = document.getElementsByClassName("Navdot");
+                       if (n > slides.length) {
+                          slideIndex = 1;
+                       }
+                       if (n < 1) {
+                          slideIndex = slides.length;
+                       }
+                       Array.from(slides).forEach(item => (item.style.display = "none"));
+                       Array.from(dots).forEach(
+                          item => (item.className = item.className.replace(" selected", ""))
+                       );
+                       slides[slideIndex - 1].style.display = "block";
+                       dots[slideIndex - 1].className += " selected";
+                    }
+                    
+                </script>
+                </main>
+            
+            <footer role="contentinfo">
+                <a href="index.html"><img src="watermark.png" alt="Logo"></a>
+                <p>&copy; 2021 - All rights reserved</p>
+                <section id="footermenu">
+                <a href="index.html">Designs</a> | <a href="about.html">Bio</a> | <a href="contact.html">Contact</a> | <a href="blog.html">Blog</a>
+                </section>
+            </footer>
+        </div> 
+    </body>
+</html>
