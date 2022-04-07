@@ -908,7 +908,7 @@ footer a, a:visited {
     
     .topprojects {
         background-color: rgba(255, 255, 255, 0.25);
-        width: 85%;
+        width: 99%;
         height: 100%;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
         border: 1px;
@@ -1007,7 +1007,7 @@ footer a, a:visited {
     }
     
     .name img {
-        margin: 0 5px 0 -85px;
+        margin: 5px;
         width: 135px;
         float: left;
     }
@@ -1567,7 +1567,7 @@ footer a, a:visited {
     }
     
     .name img {
-        margin: 0 5px 0 -85px;
+        margin: 5px;
         width: 135px;
         float: left;
     }
