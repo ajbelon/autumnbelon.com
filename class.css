@@ -695,7 +695,7 @@ h1 {
     align-self: center;
     color: white;
     font-size: 2em;
-    padding: 15px 0 0 40px;
+    padding: 15px 0 0 0;
     margin: 0;
     text-align: left;
 }
@@ -767,7 +767,7 @@ footer {
     align-self: center;
     justify-content: center;
     height: 100%;
-    width: 95%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.25);
     text-align: center;
     position: relative;
@@ -776,7 +776,7 @@ footer {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 15px;
-    font-size: 14px;
+    font-size: 18px;
 }
 footer img {
     flex: left;
@@ -786,7 +786,7 @@ footer img {
     float: right;
     padding-left: 50px;
 }
-footer a {
+footer a, a:visited {
     color: white;
     text-decoration: underline;
 }
@@ -1597,6 +1597,8 @@ footer a {
 /*--extra large desktop display--*/
 @media screen and (min-width:1560px) {
     
+
+    
     #mobilenavhome {
         display: none;
         visibility: hidden;
@@ -1609,6 +1611,7 @@ footer a {
         align-content: center;
         align-self: center;
         justify-content: center;
+        width: 100%;
     }
     
     .name img {
@@ -1686,7 +1689,7 @@ footer a {
     
     .topprojects {
         background-color: rgba(255, 255, 255, 0.25);
-        width: 95%;
+        width: 100%;
         display: inline-flex;
         flex-wrap: wrap;
         margin-left: auto;
@@ -1746,7 +1749,7 @@ footer a {
     }
 
     .topprojects aside {
-        width: 500px;
+        width: 425px;
         font-size: 1em;
         line-height: 1.25em;
     }
