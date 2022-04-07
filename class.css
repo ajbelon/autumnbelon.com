@@ -640,6 +640,12 @@ h1 {
     float: left;
     width: 300px;
 }
+
+.instagramcontainer {
+    display: block;
+    margin: 15px;
+}
+
 #resume h3, h4, h5, p{
     margin: 25px;
     padding: 15px;
@@ -726,7 +732,7 @@ h1 {
 #content img:hover {
     transform: scaleY(1.2) scaleX(1.2);
 }
-#content iframe {
+.topprojects iframe, #content iframe {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     margin: 15px;
 }
