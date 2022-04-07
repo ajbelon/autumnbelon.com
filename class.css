@@ -953,7 +953,7 @@ footer a, a:visited {
         font-weight: bold;
         font-size: 1.5em;
         padding-top: 5px;
-        padding-bottom: 10px;
+        padding-bottom: 0;
         margin-bottom: 0;
         margin-top: 5px;
         display: flex;
@@ -1633,22 +1633,6 @@ footer a, a:visited {
         text-decoration: underline;
     }
     
-    .topprojects {
-        background-color: rgba(255, 255, 255, 0.25);
-        width: 100%;
-        display: inline-flex;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-bottom: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border: 1px ;
-        border-radius: 15px;
-    }
-    
     .article {
         width: 98%;
         display: flex;
@@ -1672,6 +1656,21 @@ footer a, a:visited {
         font-weight: bold;
     }
 
+    .topprojects {
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px ;
+        border-radius: 15px;
+    }
+    
     .topprojects img {
         border: 1px ;
         border-radius: 15px;
@@ -1685,7 +1684,7 @@ footer a, a:visited {
         font-weight: bold;
         font-size: 2.5em;
         letter-spacing: 3px;
-        padding: 10px;
+        padding: 10px 0 0 0;
         margin-bottom: 0;
         margin-top: 0;
         width: 95%;
