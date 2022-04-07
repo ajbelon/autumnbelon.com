@@ -502,7 +502,7 @@ hr {
     color: black;
 }
 
-#mobilehomemnu a:visited {
+#mobilehomemnu a, a:visited {
     list-style-type: none;
     text-decoration: none;
     color: black;
