@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="People centered design to enchant, captivate, and delight.">
+        <link rel="shortcut icon" href="watermark.png" />
+        <link rel="stylesheet" type="text/css" media="screen" href="class.css"> 
+        <script src="modernizr.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        
+    <title>Autumn Belon - Web Design</title>
+        </head>
+        <body>
+        <div id="page">
+            <main role="main">
+            <header class="header">
+                <div class="name">
+                <a href="index.html"><img src="BlackANobackground.png" alt="logo"></a>
+                    <a href="index.html">
+                    <h1>Autumn Belon</h1>
+                    <h2>Web Developer, UX Designer, <br>Social Media Strategist</h2>
+                    </a>
+                </div>
+                 <div class="causes">
+                    <a href="https://blacklivesmatter.com/" target="_blank"><img src="blm.png"></a>
+                    <a href="https://unitedhelpukraine.org/" target="_blank"><img src="unitedhelpukraine.jpg"></a>
+                    <a href="https://dogranchrescue.com/about-us/" target="_blank"><img src="lsdrr.png"></a>
+                </div>
+                </header>
+                
+                <nav class="navigation">
+                <ul id="menu">
+                    <li><a href="index.html" >Designs</a></li> 
+                    <li><a href="about.html">Bio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul> 
+                    </nav>
+                
+                <section id="mobilenavhome">
+                    <h2 class="sr-only">Main Navigation</h2>
+                    <div id="menuToggle">
+                    <input type ="checkbox" name="toggle" id="toggle">
+                    <label for="toggle">Menu</label>
+                    <ul id="mobilehomemnu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Bio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    </ul> 
+                    </div>    
+                </section>
+            
+                <div id="content">
+                    <h1>Demonstration:<br><i>Information Security and jQuery</i></h1>
+                    
+                    <section class="topprojects">
+                   
+                    <p>A JavaScript library intended to make using JavaScript easier for coders, jQuery condenses many lines of code, helping to save bandwidth, decrease page load time, and reduce data storage requirements. While there are a multitude of JavaScript libraries, jQuery’s library is robust and has become a valuable and well-respected tool in multimedia production. And while there are a multitude of instructional websites for coding utilizing JavaScript libraries, many of them are clearly written by people who already have a foundational understanding of the language. For someone new to coding with JavaScript, often the instructions are confusing. 
+                    <br><br>                    
+                    My goal with creating a <a href="https://main.d3bho5hssylqwc.amplifyapp.com/jquery.html" target="_blank">jQuery Demonstration</a> was to create instructions that were written in plain English, using no industry or coder jargon, that would be easy for someone who is completely new to coding with JavaScript libraries. While creating <a href="https://main.d3bho5hssylqwc.amplifyapp.com/jquery.html" target="_blank">the demonstration site</a>, I kept the instructions clear and simple, incorporating examples along the way. I included references to reputable sites for further explanation for anyone who wanted a deeper dive into the subject. This allowed me to provide supplementary information while keeping the instructions simple.
+                    <br><br>
+                    Thinking through how to explain to others the concepts demonstrated on the website I created for the final project deepened my own understanding and forced me to think about what verbiage to use to simplify a relatively complex subject. This forced me to think through why the syntax is so important so that I could express the importance to site visitors. I enjoyed creating this website and helping to enhance others learning is something I’ve always enjoyed. I even worked as a tutor at a previous college. Creating this website was very reminiscent of my time as tutor. 
+                    </p>
+                        
+                    </section> 
+                    </div> 
+                    <a href="index.html"><div id="returnhome">
+                        <p>Return to Home Page</p></div></a>
+                    <a href=""><div id="otherlinks">
+                        <p></p></div></a>   
+                
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                
+                <script>
+                //Get the button:
+                mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0; // For Safari
+                  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                    
+                
+                 document.querySelector(".prevBtn").addEventListener("click", () => {
+                       changeSlides(-1);
+                    });
+                    document.querySelector(".nextBtn").addEventListener("click", () => {
+                       changeSlides(1);
+                    });
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function changeSlides(n) {
+                       showSlides((slideIndex += n));
+                    }
+                    function currentSlide(n) {
+                       showSlides((slideIndex = n));
+                    }
+                    function showSlides(n) {
+                       var i;
+                       var slides = document.getElementsByClassName("Slide");
+                       var dots = document.getElementsByClassName("Navdot");
+                       if (n > slides.length) {
+                          slideIndex = 1;
+                       }
+                       if (n < 1) {
+                          slideIndex = slides.length;
+                       }
+                       Array.from(slides).forEach(item => (item.style.display = "none"));
+                       Array.from(dots).forEach(
+                          item => (item.className = item.className.replace(" selected", ""))
+                       );
+                       slides[slideIndex - 1].style.display = "block";
+                       dots[slideIndex - 1].className += " selected";
+                    }
+                    
+                </script>
+                </main>
+            
+            <footer role="contentinfo">
+                <a href="index.html"><img src="watermark.png" alt="Logo"></a>
+                <p>&copy; 2021 - All rights reserved</p>
+                <section id="footermenu">
+                <a href="index.html">Designs</a> | <a href="about.html">Bio</a> | <a href="contact.html">Contact</a> | <a href="blog.html">Blog</a>
+                </section>
+            </footer>
+        </div> 
+    </body>
+</html>
