@@ -405,19 +405,6 @@ hr {
     color: rgba(42,162,176,69);
 }
 
-.causes img {
-        width: 75px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        padding: 2px 15px 5px 0;
-        border: 1px ;
-        border-radius: 10px;
-    }
-
 #menu {
     clear: both;
     background-color: rgba(42,162,176,69);
