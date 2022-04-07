@@ -603,7 +603,7 @@ h1 {
     font-size: 1em;
 }
 
-#about h2, #resume h2, #contact h2 {
+#about h2, #resume h2, #contact h2, #content h2{
     color: RGBA(42,162,176,69); 
     font-weight: bold;
     font-size: 2.5em;
@@ -623,6 +623,8 @@ h1 {
     padding: 15px;
 }
 #about img {
+    display: inline-flex;
+    float: left;
     margin: 35px;
     padding: 15px;
     border: 1px ;
@@ -631,11 +633,12 @@ h1 {
     width: 275px;
 }
 #animals p {
-    display: block;
-    float: left;
+    display: inline-block;
 }
 #animals img {
-    display: inline-grid;
+    display: inline-block;
+    float: left;
+    width: 300px;
 }
 #resume h3, h4, h5, p{
     margin: 25px;
@@ -683,7 +686,7 @@ h1 {
 #content h1 {
     color: white;
     background-color: rgba(42,162,176,69);
-    box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+    border-radius: 15px;
     font-size: 3em;
     padding: 15px 0 15px 0;
     margin: 10px 0 35px 0;
@@ -691,7 +694,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 85%;
 }
 #content h3, img {
     display: flex;
@@ -722,6 +725,10 @@ h1 {
 }
 #content img:hover {
     transform: scaleY(1.2) scaleX(1.2);
+}
+#content iframe {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    margin: 15px;
 }
 #myBtn {
     display: none;
@@ -918,6 +925,11 @@ footer a {
         justify-content: center;
     }
     
+    #content h2 {
+        
+        
+    }
+    
     #about img {
         float: none;
     }
@@ -947,28 +959,23 @@ footer a {
         font-size: 1em;
         line-height: 1.25em;
         padding: 10px;
-        margin: 10px;
+        margin: 20px;
     }
     
     .topprojects {
-    background-color: rgba(255, 255, 255, 0.25);
-    width: 95%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-    border: 1px;
-    border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    align-self: center;
-    justify-content: center;
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 95%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 0;
+        padding-bottom: 5px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        border: 1px;
+        border-radius: 15px;
+        display: block;
     }    
     
     .article {
@@ -1029,7 +1036,7 @@ footer a {
     .topprojects p {
         font-size: 1em;
         padding: 10px;
-        margin: 0;
+        margin: 10px;
     }
     
     .truenorthweathernonmobile {
@@ -1694,12 +1701,8 @@ footer a {
     .topprojects {
         background-color: rgba(255, 255, 255, 0.25);
         width: 100%;
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -1738,35 +1741,27 @@ footer a {
         border: 1px ;
         border-radius: 15px;
         margin: 15px 0 15px 0;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        height: 375px;
+        width: 700px;
     }
 
     .topprojects h2, h2 {
         text-align: center;
         color: #F2A766;
         font-weight: bold;
-        font-size: 3em;
+        font-size: 2.5em;
         letter-spacing: 3px;
         padding: 10px;
         margin-bottom: 0;
         margin-top: 0;
-        display: block;
         width: 100%;
         float: none;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .topprojects p {
-        font-size: 1.25em;
+    .topprojects aside {
+        width: 450px;
+        font-size: 1em;
         line-height: 1.25em;
     }
     
