@@ -599,10 +599,6 @@ h1 {
    color: RGBA(44,167,178,1); 
 }
 
-.topprojects p {
-    font-size: 1em;
-}
-
 #about h2, #resume h2, #contact h2, #content h2{
     color: RGBA(42,162,176,69); 
     font-weight: bold;
@@ -931,11 +927,6 @@ footer a {
         justify-content: center;
     }
     
-    #content h2 {
-        
-        
-    }
-    
     #about img {
         float: none;
     }
@@ -1043,6 +1034,7 @@ footer a {
         font-size: 1em;
         padding: 10px;
         margin: 10px;
+        width: 94%;
     }
     
     .truenorthweathernonmobile {
