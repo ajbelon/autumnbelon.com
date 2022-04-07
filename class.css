@@ -863,9 +863,13 @@ footer a, a:visited {
         float: none;
     }
     
-    .topprojects iframe, {
-        width: 150px;
-    }
+    #content .iframe {
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 150px;
+}
     
     #returnhome {
         width: 95%;
