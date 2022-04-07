@@ -678,7 +678,7 @@ h1 {
     color: white;
     background-image: linear-gradient(to bottom right, rgba(42,162,176,69), #012840);
     border-radius: 15px;
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 15px 0 15px 0;
     margin: 10px 0 35px 0;
     clear: both;
@@ -717,7 +717,7 @@ h1 {
     transform: scaleY(1.2) scaleX(1.2);
 }
 
-#content .iframe {
+#content .iframe, .topprojects .iframe {
     margin: 25px;
     padding: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
@@ -863,12 +863,12 @@ footer a, a:visited {
         float: none;
     }
     
-    #content .iframe {
-    margin: 25px;
-    padding: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-    width: 250px;
-    height: 150px;
+    #content .iframe, .topprojects .iframe {
+        margin: 25px;
+        padding: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        width: 250px;
+        height: 150px;
 }
     
     #returnhome {
@@ -896,19 +896,15 @@ footer a, a:visited {
         font-size: 1em;
         line-height: 1.25em;
         padding: 10px;
-        margin: 20px;
+        margin: 25px;
     }
     
     .topprojects {
         background-color: rgba(255, 255, 255, 0.25);
-        width: 95%;
+        width: 90%;
         height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding-top: 0;
-        padding-bottom: 5px;
+        margin: 0 25px 15px 45px;
+        padding: 0 45px 15px 55px;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
         border: 1px;
         border-radius: 15px;
@@ -973,7 +969,7 @@ footer a, a:visited {
     .topprojects p {
         font-size: 1em;
         padding: 10px;
-        margin: 10px;
+        margin: 15px;
         width: 94%;
     }
     
