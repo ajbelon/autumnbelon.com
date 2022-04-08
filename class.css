@@ -587,10 +587,10 @@ h1 {
 }
 
 #about h2, #resume h2, #contact h2, #content h2{
-    color: RGBA(42,162,176,69); 
+    color: white; 
     font-weight: bold;
-    font-size: 2.5em;
-    margin: 25px;
+    font-size: 2em;
+    margin: 35px 0 0 0;
     padding: 15px;
 }
 .projectimages img {
