@@ -683,7 +683,7 @@ h1 {
 }
 #content h1 {
     color: white;
-    background-image: linear-gradient(to bottom right, rgba(42,162,176,69), #012840);
+    background-image: linear-gradient(to right, #012840, rgba(42,162,176,69), #012840);
     border-radius: 15px;
     font-size: 2em;
     padding: 15px 0 15px 0;
