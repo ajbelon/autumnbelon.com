@@ -877,6 +877,10 @@ footer a, a:visited {
         visibility: hidden;
     }
 
+    .parallax {
+        visibility: hidden;
+        display: none;
+    }
     #content {
         clear: both;
         width: 96%;
