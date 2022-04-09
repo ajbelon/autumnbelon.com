@@ -822,14 +822,6 @@ footer {
     padding-bottom: 15px;
     font-size: 18px;
 }
-footer img {
-    float: left;
-    width: 35px;
-}
-#footermenu {
-    float: right;
-    padding-left: 50px;
-}
 footer a, a:visited {
     color: #012840;
     text-decoration: underline;
