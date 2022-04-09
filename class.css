@@ -448,9 +448,9 @@ hr {
     border-bottom: 1px groove white;
 }
 
-#menu li a:hover {
+#menu li a:hover, #content a:hover, #parallax h2:hover {
     transform: scaleY(1.15) scaleX(1.15);
-    color: black;
+    color: grey;
     font-weight: bold;
 }
 
@@ -1071,55 +1071,6 @@ footer a, a:visited {
     .navigation {
         display: none;
         visibility: hidden;
-    }
-
-    .topnav {
-        overflow: hidden;
-        position: relative;
-    }
-
-    .topnav ul {
-        list-style: none;
-        text-align: center;
-        line-height: 1.5em;
-        font-size: 3em;
-        font-weight: bold;
-        font-family: "Nirmala UI", sans-serif;
-        position: fixed;
-        z-index: 2;
-        width: 175px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .topnav #myLinks {
-        display: none;
-    }
-
-    .topnav a {
-        background: white;
-        color: rgba(42,162,176,69);
-        padding: 0;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-
-    .topnav a.icon {
-        background-image: url(hamburgericon.png);
-        background-repeat: no-repeat;
-        width: 50px;
-        height: 50px;
-        background-size:100%;
-        display: block;
-        position: fixed;
-        top: 5px;
-        right: 10px;
-    }
-
-    .topnav a:hover {
-        background-color: white;
-        color: rgba(42,162,176,69);
     }
 
     .currentpage a {
