@@ -655,7 +655,7 @@ h1 {
     text-align: left;
     color: #012840;
     padding: 20px 0 0 40px;
-    margin: 0;
+    margin: 50px 0 0 0;
 }
 
 .instagramcontainer {
@@ -826,8 +826,9 @@ footer {
     font-size: 18px;
 }
 footer a, a:visited {
-    color: #012840;
+    color: white;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 /*--mobile display--*/
@@ -845,7 +846,7 @@ footer a, a:visited {
         width: 75px;
         margin-left: auto;
         margin-right: auto;
-        float: lef;
+        float: left;
     }
     
     .name h1 {
