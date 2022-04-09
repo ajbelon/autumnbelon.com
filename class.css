@@ -522,7 +522,7 @@ hr {
 #menuToggle input:checked ~ ul{
     top: 1.25rem;
     left: -2.5rem;
-    width: 150px;
+    width: 200px;
 }
     
 #mobilehomemnu li{
