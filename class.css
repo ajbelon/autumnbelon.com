@@ -843,7 +843,7 @@ footer a, a:visited {
         justify-content: center;
         margin: 0;
         padding: 5px;
-        width: 75px;
+        width: 50px;
         margin-left: auto;
         margin-right: auto;
         float: lef;
@@ -856,7 +856,7 @@ footer a, a:visited {
         align-content: center;
         align-self: center;
         justify-content: center;
-        font-size: 1.75em;
+        font-size: 1.5em;
         padding: 15px 0 5px 0;
         margin: 0;
     }
