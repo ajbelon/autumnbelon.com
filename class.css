@@ -475,7 +475,7 @@ hr {
 
 #menuToggle label {
     display: block;
-    background-color: black;
+    background-color: white;
     padding: .5rem;
     text-align: center;
     color: #012840;
@@ -609,7 +609,7 @@ h1 {
 }
 
 #about h2, #resume h2, #contact h2, #content h2{
-    color: #012840; 
+    color: white; 
     font-weight: bold;
     font-size: 2em;
     margin: 0;
