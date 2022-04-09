@@ -818,8 +818,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+    margin-bottom: 25px;
     padding-top: 0;
-    padding-bottom: 15px;
     font-size: 18px;
 }
 footer a, a:visited {
