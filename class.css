@@ -17,6 +17,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  height: 100%
 }
 
 /* Sections
@@ -28,6 +29,7 @@ html {
 
 body {
   margin: 0;
+  height: 100%
 }
 
 /**
@@ -357,6 +359,11 @@ template {
 /* class=. id=# */
 /* universal styles */
 
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 a, a:visited {
     text-decoration: none;
 }
@@ -366,8 +373,8 @@ hr {
 }
 
 #page {
-    background-color: #012840;
-    color: white;
+    background-color: white;
+    color: #012840;
     font-family: "verdana", arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -387,7 +394,12 @@ hr {
     align-content:center;
     align-self:auto;
     justify-content:center;
-    background-color: white;
+    background-image: url(blueandbrownclouds.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     margin-bottom: 0;
     padding-bottom: 5px;
 }
@@ -398,26 +410,25 @@ hr {
 }
 
 .name h1 {
-    color: black;
+    color: #012840;
 }
 
 .name h2 {
-    color: rgba(42,162,176,69);
+    color: #012840;
 }
 
 #menu {
     clear: both;
-    background-color: rgba(42,162,176,69);
     float: none;
     padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    align-content:flex-end;
-    align-self:flex-end;
-    justify-content:flex-end;
+    align-content:flex-start;
+    align-self:flex-start;
+    justify-content:flex-start;
+    background-color: rgba(219,195,163, 0.25)
 }
 
 #menu ul {
@@ -445,7 +456,7 @@ hr {
 
 #menu li a{
     list-style-type: none;
-    color: white;
+    color: #012840;
     font-family: "Nirmala UI", sans-serif;
     text-align: center;
 }
@@ -467,7 +478,7 @@ hr {
     background-color: black;
     padding: .5rem;
     text-align: center;
-    color: white;
+    color: #012840;
     font-weight: bold;
     border-radius: 0.5rem;
     margin: 20px;
@@ -564,10 +575,21 @@ h1 {
     }
 }
 
+.parallax {
+    background-image: url(blueandbrownclouds.jpg);
+    min-height: 150px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%vw;
+    border-radius: 5px;
+}
+
 #aboutprojects a, #about a {
     text-decoration: underline;
     font-weight: 800;
-    color: white;
+    color: #012840;
 }
 
 #aboutprojects h4 {
@@ -579,7 +601,7 @@ h1 {
     font-style: italic;
 }
 .topprojects a {
-    color: white;   
+    color: #012840;   
 }
 
 .heading {
@@ -590,12 +612,12 @@ h1 {
     color: white; 
     font-weight: bold;
     font-size: 2em;
-    margin: 35px 0 0 0;
-    padding: 15px;
+    margin: 0;
+    padding: 55px 0 0 0;
 }
 .projectimages img {
     border: 1px ;
-    border-radius: 15px; 
+    border-radius: 5px; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -611,7 +633,7 @@ h1 {
     margin: 35px;
     padding: 15px;
     border: 1px ;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 275px;
 }
@@ -628,7 +650,7 @@ h1 {
 
 #animals h2 {
     text-align: left;
-    color: white;
+    color: #012840;
     padding: 20px 0 0 40px;
     margin: 0;
 }
@@ -670,7 +692,7 @@ h1 {
     padding-bottom: 5px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     border: 1px;
-    border-radius: 15px;
+    border-radius: 5px;
     display: block;
 }
 #contact p {
@@ -679,23 +701,26 @@ h1 {
 }
 #contact a {
     text-decoration: underline;
-    color: white;
+    color: #012840;
 }
 .badge-base {
     margin-left: 45px;
 }
+#content {
+    margin: 0;
+}
 #content h1 {
     color: white;
-    background-image: linear-gradient(to right, #012840, rgba(42,162,176,69), #012840);
-    border-radius: 15px;
+    background-image: linear-gradient(to right, white, rgba(42,162,176,69), #012840, rgba(42,162,176,69), white);
+    border-radius: 5px;
     font-size: 2em;
     padding: 15px 0 15px 0;
-    margin: 10px 0 35px 0;
+    margin: 0;
     clear: both;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 100%;
 }
 #content h3, img {
     display: flex;
@@ -703,7 +728,7 @@ h1 {
     align-items: center;
     align-content: center;
     align-self: center;
-    color: white;
+    color: #012840;
     font-size: 2em;
     padding: 15px 0 0 0;
     margin: 0;
@@ -714,13 +739,13 @@ h1 {
     line-height: 1.75em;
 }
 #content p a {
-    color: white;
+    color: #012840;
     text-decoration: underline;
 }
 #content img {
     padding: 15px;
     border: 1px ;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #content img:hover {
@@ -744,7 +769,7 @@ h1 {
     outline: none;
     background-color: RGBA(44,167,178,1);
     box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-    color: white;
+    color: #012840;
     cursor: pointer;
     padding: 5px;
     border-radius: 3px;
@@ -756,7 +781,7 @@ h1 {
 #aboutprojects img {
     width: 65%;
     border: 1px ;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -801,7 +826,7 @@ footer img {
     padding-left: 50px;
 }
 footer a, a:visited {
-    color: white;
+    color: #012840;
     text-decoration: underline;
 }
 
@@ -856,7 +881,7 @@ footer a, a:visited {
         width: 96%;
         height: 100%;
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
         text-decoration: none;
@@ -886,7 +911,7 @@ footer a, a:visited {
         height: 75px;
         float: none;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1em;
         margin-left: auto;
         margin-right: auto;
@@ -914,7 +939,7 @@ footer a, a:visited {
         height: 100%;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
         border: 1px;
-        border-radius: 15px;
+        border-radius: 5px;
         display: block;
     }    
     
@@ -927,20 +952,20 @@ footer a, a:visited {
         margin-top: 0;
         padding-top: 0;
         padding-left: 0;
-        color: white;
+        color: #012840;
         font-family: "Nirmala UI", sans-serif;
         font-size: 1.10em;
     }
     
     .article a {
-        color: white;
+        color: #012840;
         text-decoration: underline;
         font-weight: bold;
     }
     
     .topprojects img {
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
         margin:0 0 0 8px;
         padding-top: 0;
         padding-bottom: 10px;
@@ -958,7 +983,7 @@ footer a, a:visited {
     
     .topprojects h2 {
         text-align: center;
-        color: white;
+        color: #012840;
         font-weight: bold;
         font-size: 1.05em;
         padding-top: 5px;
@@ -1119,7 +1144,7 @@ footer a, a:visited {
         height: 100px;
         float: left;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1.35em;
     }
 
@@ -1128,7 +1153,7 @@ footer a, a:visited {
         height: 100px;
         float: right;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1.35em;
     }
     
@@ -1161,7 +1186,7 @@ footer a, a:visited {
         padding-bottom: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     
     .article {
@@ -1177,20 +1202,20 @@ footer a, a:visited {
         margin-left: 0;
         margin-top: 0;
         padding-top: 0;
-        color: white;
+        color: #012840;
         font-family: "Nirmala UI", sans-serif;
         font-size: 1em;
     }
     
     .article a {
-        color: white;
+        color: #012840;
         text-decoration: underline;
         font-weight: bold;
     }
 
     .topprojects img {
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
         margin: 15px;
         margin-left: auto;
         margin-right: auto;
@@ -1206,7 +1231,7 @@ footer a, a:visited {
     
     .topprojects h2 {
         text-align: center;
-        color: white;
+        color: #012840;
         font-weight: bold;
         font-size: 3em;
         padding-top: 3px;
@@ -1290,7 +1315,7 @@ footer a, a:visited {
         height: 100px;
         float: left;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1.35em;
     }
 
@@ -1326,7 +1351,7 @@ footer a, a:visited {
         padding-top: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     
     .article {
@@ -1342,19 +1367,19 @@ footer a, a:visited {
         margin-left: 0;
         margin-top: 0;
         padding-top: 0;
-        color: white;
+        color: #012840;
         font-family: "Nirmala UI", sans-serif;
         font-size: 1em;
     }
     .article a {
-        color: white;
+        color: #012840;
         text-decoration: underline;
         font-weight: bold;
     }
 
     .topprojects img {
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
         margin: 15px;
         display: flex;
         flex-wrap: wrap;
@@ -1368,7 +1393,7 @@ footer a, a:visited {
     
     .topprojects h2 {
         text-align: center;
-        color: white;
+        color: #012840;
         font-weight: bold;
         font-size: 3em;
         padding-top: 3px;
@@ -1434,7 +1459,7 @@ footer a, a:visited {
         height: 100px;
         float: left;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1.35em;
     }
 
@@ -1443,7 +1468,7 @@ footer a, a:visited {
         height: 100px;
         float: right;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1.35em;
     }
     
@@ -1470,7 +1495,7 @@ footer a, a:visited {
         padding-top: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     
     .article {
@@ -1486,19 +1511,19 @@ footer a, a:visited {
         margin-left: 0;
         margin-top: 0;
         padding-top: 0;
-        color: white;
+        color: #012840;
         font-family: "Nirmala UI", sans-serif;
         font-size: 1.25em;
     }
     .article a {
-        color: white;
+        color: #012840;
         text-decoration: underline;
         font-weight: bold;
     }
 
     .topprojects img {
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
         margin: 15px;
         display: flex;
         flex-wrap: wrap;
@@ -1512,7 +1537,7 @@ footer a, a:visited {
     
     .topprojects h2 {
         text-align: center;
-        color: white;
+        color: #012840;
         font-weight: bold;
         font-size: 3em;
         padding-top: 3px;
@@ -1550,8 +1575,6 @@ footer a, a:visited {
 
 /*--extra large desktop display--*/
 @media screen and (min-width:1560px) {
-    
-
     
     #mobilenavhome {
         display: none;
@@ -1621,7 +1644,7 @@ footer a, a:visited {
         width: 50%;
         float: left;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1.35em;
     }
 
@@ -1630,7 +1653,7 @@ footer a, a:visited {
         width: 50%;
         float: right;
         text-align: center;
-        color: white;
+        color: #012840;
         font-size: 1.35em;
     }
     
@@ -1654,36 +1677,37 @@ footer a, a:visited {
         margin-left: 0;
         margin-top: 0;
         padding-top: 0;
-        color: white;
+        color: #012840;
         font-family: "Nirmala UI", sans-serif;
         font-size: 1.25em;
     }
     .article a {
-        color: white;
+        color: #012840;
         text-decoration: underline;
         font-weight: bold;
     }
 
     .topprojects {
-        background-color: rgba(255, 255, 255, 0.25);
+        background-color: rgba(219,195,163, 0.25);
         width: 100%;
         display: inline-flex;
         flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         padding: 0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     
     .topprojects img {
         border: 1px ;
-        border-radius: 15px;
+        border-radius: 5px;
         margin: 15px 0 15px 15px;
         width: 700px;
+        background-color: white;
     }
 
     .topprojects h2, h2 {
@@ -1692,7 +1716,7 @@ footer a, a:visited {
         font-weight: bold;
         font-size: 2.25em;
         letter-spacing: 3px;
-        padding: 10px 0 0 0;
+        padding: 0;
         margin-bottom: 0;
         margin-top: 0;
         width: 95%;
@@ -1702,7 +1726,7 @@ footer a, a:visited {
     }
 
     .topprojects aside {
-        width: 425px;
+        width: 550px;
         font-size: 1em;
         line-height: 1.25em;
     }
