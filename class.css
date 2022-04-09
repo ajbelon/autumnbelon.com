@@ -879,8 +879,7 @@ footer a, a:visited {
     }
 
     .parallax {
-        visibility: hidden;
-        display: none;
+        background-attachment: scroll;
     }
     #content {
         clear: both;
