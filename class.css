@@ -448,7 +448,7 @@ hr {
     border-bottom: 1px groove white;
 }
 
-#menu li a:hover, #content a:hover, #parallax h2:hover {
+#menu li a:hover, #parallax h2:hover {
     transform: scaleY(1.15) scaleX(1.15);
     color: grey;
     font-weight: bold;
@@ -588,7 +588,7 @@ h1 {
     margin-right: auto;
 }
 
-#aboutprojects a, #about a {
+#aboutprojects a, #aboutprojects a:visited, #about a {
     text-decoration: underline;
     font-weight: 800;
     color: #012840;
@@ -740,8 +740,9 @@ h1 {
 #content p {
     font-size: 1.5em;
     line-height: 1.75em;
+    color: #012840;
 }
-#content p a {
+#content p a, #content p a:visited {
     color: #012840;
     text-decoration: underline;
 }
@@ -821,8 +822,7 @@ footer {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 25px;
-    padding-top: 0;
-    padding-bottom: 25px;
+    padding: 0 50px 25px 50px;
     font-size: 18px;
 }
 footer a, a:visited {
@@ -1272,15 +1272,6 @@ footer a, a:visited {
         float: left;
         text-align: center;
         color: #012840;
-        font-size: 1.35em;
-    }
-
-    #otherlinks {
-        width: 50%;
-        height: 100px;
-        float: right;
-        text-align: center;
-        color: white;
         font-size: 1.35em;
     }
     
