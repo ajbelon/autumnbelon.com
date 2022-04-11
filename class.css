@@ -889,25 +889,18 @@ footer li {
         height: 150px;
 }
     
-    #returnhome {
-        width: 95%;
-        height: 75px;
-        float: none;
+    #returnhome a {
+        width: 250px;
+        height: 50px;
+        float: right;
+        margin: 50px;
         text-align: center;
-        color: #012840;
-        font-size: 1em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #returnhome a, #otherlinks a, #returnhome a:visited, #otherlinks a:visited,  {
-        text-decoration: underline;
-    }
-    
-    #returnhome p, #returnhome h5, #otherlinks p {
-        line-height: 1.75em;
-        margin: 10px;
-        padding-top: 15px;
-        text-decoration: underline;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        color: black;
+        line-height: 2.5em;
     }
 
     #aboutprojects p {
@@ -1073,29 +1066,18 @@ footer li {
         150px;
     }
     
-    #returnhome {
-        width: 49%;
-        height: 100px;
-        float: left;
-        text-align: center;
-        color: #012840;
-        font-size: 1.35em;
-    }
-
-    #otherlinks {
-        width: 49%;
-        height: 100px;
+    #returnhome a {
+        width: 250px;
+        height: 50px;
         float: right;
+        margin: 50px;
         text-align: center;
-        color: #012840;
-        font-size: 1.35em;
-    }
-    
-    #returnhome p, #returnhome h5, #otherlinks p {
-        line-height: 1.75em;
-        margin: 15px;
-        padding-top: 5px;
-        text-decoration: underline;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        color: black;
+        line-height: 2.5em;
     }
 
     #aboutprojects p {
@@ -1244,20 +1226,18 @@ footer li {
         visibility: hidden;
     }
     
-    #returnhome {
-        width: 50%;
-        height: 100px;
-        float: left;
+    #returnhome a {
+        width: 250px;
+        height: 50px;
+        float: right;
+        margin: 50px;
         text-align: center;
-        color: #012840;
-        font-size: 1.35em;
-    }
-    
-    #returnhome p, #returnhome h5, #otherlinks p {
-        line-height: 1.75em;
-        margin: 15px;
-        padding-top: 5px;
-        text-decoration: underline;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        color: black;
+        line-height: 2.5em;
     }
     
     .topprojects {
@@ -1342,10 +1322,7 @@ footer li {
 
 /*--large desktop display--*/
 @media screen and (min-width: 1251px) and (max-width:1559px) {
-    #otherlinks:hover, #returnhome:hover {
-        font-weight: bold;
-    }
-
+    
     #menu li a:hover, #parallax h2:hover {
         transform: scaleY(1.15) scaleX(1.15);
         color: grey;
@@ -1392,29 +1369,18 @@ footer li {
         transform: scaleY(1.2) scaleX(1.2);
     }
     
-    #returnhome {
-        width: 50%;
-        height: 100px;
-        float: left;
-        text-align: center;
-        color: #012840;
-        font-size: 1.35em;
-    }
-
-    #otherlinks {
-        width:50%;
-        height: 100px;
+    #returnhome a {
+        width: 250px;
+        height: 50px;
         float: right;
+        margin: 50px;
         text-align: center;
-        color: #012840;
-        font-size: 1.35em;
-    }
-    
-    #returnhome p, #returnhome h5, #otherlinks p {
-        line-height: 1.75em;
-        margin: 15px;
-        padding-top: 5px;
-        text-decoration: underline;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        color: black;
+        line-height: 2.5em;
     }
     
     .topprojects {
@@ -1544,10 +1510,6 @@ footer li {
       }
     }
     
-    #otherlinks:hover, #returnhome:hover {
-        font-weight: bold;
-    }
-
     #mobilenavhome {
         display: none;
         visibility: hidden;
@@ -1615,29 +1577,23 @@ footer li {
         transform: scaleY(1.2) scaleX(1.2);
     }
     
-    #returnhome {
-        height: 100px;
-        width: 50%;
-        float: left;
-        text-align: center;
-        color: #012840;
-        font-size: 1.35em;
-    }
-
-    #otherlinks {
-        height: 100px;
-        width: 50%;
+    #returnhome a {
+        width: 250px;
+        height: 50px;
         float: right;
+        margin: 50px;
         text-align: center;
-        color: #012840;
-        font-size: 1.35em;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        color: black;
+        line-height: 2.5em;
     }
     
-    #returnhome p, #returnhome h5, #otherlinks p {
-        line-height: 1.75em;
-        margin: 15px;
-        padding-top: 5px;
-        text-decoration: underline;
+    #returnhome a:hover {
+        border-radius: 2.5rem;
+        box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
     }
     
     .article {
