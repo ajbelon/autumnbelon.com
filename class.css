@@ -913,7 +913,7 @@ footer li {
         font-weight: bold;
     }
     #animals img {
-        width: calc(100vw - 20px);
+        width: 85vw;
     }
     .topprojects img {
         border: 1px ;
