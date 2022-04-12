@@ -947,6 +947,7 @@ footer li {
     }
     .topprojects p {
         font-size: 1em;
+        margin: 10px;
         width: 96%;
     }
     .truenorthweathernonmobile {
