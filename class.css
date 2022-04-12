@@ -928,10 +928,6 @@ footer li {
         padding: 10px;
         width: 94vw;
     }
-    #myBtn {
-        display: none;
-        visibility: hidden;
-    }
 }
 
 /*--tablet display--*/
