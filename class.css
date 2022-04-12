@@ -860,13 +860,6 @@ footer li {
         align-self: center;
         justify-content: center;
     }
-    #content .iframe, .topprojects .iframe {
-        margin: 25px;
-        padding: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-        width: 250px;
-        height: 150px;
-    }
     #returnhome a {
         width: 175px;
         height: 50px;
@@ -887,7 +880,7 @@ footer li {
         margin: 25px;
     }
     .topprojects {
-        width: 98%;
+        width: 98vw;
         height: 100%;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
         border: 1px;
@@ -895,7 +888,7 @@ footer li {
         display: block;
     }    
     .article {
-        width: 95%;
+        width: 95vw;
         float: none;
         margin-right: 0;
         margin-bottom: 5px;
