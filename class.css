@@ -604,6 +604,7 @@ h1 {
 }
 #animals p {
     display: inline-block;
+    padding: 5px;
 }
 #animals img {
     display: inline-block;
