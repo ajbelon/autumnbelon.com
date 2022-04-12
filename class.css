@@ -671,9 +671,6 @@ h1 {
 .badge-base {
     margin-left: 45px;
 }
-#content {
-    margin: 0;
-}
 #content h1 {
     color: white;
     background-image: linear-gradient(to right, white, rgba(42,162,176,69), #012840, rgba(42,162,176,69), white);
@@ -848,7 +845,7 @@ footer li {
     }
     #content {
         clear: both;
-        width: 96%;
+        width: 98%;
         height: 100%;
         border: 1px ;
         border-radius: 5px;
