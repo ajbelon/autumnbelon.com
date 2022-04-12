@@ -683,7 +683,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 98vw;
 }
 #content h3, img {
     display: flex;
@@ -922,7 +922,6 @@ footer li {
         align-content: center;
         align-self: center;
         justify-content: center;
-        width: 98vw;
     }
     .topprojects p {
         font-size: 1em;
