@@ -623,6 +623,7 @@ h1 {
 .instagramcontainer {
     display: block;
     margin: 15px;
+    max-width: 75vw;
 }
 
 #resume h3, h4, h5, p{
