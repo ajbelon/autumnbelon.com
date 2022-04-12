@@ -767,6 +767,7 @@ footer {
     margin-bottom: 25px;
     padding: 0 0 25px 0;
     font-size: 1.25em;
+    text-align: center;
 }
 footer a, a:visited {
     color: white;
@@ -780,6 +781,10 @@ footer li {
     display: inline-flex;
     justify-content: center;
     align-self: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    width: 100vw;
 }
 
 /*--mobile display--*/
