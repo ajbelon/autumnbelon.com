@@ -609,7 +609,6 @@ h1 {
 #animals img {
     display: inline-block;
     float: left;
-    width: 285px;
     margin: 5px 15px 5px 5px;
     padding: 0;
 }
@@ -913,6 +912,9 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
+    #animals img {
+        width: calc(100vw - 20px);
+    }
     .topprojects img {
         border: 1px ;
         border-radius: 5px;
@@ -1093,6 +1095,10 @@ footer li {
         font-weight: bold;
     }
 
+     #animals img {
+        width: 285px;
+    }
+    
     .topprojects img {
         border: 1px ;
         border-radius: 5px;
@@ -1246,6 +1252,10 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
+    
+    #animals img {
+        width: 285px;
+    }
 
     .topprojects img {
         border: 1px ;
@@ -1385,6 +1395,10 @@ footer li {
         color: #012840;
         text-decoration: underline;
         font-weight: bold;
+    }
+    
+    #animals img {
+        width: 285px;
     }
 
     .topprojects img {
@@ -1576,6 +1590,10 @@ footer li {
         color: #012840;
         text-decoration: underline;
         font-weight: bold;
+    }
+    
+    #animals img {
+        width: 285px;
     }
 
     .topprojects {
