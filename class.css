@@ -582,7 +582,7 @@ h1 {
    color: RGBA(44,167,178,1); 
 }
 
-#about h2, #resume h2, #contact h2, #content h2{
+#about h2, #contact h2, #content h2{
     color: white; 
     font-weight: bold;
     font-size: 2em;
@@ -825,7 +825,6 @@ footer li {
         display: none;
         visibility: hidden;
     }
-
     .parallax {
         background-attachment: scroll;
     }
@@ -926,7 +925,7 @@ footer li {
     }
     .topprojects p {
         font-size: 1em;
-        margin: 10px;
+        margin: 15px;
         padding: 10px;
         width: 95vw;
     }
