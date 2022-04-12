@@ -664,19 +664,6 @@ h1 {
 .badge-base {
     margin-left: 45px;
 }
-#content h1 {
-    color: white;
-    background-image: linear-gradient(to right, white, rgba(42,162,176,69), rgba(42,162,176,69), #012840, #012840, rgba(42,162,176,69), rgba(42,162,176,69), white);
-    font-size: 2em;
-    padding: 15px 0 15px 0;
-    margin: 0;
-    clear: both;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80vw;
-    position: relative;
-}
 #content h3, img {
     display: flex;
     flex-wrap: wrap;
@@ -841,6 +828,19 @@ footer li {
         align-self: center;
         justify-content: center;
     }
+    #content h1 {
+        color: white;
+        background-image: linear-gradient(to right, white, rgba(42,162,176,69), rgba(42,162,176,69), #012840, #012840, rgba(42,162,176,69), rgba(42,162,176,69), white);
+        font-size: 2em;
+        padding: 15px 0 15px 0;
+        margin: 0;
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 98vw;
+        position: relative;
+    }
     #returnhome a {
         width: 175px;
         height: 50px;
@@ -992,6 +992,20 @@ footer li {
         text-decoration: none;
     }
     
+    #content h1 {
+        color: white;
+        background-image: linear-gradient(to right, white, rgba(42,162,176,69), rgba(42,162,176,69), #012840, #012840, rgba(42,162,176,69), rgba(42,162,176,69), white);
+        font-size: 2em;
+        padding: 15px 0 15px 0;
+        margin: 0;
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        position: relative;
+    }  
+    
     #returnhome a {
         width: 250px;
         height: 50px;
@@ -1142,6 +1156,20 @@ footer li {
         text-decoration: none;
     }
     
+    #content h1 {
+        color: white;
+        background-image: linear-gradient(to right, white, rgba(42,162,176,69), rgba(42,162,176,69), #012840, #012840, rgba(42,162,176,69), rgba(42,162,176,69), white);
+        font-size: 2em;
+        padding: 15px 0 15px 0;
+        margin: 0;
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        position: relative;
+    }
+    
     .truenorthweathermobile img {
         display: none;
         visibility: hidden;
@@ -1290,6 +1318,20 @@ footer li {
         margin-bottom: 0;
         padding-bottom: 15px;
         text-decoration: none;
+    }
+    
+    #content h1 {
+        color: white;
+        background-image: linear-gradient(to right, white, rgba(42,162,176,69), rgba(42,162,176,69), #012840, #012840, rgba(42,162,176,69), rgba(42,162,176,69), white);
+        font-size: 2em;
+        padding: 15px 0 15px 0;
+        margin: 0;
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        position: relative;
     }
     
     #returnhome a {
@@ -1495,6 +1537,20 @@ footer li {
         margin-bottom: 0;
         padding-bottom: 15px;
         text-decoration: none;
+    }
+    
+    #content h1 {
+        color: white;
+        background-image: linear-gradient(to right, white, rgba(42,162,176,69), rgba(42,162,176,69), #012840, #012840, rgba(42,162,176,69), rgba(42,162,176,69), white);
+        font-size: 2em;
+        padding: 15px 0 15px 0;
+        margin: 0;
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        position: relative;
     }
     
     #returnhome a {
