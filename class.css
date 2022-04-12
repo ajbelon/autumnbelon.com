@@ -845,7 +845,7 @@ footer li {
     }
     #content {
         clear: both;
-        width: 98%;
+        width: 98vw;
         height: 100%;
         border: 1px ;
         border-radius: 5px;
