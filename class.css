@@ -720,9 +720,6 @@ h1 {
     border-radius: 3px;
     font-size: 18px;
 }
-#myBtn:hover {
-    background-color: #555;
-}
 #aboutprojects img {
     width: 65vw;
     border: 1px ;
@@ -1247,6 +1244,9 @@ footer li {
         line-height: 1.25em;
     }
     
+    #myBtn:hover {
+        background-color: #555;
+    }
 }
 
 /*--large desktop display--*/
@@ -1389,9 +1389,8 @@ footer li {
         line-height: 1.25em;
     }
     
-    .truenorthweathermobile img {
-        display: none;
-        visibility: hidden;
+    #myBtn:hover {
+        background-color: #555;
     }
     
     #about, #resume, #contact {
@@ -1589,9 +1588,8 @@ footer li {
         line-height: 1.25em;
     }
     
-    .truenorthweathermobile img {
-        display: none;
-        visibility: hidden;
+    #myBtn:hover {
+        background-color: #555;
     }
 
 }
