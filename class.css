@@ -778,7 +778,6 @@ footer img {
     width: 45px;
 }
 footer li {
-    display: inline-flex;
     justify-content: center;
     align-self: center;
     align-items: center;
