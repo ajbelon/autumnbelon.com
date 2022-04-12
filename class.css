@@ -666,7 +666,7 @@ h1 {
 }
 #content h1 {
     color: white;
-    background-image: linear-gradient(to right, white, rgba(42,162,176,69), #012840, rgba(42,162,176,69), white);
+    background-image: linear-gradient(to right, white, rgba(42,162,176,69), rgba(42,162,176,69), #012840, #012840, rgba(42,162,176,69), rgba(42,162,176,69), white);
     font-size: 2em;
     padding: 15px 0 15px 0;
     margin: 0;
