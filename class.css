@@ -609,7 +609,7 @@ h1 {
     display: inline-block;
     float: left;
     width: 275px;
-    margin: 5px 15px 5px 0;
+    margin: 5px 15px 5px 5px;
     padding: 0;
 }
 
