@@ -816,7 +816,6 @@ footer li {
         margin-right: auto;
         float: none;
     }
-    
     .name h1 {
         display: flex;
         flex-wrap: wrap;
@@ -828,7 +827,6 @@ footer li {
         padding: 15px 0 5px 0;
         margin: 0;
     }
-
     .name h2 {
         display: flex;
         flex-wrap: wrap;
@@ -840,7 +838,6 @@ footer li {
         margin: 0;
         padding: 10px;
     }
-    
     .navigation {
         display: none;
         visibility: hidden;
@@ -866,15 +863,13 @@ footer li {
         align-self: center;
         justify-content: center;
     }
-    
     #content .iframe, .topprojects .iframe {
         margin: 25px;
         padding: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
         width: 250px;
         height: 150px;
-}
-    
+    }
     #returnhome a {
         width: 175px;
         height: 50px;
@@ -888,14 +883,12 @@ footer li {
         font-weight: bold;
         line-height: 3em;
     }
-
     #aboutprojects p {
         font-size: 1em;
         line-height: 1.25em;
         padding: 10px;
         margin: 25px;
     }
-    
     .topprojects {
         width: 96%;
         height: 100%;
@@ -904,7 +897,6 @@ footer li {
         border-radius: 5px;
         display: block;
     }    
-    
     .article {
         width: 95%;
         float: none;
@@ -918,13 +910,11 @@ footer li {
         font-family: "Nirmala UI", sans-serif;
         font-size: 1.10em;
     }
-    
     .article a {
         color: #012840;
         text-decoration: underline;
         font-weight: bold;
     }
-    
     .topprojects img {
         border: 1px ;
         border-radius: 5px;
@@ -942,12 +932,11 @@ footer li {
         margin-right: auto;
         width: calc(98vw);
     }
-    
     .topprojects h2 {
         text-align: center;
         color: #012840;
         font-weight: bold;
-        font-size: 1em;
+        font-size: .75em;
         padding: 0;
         margin-bottom: 0;
         margin-top: 5px;
@@ -958,24 +947,20 @@ footer li {
         align-self: center;
         justify-content: center;
     }
-
     .topprojects p {
         font-size: 1em;
         margin: 5px;
         width: 96%;
     }
-    
     .truenorthweathernonmobile {
         display: none;
         visibility: hidden;
     }
-    
     .truenorthweathermobile img {
         width: 319px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     #myBtn {
         display: none;
         visibility: hidden;
