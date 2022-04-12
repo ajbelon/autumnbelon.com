@@ -602,24 +602,14 @@ h1 {
     line-height: 1.75em;
     padding: 15px;
 }
-#about img {
-    display: inline-flex;
-    float: left;
-    margin: 35px;
-    padding: 15px;
-    border: 1px ;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 275px;
-}
 #animals p {
     display: inline-block;
 }
 #animals img {
     display: inline-block;
     float: left;
-    width: 300px;
-    margin: 10px;
+    width: 275px;
+    margin: 5px 15px 5px 0;
     padding: 0;
 }
 
@@ -877,10 +867,6 @@ footer li {
         justify-content: center;
     }
     
-    #about img {
-        float: none;
-    }
-    
     #content .iframe, .topprojects .iframe {
         margin: 25px;
         padding: 5px;
@@ -1060,10 +1046,6 @@ footer li {
         margin-bottom: 0;
         padding-bottom: 15px;
         text-decoration: none;
-    }
-    
-    #about img {
-        150px;
     }
     
     #returnhome a {
