@@ -1111,6 +1111,10 @@ footer li {
 /*--in-between display--*/
 @media screen and (min-width: 1181px) and (max-width: 1250px) {
     
+    #menu li a:hover {
+        color: RGBA(44,167,178,1)
+    }
+    
     .header img {
         margin: 15px 0 0 35px;
         width: 85px;
@@ -1254,10 +1258,8 @@ footer li {
 /*--large desktop display--*/
 @media screen and (min-width: 1251px) and (max-width:1559px) {
     
-    #menu li a:hover, #parallax h2:hover {
-        transform: scaleY(1.15) scaleX(1.15);
-        color: grey;
-        font-weight: bold;
+    #menu li a:hover {
+        color: RGBA(44,167,178,1)
     }
 
     .name img {
@@ -1411,10 +1413,8 @@ footer li {
 
 /*--extra large desktop display--*/
 @media screen and (min-width:1560px) {
-    #menu li a:hover, #parallax h2:hover {
-        transform: scaleY(1.15) scaleX(1.15);
-        color: grey;
-        font-weight: bold;
+    #menu li a:hover {
+        color: RGBA(44,167,178,1)
     }
     
     .animate-character{
