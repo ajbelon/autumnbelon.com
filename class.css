@@ -622,7 +622,7 @@ h1 {
 
 .instagramcontainer {
     display: block;
-    margin: 15px;
+    padding: 15px;
     max-width: 75vw;
 }
 
