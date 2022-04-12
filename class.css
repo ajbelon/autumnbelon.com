@@ -922,6 +922,7 @@ footer li {
         align-content: center;
         align-self: center;
         justify-content: center;
+        width: 98vw;
     }
     .topprojects p {
         font-size: 1em;
