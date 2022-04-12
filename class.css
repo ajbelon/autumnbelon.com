@@ -927,8 +927,8 @@ footer li {
     .topprojects p {
         font-size: 1em;
         margin: 10px;
-        padding: 5px;
-        width: 96vw;
+        padding: 10px;
+        width: 95vw;
     }
     #myBtn {
         display: none;
