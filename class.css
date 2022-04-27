@@ -700,7 +700,7 @@ h1 {
     outline: none;
     background-color: RGBA(44,167,178,1);
     box-shadow: 0 0 5px rgba(42,162,176,69), 0 0 25px rgba(112,243,255,100), 0 0 30px rgba(179,88,21,70);
-    color: #012840;
+    color: white;
     cursor: pointer;
     padding: 10px 15px 10px 15px;
     border-radius: 3px;
