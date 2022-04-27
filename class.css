@@ -1518,8 +1518,6 @@ footer li {
         color: RGBA(44,167,178,1)
     }
     
-    
-    
     #mobilenavhome {
         display: none;
         visibility: hidden;
@@ -1639,10 +1637,6 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
-    
-    .animals img {
-        width: 285px;
-    }
 
     .topprojects {
         background-color: rgba(219,195,163, 0.25);
@@ -1662,8 +1656,8 @@ footer li {
     .topprojects img {
         border: 1px ;
         border-radius: 5px;
-        margin: 15px 0 15px 15px;
-        width: 700px;
+        margin: 15px;
+        width: 500px;
         background-color: white;
     }
 
@@ -1683,7 +1677,7 @@ footer li {
     }
 
     .topprojects aside {
-        width: 550px;
+        width: 750px;
         font-size: 1em;
         line-height: 1.25em;
     }
