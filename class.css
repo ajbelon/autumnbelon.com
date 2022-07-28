@@ -684,7 +684,7 @@ h1 {
     color: #012840;
     text-decoration: underline;
 }
-#content img {
+#content img, video {
     padding: 15px;
     border: 1px ;
     border-radius: 5px;
@@ -888,7 +888,7 @@ footer li {
     .animals img {
         width: 80vw;
     }
-    .topprojects img {
+    .topprojects img, #video {
         border: 1px ;
         border-radius: 5px;
         margin:0 0 0 8px;
@@ -1073,7 +1073,7 @@ footer li {
         width: 285px;
     }
     
-    .topprojects img {
+    .topprojects img, #video {
         border: 1px ;
         border-radius: 5px;
         margin: 15px;
@@ -1258,7 +1258,7 @@ footer li {
         width: 285px;
     }
 
-    .topprojects img {
+    .topprojects img, #video {
         border: 1px ;
         border-radius: 5px;
         margin: 15px;
@@ -1439,7 +1439,7 @@ footer li {
         width: 285px;
     }
 
-    .topprojects img {
+    .topprojects img, #video {
         border: 1px ;
         border-radius: 5px;
         margin: 15px;
@@ -1653,14 +1653,14 @@ footer li {
         border-radius: 5px;
     }
     
-    .topprojects img {
+    .topprojects img, #video {
         border: 1px ;
         border-radius: 5px;
         margin: 15px;
         width: 500px;
         background-color: white;
     }
-
+    
     .topprojects h2, h2 {
         text-align: center;
         color: white;
