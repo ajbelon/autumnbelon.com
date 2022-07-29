@@ -719,6 +719,7 @@ h1 {
     align-self:auto;
     justify-content:center;
 }
+
 footer {
     display: flex;
     flex-wrap: wrap;
