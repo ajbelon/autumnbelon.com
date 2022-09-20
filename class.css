@@ -726,19 +726,6 @@ h1 {
     border-radius: 3px;
     font-size: 18px;
 }
-#aboutprojects img {
-    width: 65vw;
-    border: 1px ;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items:center;
-    align-content:center;
-    align-self:auto;
-    justify-content:center;
-}
 
 footer {
     display: flex;
@@ -1423,7 +1410,7 @@ footer li {
     }
     
     .animals img {
-        width: 285px;
+        width: 35vw;
     }
 
     .topprojects img, #video {
@@ -1607,6 +1594,10 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
+    
+    .animals img {
+        width: 20vw;
+    }
 
     .topprojects {
         background-color: rgba(219,195,163, 0.25);
@@ -1627,7 +1618,7 @@ footer li {
         border: 1px ;
         border-radius: 5px;
         margin: 15px;
-        width: 500px;
+        width: 30vw;
         background-color: white;
     }
     
