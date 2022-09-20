@@ -382,7 +382,7 @@ hr {
     align-content: center;
     align-self: center;
     justify-content: center;
-    width: 100vw;
+    width: 80vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -399,7 +399,7 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 80vw;
     margin-bottom: 0;
     padding-bottom: 5px;
 }
@@ -539,6 +539,14 @@ hr {
     text-decoration: underline;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 h1 {
     font-size: 3em;
     vertical-align: middle;
@@ -597,8 +605,8 @@ h1 {
 }
 #about p {
     margin: 25px;
-    font-size: 1.75em;
-    line-height: 1.75em;
+    font-size: 1.25em;
+    line-height: 1.25em;
     padding: 15px;
 }
 .animals p {
@@ -663,21 +671,22 @@ h1 {
 .badge-base {
     margin-left: 45px;
 }
-#content h3, img {
+#content h3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     align-self: center;
+    justify-content: center;
     color: #012840;
     font-size: 2em;
     padding: 15px 0 0 0;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 #content p {
-    font-size: 1.5em;
-    line-height: 1.75em;
+    font-size: 1.35em;
+    line-height: 1.35em;
     color: #012840;
 }
 #content p a, #content p a:visited {
@@ -689,12 +698,21 @@ h1 {
     border: 1px ;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    color: #012840;
+    font-size: 2em;
+    margin: 15px;
+    text-align: left;
 }
 #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px; 
+    right: 50px; 
     z-index: 99;
     border: none; 
     outline: none;
@@ -729,7 +747,7 @@ footer {
     justify-content: center;
     vertical-align: middle;
     height: 100%;
-    width: 100vw;
+    width: 80vw;
     background-image: url(blueandbrownclouds.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -1108,26 +1126,9 @@ footer li {
     }
 
     .topprojects p {
-        font-size: 1.25em;
-        line-height: 1.25em;
+        font-size: 1em;
+        line-height: 1em;
     }
-    .animate-character{
-        background-image: linear-gradient(
-        -225deg,
-        white 0%,
-        white 50%,
-        black 100%);
-        background-size: auto auto;
-        background-clip: border-box;
-        background-size: 200% auto;
-        color: #fff;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textclip 6s linear infinite;
-        display: inline-block;
-        font-size: 190px;
-        }
 
     @keyframes textclip {
       to {
@@ -1291,26 +1292,9 @@ footer li {
     }
 
     .topprojects p {
-        font-size: 1.25em;
-        line-height: 1.25em;
+        font-size: 1em;
+        line-height: 1em;
     }
-    .animate-character{
-        background-image: linear-gradient(
-        -225deg,
-        white 0%,
-        white 50%,
-        black 100%);
-        background-size: auto auto;
-        background-clip: border-box;
-        background-size: 200% auto;
-        color: #fff;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textclip 6s linear infinite;
-        display: inline-block;
-        font-size: 190px;
-        }
 
     @keyframes textclip {
       to {
@@ -1472,30 +1456,13 @@ footer li {
     }
 
     .topprojects p {
-        font-size: 1.25em;
-        line-height: 1.25em;
+        font-size: 1em;
+        line-height: 1em;
     }
     
     #myBtn:hover {
         background-color: #555;
     }
-    .animate-character{
-        background-image: linear-gradient(
-        -225deg,
-        white 0%,
-        white 50%,
-        black 100%);
-        background-size: auto auto;
-        background-clip: border-box;
-        background-size: 200% auto;
-        color: #fff;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textclip 6s linear infinite;
-        display: inline-block;
-        font-size: 190px;
-        }
 
     @keyframes textclip {
       to {
@@ -1571,7 +1538,7 @@ footer li {
     
     #content {
         clear: both;
-        width: 80vw;
+        width: 70vw;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -1592,7 +1559,7 @@ footer li {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80vw;
+        width: 70vw;
         position: relative;
     }
     
@@ -1682,23 +1649,6 @@ footer li {
         font-size: 1em;
         line-height: 1.25em;
     }
-    .animate-character{
-        background-image: linear-gradient(
-        -225deg,
-        white 0%,
-        white 50%,
-        black 100%);
-        background-size: auto auto;
-        background-clip: border-box;
-        background-size: 200% auto;
-        color: #fff;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textclip 6s linear infinite;
-        display: inline-block;
-        font-size: 190px;
-        }
 
     @keyframes textclip {
       to {
