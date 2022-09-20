@@ -382,9 +382,10 @@ hr {
     align-content: center;
     align-self: center;
     justify-content: center;
-    width: 80vw;
+    width: 95vw;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .header {
@@ -392,14 +393,14 @@ hr {
     flex-wrap: wrap;
     align-items:center;
     align-content:center;
-    align-self:auto;
+    align-self:center;
     justify-content:center;
     background-image: url(blueandbrownclouds.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 80vw;
+    width: 95vw;
     margin-bottom: 0;
     padding-bottom: 5px;
 }
@@ -748,7 +749,7 @@ footer {
     justify-content: center;
     vertical-align: middle;
     height: 100%;
-    width: 80vw;
+    width: 95vw;
     background-image: url(blueandbrownclouds.jpg);
     background-attachment: fixed;
     background-position: center;
