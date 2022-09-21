@@ -559,7 +559,7 @@ h1 {
 
 .parallax {
     background-image: url(blueandbrownclouds.jpg);
-    min-height: 150px;
+    height: minmax(250px, auto);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -569,29 +569,8 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-
-#aboutprojects {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    width: 65vw;
-    text-align: center;
-}
-#aboutprojects a, #aboutprojects a:visited, #about a {
-    text-decoration: underline;
-    font-weight: 800;
-    color: #012840;
-}
-
-#aboutprojects h4 {
-    font-size: 2.55em;
-    padding: 10px;
-    margin: 0;
+.topprojects {
+    background-color: rgba(54,117,136,0.25);
 }
 .topprojects h4 {
     font-style: italic;
@@ -643,32 +622,11 @@ h1 {
     padding: 0;
     width: 15vw;
 }
-
 .bio h2 {
     text-align: left;
     color: #012840;
     padding: 20px 0 0 0;
     margin: 50px 0 0 0;
-}
-#resume h3, h4, h5, p{
-    margin: 25px;
-    padding: 15px;
-}
-#resume h3 {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-#resume h4 {
-    font-weight: bold;
-    font-size: 1.35em;
-    margin-top: 0;
-    padding-top: 2px;
-    padding-bottom: 0;
-}
-#resume h5 {
-    margin-top: 2px;
 }
 #contact {
     background-color: rgba(219,195,163, 0.25);
@@ -685,15 +643,34 @@ h1 {
     display: block;
 }
 #contact p {
-    font-size: 16px;   
+    font-size: 1em;   
     text-align: left;
+    padding: 15px;
 }
 #contact a {
     text-decoration: underline;
     color: #012840;
 }
 .badge-base {
-    margin-left: 45px;
+    margin: 25px;
+    float: left;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(250px, auto);
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.parallax img {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
 }
 #content h3 {
     display: flex;
@@ -709,7 +686,7 @@ h1 {
     text-align: center;
 }
 #content p {
-    font-size: 1.35em;
+    font-size: 1.25em;
     line-height: 1.35em;
     color: #012840;
 }
@@ -730,7 +707,6 @@ h1 {
     color: #012840;
     font-size: 2em;
     margin: 15px;
-    text-align: left;
 }
 #myBtn {
     display: none;
@@ -764,7 +740,6 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -883,12 +858,6 @@ footer li {
         font-weight: bold;
         line-height: 3em;
     }
-    #aboutprojects p {
-        font-size: 1.15em;
-        line-height: 1.25em;
-        padding: 10px;
-        margin: 25px;
-    }
     .topprojects {
         width: 98vw;
         height: 100%;
@@ -938,18 +907,10 @@ footer li {
         font-weight: bold;
         font-size: .75em;
         padding: 0;
-        display: flex;
-        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
-    }
-    .topprojects p {
-        font-size: 1em;
-        margin: 5px;
-        padding: 10px;
-        width: 94vw;
     }
 }
 
@@ -1046,14 +1007,8 @@ footer li {
         font-weight: bold;
         line-height: 2.5em;
     }
-
-    #aboutprojects p {
-        font-size: 1.35em;
-        padding: 0 5px 0 5px;
-    }
     
     .topprojects {
-        background-color: rgba(255, 255, 255, 0.25);
         width: 96vw;
         display: flex;
         flex-wrap: wrap;
@@ -1121,17 +1076,10 @@ footer li {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
-        display: flex;
-        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
-    }
-
-    .topprojects p {
-        font-size: 1em;
-        line-height: 1em;
     }
 
     @keyframes textclip {
@@ -1219,7 +1167,6 @@ footer li {
     }
     
     .topprojects {
-        background-color: rgba(255, 255, 255, 0.25);
         width: 96vw;
         display: flex;
         flex-wrap: wrap;
@@ -1283,17 +1230,10 @@ footer li {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
-        display: flex;
-        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
-    }
-
-    .topprojects p {
-        font-size: 1em;
-        line-height: 1em;
     }
 
     @keyframes textclip {
@@ -1379,7 +1319,6 @@ footer li {
     }
     
     .topprojects {
-        background-color: rgba(255, 255, 255, 0.25);
         width: 96vw;
         display: flex;
         flex-wrap: wrap;
@@ -1443,17 +1382,10 @@ footer li {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
-        display: flex;
-        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
-    }
-
-    .topprojects p {
-        font-size: 1em;
-        line-height: 1em;
     }
     
     #myBtn:hover {
@@ -1527,12 +1459,7 @@ footer li {
         justify-content: center;
     }
     
-    #aboutprojects p {
-        line-height: 1.5em; 
-        font-size: 1.5em;
-    }
-    
-    #content {
+    #content, .grid {
         clear: both;
         width: 70vw;
         height: 100%;
@@ -1603,7 +1530,6 @@ footer li {
     }
 
     .topprojects {
-        background-color: rgba(219,195,163, 0.25);
         width: 100%;
         display: inline-flex;
         flex-wrap: wrap;
@@ -1619,28 +1545,19 @@ footer li {
         border-radius: 5px;
         margin: 15px;
         width: 30vw;
-        background-color: white;
     }
     
-    .topprojects h2, h2 {
+    .topprojects h2{
         text-align: center;
-        color: white;
+        color: #012840;
+        border: 1px;
+        border-radius: 5px;
+        height: 1.35em;
         font-weight: bold;
         font-size: 2.25em;
-        letter-spacing: 3px;
-        padding: 0;
-        margin-bottom: 0;
-        margin-top: 0;
-        width: 95%;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .topprojects aside {
-        width: 750px;
-        font-size: 1em;
-        line-height: 1.25em;
+        padding: 15px;
+        width: 100%;
+        margin: 0;
     }
 
     @keyframes textclip {
