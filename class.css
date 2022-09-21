@@ -1482,8 +1482,12 @@ footer li {
         align-self: center;
         justify-content: center;
     }
-    
-    #content, .grid {
+    .grid {
+        clear: both;
+        width: 70vw;
+        padding: 15px;
+    }
+    #content {
         clear: both;
         width: 70vw;
         height: 100%;
