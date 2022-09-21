@@ -657,9 +657,17 @@ h1 {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 550px;
     grid-gap: 1em;
     grid-auto-rows: minmax(250px, auto);
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.grid > div {
+    text-align: center;
 }
 .parallax img {
     align-items: center;
