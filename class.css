@@ -602,18 +602,14 @@ h1 {
 }
 .bio {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
 }
 .bio > div{
     background: #eee;
     padding: 1em;
 }
-.bio p {
-    display: inline-block;
-    padding: 5px;
-}
 .bio img {
-    display: inline-block;
     float: left;
     margin: 5px 15px 5px 5px;
     padding: 0;
@@ -1403,8 +1399,6 @@ footer li {
         color: #012840;
         font-weight: bold;
         font-size: 3em;
-        padding-top: 3px;
-        padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
         display: flex;
