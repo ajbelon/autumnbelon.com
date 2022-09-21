@@ -368,16 +368,10 @@ a, a:visited {
     text-decoration: none;
 }
 
-hr {
-    width: 75%;
-}
-
 #page {
     background-color: white;
     color: #012840;
     font-family: "verdana", arial, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
     align-content: center;
     align-self: center;
@@ -650,7 +644,7 @@ h1 {
 }
 .grid {
     display: grid;
-    grid-template-columns: 600px;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     grid-gap: 1em;
     grid-auto-rows: minmax(250px, auto);
     align-items: center;
