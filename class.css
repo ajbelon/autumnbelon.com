@@ -660,11 +660,6 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
     grid-auto-rows: minmax(250px, auto);
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
-    text-align: center;
 }
 .parallax img {
     align-items: center;
@@ -707,6 +702,7 @@ h1 {
     color: #012840;
     font-size: 2em;
     margin: 15px;
+    text-align: left;
 }
 #myBtn {
     display: none;
@@ -907,10 +903,18 @@ footer li {
         font-weight: bold;
         font-size: .75em;
         padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
+    }
+    .topprojects p {
+        font-size: 1em;
+        margin: 5px;
+        padding: 10px;
+        width: 94vw;
     }
 }
 
@@ -1076,10 +1080,17 @@ footer li {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
+    }
+
+    .topprojects p {
+        font-size: 1em;
+        line-height: 1em;
     }
 
     @keyframes textclip {
@@ -1230,10 +1241,17 @@ footer li {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
+    }
+
+    .topprojects p {
+        font-size: 1em;
+        line-height: 1em;
     }
 
     @keyframes textclip {
@@ -1382,10 +1400,17 @@ footer li {
         padding-bottom: 3px;
         margin-bottom: 0;
         margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         align-content: center;
         align-self: center;
         justify-content: center;
+    }
+
+    .topprojects p {
+        font-size: 1em;
+        line-height: 1em;
     }
     
     #myBtn:hover {
@@ -1555,9 +1580,19 @@ footer li {
         height: 1.35em;
         font-weight: bold;
         font-size: 2.25em;
-        padding: 15px;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
         width: 100%;
-        margin: 0;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topprojects p {
+        font-size: 1em;
+        line-height: 1em;
+        padding: 25px;
+        color: white;
     }
 
     @keyframes textclip {
