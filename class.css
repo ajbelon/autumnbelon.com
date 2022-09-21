@@ -569,6 +569,19 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
+#aboutprojects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    width: 65vw;
+    text-align: center;
+}
 #aboutprojects a, #aboutprojects a:visited, #about a {
     text-decoration: underline;
     font-weight: 800;
@@ -611,18 +624,27 @@ h1 {
     line-height: 1.25em;
     padding: 15px;
 }
-.animals p {
+.bio {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.bio > div{
+    background: #eee;
+    padding: 1em;
+}
+.bio p {
     display: inline-block;
     padding: 5px;
 }
-.animals img {
+.bio img {
     display: inline-block;
     float: left;
     margin: 5px 15px 5px 5px;
     padding: 0;
+    width: 15vw;
 }
 
-.animals h2 {
+.bio h2 {
     text-align: left;
     color: #012840;
     padding: 20px 0 0 0;
@@ -893,9 +915,6 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
-    .animals img {
-        width: 80vw;
-    }
     .topprojects img, #video {
         border: 1px ;
         border-radius: 5px;
@@ -1076,10 +1095,6 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
-
-     .animals img {
-        width: 285px;
-    }
     
     .topprojects img, #video {
         border: 1px ;
@@ -1244,10 +1259,6 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
-    
-    .animals img {
-        width: 285px;
-    }
 
     .topprojects img, #video {
         border: 1px ;
@@ -1408,10 +1419,6 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
-    
-    .animals img {
-        width: 35vw;
-    }
 
     .topprojects img, #video {
         border: 1px ;
@@ -1522,7 +1529,7 @@ footer li {
     
     #aboutprojects p {
         line-height: 1.5em; 
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
     
     #content {
@@ -1594,20 +1601,13 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
-    
-    .animals img {
-        width: 20vw;
-    }
 
     .topprojects {
         background-color: rgba(219,195,163, 0.25);
         width: 100%;
         display: inline-flex;
         flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 15px;
         padding: 0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 1px ;
