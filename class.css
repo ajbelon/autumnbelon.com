@@ -661,13 +661,15 @@ h1 {
     text-align: center;
     background-color: rgba(54,117,136,0.15);
     height: 100%;
-}
-.parallax img {
     align-items: center;
     align-content: center;
     align-self: center;
     justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    float: none;
 }
+
 #content h3 {
     display: flex;
     flex-wrap: wrap;
@@ -888,12 +890,12 @@ footer li {
         padding-top: 0;
         padding-bottom: 10px;
         float: none;
-        display: flex;
-        flex-wrap: wrap;
-        align-items:flex-start;
-        align-content:flex-start;
+        align-content: center;
+        align-items: center;
         align-self: center;
         justify-content: center;
+        justify-items: center;
+        justify-self: center;
         margin-left: auto;
         margin-right: auto;
         width: 80vw;
@@ -1573,6 +1575,13 @@ footer li {
         border-radius: 5px;
         margin: 15px;
         width: 30vw;
+        float: none;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
     }
     
     .topprojects h2{
