@@ -873,7 +873,7 @@ footer li {
         text-decoration: underline;
         font-weight: bold;
     }
-    .grid {
+    .grid > div {
         width: 90vw;
     }
     .topprojects img, #video {
