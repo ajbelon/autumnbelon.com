@@ -682,7 +682,7 @@ h1 {
     color: #012840;
     text-decoration: underline;
 }
-#content img, video {
+#content img {
     padding: 15px;
     border: 1px ;
     border-radius: 5px;
