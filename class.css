@@ -649,6 +649,7 @@ h1 {
     grid-auto-rows: minmax(250px, auto);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 .grid > div {
     text-align: center;
