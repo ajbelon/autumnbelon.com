@@ -888,7 +888,7 @@ footer li {
         justify-self: center;
         margin-left: auto;
         margin-right: auto;
-        width: 70vw;
+        width: 300px;
     }
     .topprojects h2 {
         text-align: center;
@@ -902,12 +902,6 @@ footer li {
         align-content: center;
         align-self: center;
         justify-content: center;
-    }
-    .topprojects p {
-        font-size: 1em;
-        margin: 5px;
-        padding: 10px;
-        width: 94vw;
     }
 }
 
