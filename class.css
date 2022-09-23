@@ -644,7 +644,7 @@ h1 {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, .95fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1em;
     grid-auto-rows: minmax(250px, auto);
     margin-left: auto;
@@ -872,6 +872,9 @@ footer li {
         color: #012840;
         text-decoration: underline;
         font-weight: bold;
+    }
+    .grid {
+        width: 90vw;
     }
     .topprojects img, #video {
         border: 1px ;
