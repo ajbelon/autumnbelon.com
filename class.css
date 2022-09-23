@@ -596,9 +596,8 @@ h1 {
 }
 .bio {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
-    margin: 5px;
 }
 .bio > div{
     background: #eee;
@@ -645,7 +644,7 @@ h1 {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(525px, 1fr));
     grid-gap: 1em;
     grid-auto-rows: minmax(250px, auto);
     margin-left: auto;
