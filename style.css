@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  height: 100%
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+  height: 100%
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* universal styles */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+.header {
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: .1em;
+    text-align: center;
+    display: block;
+    max-height: 125px;
+}
+.header a{
+    text-decoration: none;
+}
+.header h1 {
+    font-size: 3.5em;
+    font-family: 'Handlee', cursive;
+    color: black;
+    z-index: 1;
+}
+.header a:hover {
+    color: RGBA(44,167,178,1);
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-evenly;
+    height: 125px;
+    background: rgba(0, 236, 255, 0.1);
+}
+#menu li{
+    list-style-type: none;
+    font-size: 1.5em;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+#menu li a{
+    list-style-type: none;
+    color: #012840;
+    text-align: center;
+}
+#currentpage a{
+    text-decoration: none;
+    pointer-events: none;
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.15em;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#section-a {
+    padding: 1em;
+    background: #333;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#section-a a, #section-a a:visited {
+    text-decoration: none;
+    color: #333;
+}
+#section-a p, .research p {
+    color: #fff;
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+#section-a li{
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    background: #eaeaea;
+    color: #333;
+    max-width: 350px;
+}
+.research {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px;
+}
+.research a, .research a:visited, .research p {
+    color: #333;
+}
+.research li{
+    font-size: 1.25em;
+    line-height: 2em;
+    margin-left: 10px;
+}
+.research ul li {
+    list-style-type: square;
+}
+.research h2 {
+    text-align: left;
+}
+.research-card h3 {
+    font-size: 1.5em;
+}
+.research-card li{
+    font-size: 1.25em;
+    line-height: 1.25em;
+    padding-bottom: 10px;
+}
+.research-card p {
+    padding-left: 20px;
+    font-size: 1.25em;
+}
+.research-card img {
+    width: 100vw;
+}
+.button {
+    background: rgba(0, 236, 255, 0.1);
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+}
+.card-content {
+    padding: 1.5em;
+}
+.card-content h2 {
+    text-align: center;
+}
+.card {
+    padding: 20px;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.card img {
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#content {
+    padding: 25px;
+}
+#content img {
+    border-radius: 1em;
+}
+#content p {
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+#contact img {
+    width: 350px;
+    display: block;
+}
+#footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+#footer img {
+    width: 25px;
+    margin: 0 10px 0 0;
+}
+@media (max-width: 699px) {
+    /*lightbox styles - mobile */
+    a.lightbox img {
+        width: 95vw;
+        margin: 5px;
+        pointer-events: none;
+    }
+    .lightbox-target, .lightbox-close {
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 700px) {
+    #parallax {
+        background-image: url(images/background.jpg);
+        background-attachment: fixed;
+        background-position:bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+}
+    .header {
+        max-height: 225px;
+    }
+    .header h1 {
+        padding: 0.25em;
+        font-size: 5em;
+        font-family: 'Handlee', cursive;
+        color: black;
+        z-index: 1;
+    }
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 75px;
+    }
+    #section-a, #section-a ul, #section-a li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card {
+        justify-content: space-evenly;
+    }
+    .research, #content {
+        width: 80%;
+        max-width: 900px;
+    }
+    #content {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .research-card img {
+        width: 45vw;
+    }
+
+    /*lightbox styles */
+    
+    /* Styles the thumbnail */
+    a.lightbox img {
+        width: 35vw;
+        border: 3px solid white;
+        box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+        margin: 20px;
+    }
+
+    /* Styles the lightbox, removes it from sight and adds the fade-in transition */
+    .lightbox-target {
+        visibility: visible;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,.7);
+        width: 100%;
+        opacity: 0;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+        overflow: hidden;
+    }
+
+    /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+    .lightbox-target img {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        bottom: 0;
+        width: 55vw;
+        border: 3px solid white;
+        box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+        box-sizing: border-box;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+
+    }
+
+    /* Styles the close link, adds the slide down transition */
+    a.lightbox-close {
+        display: block;
+        width:50px;
+        height:50px;
+        box-sizing: border-box;
+        background: white;
+        color: black;
+        text-decoration: none;
+        position: absolute;
+        top: -80px;
+        right: 0;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+
+    /* Provides part of the "X" to eliminate an image from the close link */
+    a.lightbox-close:before {
+        content: "";
+        display: block;
+        height: 30px;
+        width: 1px;
+        background: black;
+        position: absolute;
+        left: 26px;
+        top:10px;
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+    }
+
+    /* Provides part of the "X" to eliminate an image from the close link */
+    a.lightbox-close:after {
+        content: "";
+        display: block;
+        height: 30px;
+        width: 1px;
+        background: black;
+        position: absolute;
+        left: 26px;
+        top:10px;
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        -o-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+    }
+
+    /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+    .lightbox-target:target {
+        opacity: 1;
+        top: 0;
+        bottom: 0;
+        overflow:scroll;
+    }
+    .lightbox-target:target img {
+        width: 55vw;
+    }
+
+    .lightbox-target:target a.lightbox-close {
+        top: 0;
+    }
+}
