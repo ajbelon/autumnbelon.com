@@ -386,13 +386,13 @@ body, html {
 .header a:hover {
     color: RGBA(44,167,178,1);
 }
-  #parallax {
-      background-image: url(images/background.jpg);
-      background-attachment: fixed;
-      background-position:bottom;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: -1;
+#parallax {
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 #menu {
     display: flex;
@@ -518,6 +518,7 @@ img {
     max-width: 350px;
     display: flex;
     flex-wrap: wrap;  
+    justify-content: space-evenly;
 }
 .card img {
     width: 95vw;
@@ -525,7 +526,6 @@ img {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 #content {
     padding: 25px;
 }
