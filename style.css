@@ -424,12 +424,11 @@ h2 {
     font-size: 2em;
 }
 h4 {
-    font-size: 1.15em;
+    font-size: 1.25em;
 }
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+ol {
+  list-style-type: decimal;
 }
 img {
     max-width: 100%;
@@ -469,29 +468,21 @@ img {
 .research a, .research a:visited, .research p {
     color: #333;
 }
-.research li {
-    font-size: 1.25em;
-    line-height: 2em;
-    margin-left: 10px;
+.research h2 {
+  text-align: left;
 }
 .research ul li {
     list-style-type: square;
 }
-.research h2 {
-    text-align: left;
-}
-.research-card h3 {
+.research h3 {
     font-size: 1.5em;
 }
-.research-card li {
+.research p {
+    padding-left: 20px;
     font-size: 1.25em;
     line-height: 1.25em;
 }
-.research-card p {
-    padding-left: 20px;
-    font-size: 1.25em;
-}
-.research-card img {
+.research img {
     width: 100vw;
 }
 .button {
@@ -542,6 +533,21 @@ img {
     width: 350px;
     display: block;
 }
+#bottomnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+}
+#bottomnav a{
+    color: #fff;
+    font-size: 1.25em;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+}
 #footer {
     padding: 2em;
     background-image: url(images/ClearLake.png);
@@ -552,6 +558,9 @@ img {
     z-index: -1;
     color: #fff;
     text-align: center;
+}
+#footer ul {
+  list-style-type: none;
 }
 #footer li {
   font-size: 1.5em;
