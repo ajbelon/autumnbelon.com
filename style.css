@@ -426,7 +426,6 @@ h2 {
 h4 {
     font-size: 1.25em;
 }
-
 ol {
   list-style-type: decimal;
 }
@@ -477,6 +476,9 @@ img {
 .research h3 {
     font-size: 1.5em;
 }
+.research h4 {
+  font-size: 1.25em;
+}
 .research p {
     padding-left: 20px;
     font-size: 1.25em;
@@ -499,12 +501,6 @@ img {
     cursor: pointer;
     display: block;
     width: 200px;
-}
-.card-content {
-    padding: 1.5em;
-}
-.card-content h2 {
-    text-align: center;
 }
 .card {
     padding: 20px;
