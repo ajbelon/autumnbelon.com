@@ -479,7 +479,10 @@ img {
 .research h4 {
   font-size: 1.25em;
 }
-.research p {
+.research h5 {
+  font-size: 1.05em;
+}
+.research p, .research li {
     padding-left: 20px;
     font-size: 1.25em;
     line-height: 1.25em;
