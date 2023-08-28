@@ -426,6 +426,11 @@ h2 {
 h4 {
     font-size: 1.25em;
 }
+p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  color: #333
+}
 ol {
   list-style-type: decimal;
 }
@@ -446,35 +451,33 @@ img {
     text-decoration: none;
     color: #333;
 }
-#section-a p, .research p {
+#section-a p {
     color: #fff;
-    font-size: 1.25em;
-    line-height: 1.25em;
 }
 #section-a li {
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-    background: #eaeaea;
-    color: #333;
-    max-width: 350px;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  background: #eaeaea;
+  color: #333;
+  max-width: 350px;
 }
 .research {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px;
 }
-.research a, .research a:visited, .research p {
-    color: #333;
+.research a, .research a:visited {
+  color: #333;
 }
 .research h2 {
   text-align: left;
 }
 .research ul li {
-    list-style-type: square;
+  list-style-type: square;
 }
 .research h3 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 .research h4 {
   font-size: 1.25em;
@@ -482,13 +485,8 @@ img {
 .research h5 {
   font-size: 1.05em;
 }
-.research p, .research li {
-    padding-left: 20px;
-    font-size: 1.25em;
-    line-height: 1.25em;
-}
 .research img {
-    width: 100vw;
+  width: 100vw;
 }
 .table1 {
   border-collapse: collapse;
@@ -541,10 +539,6 @@ img {
 }
 #content img {
     border-radius: 1em;
-}
-#content p {
-    font-size: 1.25em;
-    line-height: 1.25em;
 }
 #contact img {
     width: 350px;
