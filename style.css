@@ -614,15 +614,9 @@ img {
     .card {
         justify-content: space-evenly;
     }
-    .research, #content {
+    .research {
         width: 80%;
         max-width: 900px;
-    }
-    #content {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
     .research-card img {
         width: 45vw;
