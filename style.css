@@ -428,7 +428,6 @@ img {
     height: auto;
 }
 #section-a {
-    padding: 1em;
     background: #333;
     display: flex;
     flex-wrap: wrap;
