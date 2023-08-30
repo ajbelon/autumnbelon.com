@@ -405,15 +405,15 @@ body, html {
   text-align: center;
 }
 #currentpage a{
-    text-decoration: none;
-    pointer-events: none;
+  text-decoration: none;
+  pointer-events: none;
 }
 h2 {
-    text-align: center;
-    font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 h4 {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 p {
   font-size: 1.25em;
@@ -424,21 +424,21 @@ ol {
   list-style-type: decimal;
 }
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 #section-a {
-    background: #333;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  background: #333;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 #section-a a, #section-a a:visited {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 #section-a p {
-    color: #fff;
+  color: #fff;
 }
 #section-a li {
   margin-bottom: 1em;
@@ -493,44 +493,44 @@ img {
   color: white;
 }
 .button {
-    background: rgba(0, 236, 255, 0.1);
-    border-style: groove;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    margin: 4px 2px;
-    cursor: pointer;
-    display: block;
-    width: 200px;
+  background: rgba(0, 236, 255, 0.1);
+  border-style: groove;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: block;
+  width: 200px;
 }
 .card {
-    padding: 20px;
-    max-width: 350px;
-    display: flex;
-    flex-wrap: wrap;  
-    justify-content: space-evenly;
+  padding: 20px;
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-evenly;
 }
 .card img {
-    width: 95vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #contact img {
-    width: 350px;
-    display: block;
+  width: 350px;
+  display: block;
 }
 #footer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: black;
-    color: #fff;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  color: #fff;
+  text-align: center;
 }
 #footer ul {
   list-style-type: none;
@@ -540,179 +540,179 @@ img {
   padding: 5px;
 }
 #footer a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 #footer img {
-    width: 25px;
-    margin: 0 10px 0 0;
+  width: 25px;
+  margin: 0 10px 0 0;
 }
 @media (max-width: 699px) {
     /*lightbox styles - mobile */
     a.lightbox img {
-        width: 95vw;
-        margin: 5px;
-        pointer-events: none;
+      width: 95vw;
+      margin: 5px;
+      pointer-events: none;
     }
     .lightbox-target, .lightbox-close {
-        visibility: hidden;
-        display: none;
+      visibility: hidden;
+      display: none;
     }
     .breadcrumb {
     visibility: hidden;
     display: none;
     }
     #footer li {
-      font-size: 1.25em;
+    font-size: 1.25em;
     }
 }
 @media (min-width: 700px) {
     .header {
-        max-height: 225px;
+      max-height: 225px;
     }
     .header h1 {
-        padding: 0.25em;
-        font-size: 5em;
-        font-family: 'Handlee', cursive;
-        color: black;
-        z-index: 1;
+      padding: 0.25em;
+      font-size: 5em;
+      font-family: 'Handlee', cursive;
+      color: black;
+      z-index: 1;
     }
     #menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
     }
     .breadcrumb {
-        padding-left: 150px;
+      padding-left: 150px;
     }
     .breadcrumb a, .breadcrumb a:visited {
       color:black;
     }
     #section-a, #section-a ul, #section-a li {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
     .card {
-        justify-content: space-evenly;
+      justify-content: space-evenly;
     }
     .research {
-        width: 80%;
-        max-width: 900px;
+      width: 80%;
+      max-width: 900px;
     }
     .research-card img {
-        width: 45vw;
+      width: 45vw;
     }
 
     /*lightbox styles */
     
     /* Styles the thumbnail */
     a.lightbox img {
-        width: 35vw;
-        border: 3px solid white;
-        box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-        margin: 20px;
+      width: 35vw;
+      border: 3px solid white;
+      box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+      margin: 20px;
     }
 
     /* Styles the lightbox, removes it from sight and adds the fade-in transition */
     .lightbox-target {
-        visibility: visible;
-        position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        background: rgba(0,0,0,.7);
-        width: 100%;
-        opacity: 0;
-        -webkit-transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -o-transition: opacity .5s ease-in-out;
-        transition: opacity .5s ease-in-out;
-        overflow: hidden;
+      visibility: visible;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,.7);
+      width: 100%;
+      opacity: 0;
+      -webkit-transition: opacity .5s ease-in-out;
+      -moz-transition: opacity .5s ease-in-out;
+      -o-transition: opacity .5s ease-in-out;
+      transition: opacity .5s ease-in-out;
+      overflow: hidden;
     }
 
     /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
     .lightbox-target img {
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left:0;
-        right:0;
-        bottom: 0;
-        width: 55vw;
-        border: 3px solid white;
-        box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-        box-sizing: border-box;
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left:0;
+      right:0;
+      bottom: 0;
+      width: 55vw;
+      border: 3px solid white;
+      box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+      box-sizing: border-box;
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
 
     }
 
     /* Styles the close link, adds the slide down transition */
     a.lightbox-close {
-        display: block;
-        width:50px;
-        height:50px;
-        box-sizing: border-box;
-        background: white;
-        color: black;
-        text-decoration: none;
-        position: absolute;
-        top: -80px;
-        right: 0;
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+      display: block;
+      width:50px;
+      height:50px;
+      box-sizing: border-box;
+      background: white;
+      color: black;
+      text-decoration: none;
+      position: absolute;
+      top: -80px;
+      right: 0;
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
     }
 
     /* Provides part of the "X" to eliminate an image from the close link */
     a.lightbox-close:before {
-        content: "";
-        display: block;
-        height: 30px;
-        width: 1px;
-        background: black;
-        position: absolute;
-        left: 26px;
-        top:10px;
-        -webkit-transform:rotate(45deg);
-        -moz-transform:rotate(45deg);
-        -o-transform:rotate(45deg);
-        transform:rotate(45deg);
+      content: "";
+      display: block;
+      height: 30px;
+      width: 1px;
+      background: black;
+      position: absolute;
+      left: 26px;
+      top:10px;
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      -o-transform:rotate(45deg);
+      transform:rotate(45deg);
     }
 
     /* Provides part of the "X" to eliminate an image from the close link */
     a.lightbox-close:after {
-        content: "";
-        display: block;
-        height: 30px;
-        width: 1px;
-        background: black;
-        position: absolute;
-        left: 26px;
-        top:10px;
-        -webkit-transform:rotate(-45deg);
-        -moz-transform:rotate(-45deg);
-        -o-transform:rotate(-45deg);
-        transform:rotate(-45deg);
+      content: "";
+      display: block;
+      height: 30px;
+      width: 1px;
+      background: black;
+      position: absolute;
+      left: 26px;
+      top:10px;
+      -webkit-transform:rotate(-45deg);
+      -moz-transform:rotate(-45deg);
+      -o-transform:rotate(-45deg);
+      transform:rotate(-45deg);
     }
 
     /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
     .lightbox-target:target {
-        opacity: 1;
-        top: 0;
-        bottom: 0;
-        overflow: hidden;
+      opacity: 1;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
     }
     .lightbox-target:target img {
-        width: 55vw;
+      width: 55vw;
     }
 
     .lightbox-target:target a.lightbox-close {
-        top: 0;
+      top: 0;
     }
 }
