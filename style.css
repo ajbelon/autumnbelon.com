@@ -525,21 +525,6 @@ img {
     width: 350px;
     display: block;
 }
-#bottomnav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    text-align: center;
-    justify-content: center;
-}
-#bottomnav a{
-    color: #fff;
-    font-size: 1.25em;
-    background-color: #333;
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 20px;
-}
 #footer {
     display: flex;
     justify-content: center;
