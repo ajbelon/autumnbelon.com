@@ -561,13 +561,9 @@ img {
 }
 #footer {
     display: flex;
+    justify-content: center;
     align-content: center;
     background-color: black;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
     color: #fff;
     text-align: center;
 }
