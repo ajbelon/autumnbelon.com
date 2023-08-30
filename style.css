@@ -445,7 +445,7 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center;
+    
 }
 #section-a a, #section-a a:visited {
     text-decoration: none;
