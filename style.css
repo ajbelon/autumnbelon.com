@@ -373,7 +373,7 @@ body, html {
   display: block;
   max-height: 125px;
 }
-.header a{
+.header a {
   text-decoration: none;
 }
 .header h1 {
@@ -432,7 +432,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
 }
 #section-a a, #section-a a:visited {
     text-decoration: none;
