@@ -356,64 +356,58 @@ template {
 /* universal styles */
 
 body, html {
-    height: 100%;
-    width: 100%;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #fff;
-    color: #333;
+}
+#background-image {
+  background-image: url(images/background.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header {
-    background-image: url(images/background.jpg);
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    margin: 0;
-    padding: .1em;
-    text-align: center;
-    display: block;
-    max-height: 125px;
+  text-align: center;
+  margin: 0;
+  padding: .1em;
+  text-align: center;
+  display: block;
+  max-height: 125px;
 }
 .header a{
-    text-decoration: none;
+  text-decoration: none;
 }
 .header h1 {
-    font-size: 3em;
-    font-family: 'Handlee', cursive;
-    color: black;
-    z-index: 1;
+  font-size: 3em;
+  font-family: 'Handlee', cursive;
+  color: black;
+  z-index: 1;
 }
 .header a:hover {
-    color: RGBA(44,167,178,1);
+  color: RGBA(44,167,178,1);
 }
-#parallax {
-    background-image: url(images/background.jpg);
-    background-attachment: fixed;
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+.navigation {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 #menu {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    vertical-align: middle;
-    justify-content: space-evenly;
-    background: rgba(0, 236, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  vertical-align: middle;
+  justify-content: space-evenly;
+  background: rgba(0, 236, 255, 0.1);
 }
 #menu li {
-    list-style-type: none;
-    font-size: 1.5em;
-    margin-top: 0;
-    padding: 10px 20px;
+  list-style-type: none;
+  font-size: 1.5em;
+  margin-top: 0;
+  padding: 10px 20px;
 }
 #menu li a{
-    list-style-type: none;
-    color: #012840;
-    text-align: center;
+  list-style-type: none;
+  color: #012840;
+  text-align: center;
 }
 #currentpage a{
     text-decoration: none;
@@ -741,7 +735,7 @@ img {
         opacity: 1;
         top: 0;
         bottom: 0;
-        overflow:scroll;
+        overflow: hidden;
     }
     .lightbox-target:target img {
         width: 55vw;
