@@ -611,6 +611,9 @@ img {
     .breadcrumb {
         padding-left: 150px;
     }
+    .breadcrumb a, .breadcrumb a:visited {
+      color:black;
+    }
     #section-a, #section-a ul, #section-a li {
         display: flex;
         flex-direction: row;
