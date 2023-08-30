@@ -385,11 +385,6 @@ body, html {
 .header a:hover {
   color: RGBA(44,167,178,1);
 }
-.navigation {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
 #menu {
   display: flex;
   flex-direction: column;
@@ -438,8 +433,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
-    
+    justify-content: center;
 }
 #section-a a, #section-a a:visited {
     text-decoration: none;
@@ -527,12 +521,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-#content {
-    padding: 25px;
-}
-#content img {
-    border-radius: 1em;
 }
 #contact img {
     width: 350px;
