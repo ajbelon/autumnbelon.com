@@ -432,7 +432,8 @@ img {
 #section-a li {
   background: #eaeaea;
   color: #333;
-  max-width: 350px;
+  width: 350px;
+  padding: 10px;
 }
 .research, .research-card {
   margin-left: auto;
