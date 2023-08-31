@@ -591,6 +591,11 @@ img {
       color: black;
       z-index: 1;
     }
+    #section-a ul {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     #menu {
       display: flex;
       flex-direction: row;
