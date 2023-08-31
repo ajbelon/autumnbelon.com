@@ -577,11 +577,11 @@ img {
       background-size: contain;
     }
     .breadcrumb {
-    visibility: hidden;
-    display: none;
+      visibility: hidden;
+      display: none;
     }
     #footer li {
-    font-size: 1.25em;
+      font-size: 1.25em;
     }
     .bio, .contact {
       width: 100vw;
@@ -592,7 +592,7 @@ img {
       margin-right: auto;
     }
     .research, .research-card {
-    padding: 0 10px;
+      padding: 0 10px;
     }
     #section-a ul {
       display: block;
