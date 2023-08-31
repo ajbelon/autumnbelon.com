@@ -359,20 +359,13 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
-#background-image {
-  background-image: url(images/background.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .header {
   text-align: center;
   margin: 0;
   padding: .1em;
   text-align: center;
   display: block;
-  max-height: 125px;
 }
 .header a {
   text-decoration: none;
@@ -569,6 +562,18 @@ img {
       visibility: hidden;
       display: none;
     }
+    .header {
+      height: 100px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    #background-image {
+      background-image: url(images/background.jpg);
+      background-attachment: fixed;
+      background-position: 25% -5%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
     .breadcrumb {
     visibility: hidden;
     display: none;
@@ -595,6 +600,13 @@ img {
       font-family: 'Handlee', cursive;
       color: black;
       z-index: 1;
+    }
+    #background-image {
+      background-image: url(images/background.jpg);
+      background-attachment: fixed;
+      background-position: 50% 70%;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     #menu {
       display: flex;
