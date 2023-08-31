@@ -421,15 +421,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-#section-a {
-  background: #333;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 #section-a a, #section-a a:visited {
   text-decoration: none;
   color: #333;
@@ -597,6 +589,14 @@ img {
     .research, .research-card {
       padding: 0 10px;
     }
+    #section-a {
+      background: #333;
+      display: block;
+      width: 100%;
+      padding-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     #section-a ul {
       display: block;
       margin-left: auto;
@@ -632,6 +632,15 @@ img {
     }
     .breadcrumb a, .breadcrumb a:visited {
       color:black;
+    }
+    #section-a {
+      background: #333;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
     #section-a, #section-a ul, #section-a li {
       display: flex;
