@@ -579,6 +579,11 @@ img {
     .research, .research-card {
     padding: 0 10px;
     }
+    #section-a ul {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 @media (min-width: 700px) {
     .header {
@@ -590,11 +595,6 @@ img {
       font-family: 'Handlee', cursive;
       color: black;
       z-index: 1;
-    }
-    #section-a ul {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
     #menu {
       display: flex;
