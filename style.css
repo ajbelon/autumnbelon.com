@@ -572,7 +572,7 @@ img {
     #background-image {
       background-image: url(images/background.jpg);
       background-attachment: fixed;
-      background-position: 25% 0%;
+      background-position: top;
       background-repeat: no-repeat;
       background-size: contain;
     }
