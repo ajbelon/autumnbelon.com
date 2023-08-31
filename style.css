@@ -434,6 +434,7 @@ img {
   color: #333;
   width: 350px;
   padding: 10px;
+  margin: 10px;
 }
 .research, .research-card {
   margin-left: auto;
