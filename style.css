@@ -503,19 +503,6 @@ img {
   display: block;
   width: 200px;
 }
-.card {
-  padding: 20px;
-  max-width: 350px;
-  display: flex;
-  flex-wrap: wrap;  
-  justify-content: space-evenly;
-}
-.card img {
-  width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 .contact img {
   width: 350px;
   display: block;
@@ -606,11 +593,6 @@ img {
       margin-left: auto;
       margin-right: auto;
     }
-    .card {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
 }
 @media (min-width: 700px) {
     .header {
@@ -655,9 +637,6 @@ img {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-    .card {
       justify-content: space-evenly;
     }
     .research, .bio, .contact {
