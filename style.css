@@ -569,6 +569,9 @@ img {
       margin-top: auto;
       margin-bottom: auto;
     }
+    .header h1 {
+      padding-top: 25px;
+    }
     #background-image {
       background-image: url(images/background.jpg);
       background-attachment: fixed;
