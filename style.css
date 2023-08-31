@@ -452,13 +452,13 @@ img {
   margin-right: auto;
   display: block;
 }
-.research a, .research a:visited, , .research-card a, , .research-card a:visited {
+.research a, .research a:visited, .research-card a, .research-card a:visited {
   color: #333;
 }
-.research h2, , .research-card h2 {
+.research h2, .research-card h2 {
   text-align: left;
 }
-.research ul li, , .research-card ul li {
+.research ul li, .research-card ul li {
   list-style-type: square;
 }
 .research-card li {
