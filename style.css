@@ -375,7 +375,7 @@ body, html {
 .header {
   text-align: center;
   margin: 0;
-  padding: .1em;
+  padding: .1rem;
   text-align: center;
   display: block;
 }
@@ -383,7 +383,7 @@ body, html {
   text-decoration: none;
 }
 .header h1 {
-  font-size: 3em;
+  font-size: 3rem;
   font-family: 'Handlee', cursive;
   color: black;
 }
@@ -400,7 +400,7 @@ body, html {
 }
 #menu li {
   list-style-type: none;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-top: 0;
   padding: 10px 20px;
 }
@@ -414,14 +414,14 @@ body, html {
 }
 h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
 }
 h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 p {
-  font-size: 1.15em;
-  line-height: 1.15em;
+  font-size: 1.25rem;
+  line-height: 1.4rem;
   color: #333
 }
 ol {
@@ -445,6 +445,10 @@ img {
   padding: 10px;
   margin: 10px;
 }
+mark {
+  background-color: rgba(0, 236, 255, 0.15);
+  line-height: 1.4rem;
+}
 .research, .research-card {
   margin-left: auto;
   margin-right: auto;
@@ -453,28 +457,25 @@ img {
 .research a, .research a:visited, .research-card a, .research-card a:visited {
   color: #333;
 }
-.research h2, .research-card h2 {
+.research h2 {
   text-align: left;
 }
-.research ul li, .research-card ul li {
+.research ul li {
   list-style-type: square;
 }
-.research-card li {
-  font-size: 1.15em;
-  padding-bottom: 10px;
-}
-.research li {
-  font-size: 1.15em;
+.research ul li, .research ol li {
+  font-size: 1.25rem;
+  line-height: 1.4rem;
   padding-bottom: 10px;
 }
 .research h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .research h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 .research h5 {
-  font-size: 1.05em;
+  font-size: 1.25rem;
 }
 .research img {
   width: 100vw;
@@ -506,7 +507,7 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 4px 2px;
   cursor: pointer;
   display: block;
@@ -532,7 +533,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin: 0;
-  font-size: 1.15em;
+  font-size: 1.25rem;
   padding: 15px;
   text-align: center;
 }
@@ -552,7 +553,7 @@ img {
   padding: 0;
 }
 #footer li {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin: 0;
   padding: 5px;
 }
@@ -640,7 +641,7 @@ img {
       padding: 0;
     }
     #footer li {
-      font-size: 1.25em;
+      font-size: 1.25rem;
       margin: 0;
       padding: 10px 0;
     }
@@ -650,8 +651,8 @@ img {
       max-height: 225px;
     }
     .header h1 {
-      padding: 0.25em;
-      font-size: 5em;
+      padding: 0.25rem;
+      font-size: 5rem;
       font-family: 'Handlee', cursive;
       color: black;
       text-shadow: 2px 2px 4px white;
