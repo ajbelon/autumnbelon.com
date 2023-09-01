@@ -538,6 +538,12 @@ img {
       visibility: hidden;
       display: none;
     }
+    #page {
+      width: 99%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .header {
       height: 100px;
       margin-top: auto;
