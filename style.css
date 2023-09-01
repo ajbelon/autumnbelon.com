@@ -582,7 +582,6 @@ img {
       display: none;
     }
     .bio, .contact {
-      width: 99vw;
       padding-left: 10px;
       padding-right: 10px;
       display: block;
