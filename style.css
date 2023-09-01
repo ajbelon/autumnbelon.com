@@ -354,7 +354,9 @@ template {
 }
 
 /* universal styles */
-
+main {
+  width: 100vw;
+}
 body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
