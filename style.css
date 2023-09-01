@@ -600,16 +600,21 @@ img {
       padding: 5px 0;
       margin-left: auto;
       margin-right: auto;
+      margin: 0;
     }
     #section-a ul {
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin: 0;
+      padding: 0;
     }
     #section-a li {
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin: 0;
+      padding: 0;
     }
     #footer li {
       font-size: 1.25em;
