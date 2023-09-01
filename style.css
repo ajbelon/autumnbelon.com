@@ -414,7 +414,7 @@ ol {
   list-style-type: decimal;
 }
 img {
-  max-width: 100%;
+  max-width: 99%;
   height: auto;
 }
 #section-a a, #section-a a:visited {
@@ -564,7 +564,7 @@ img {
       display: none;
     }
     .bio, .contact {
-      width: 100vw;
+      width: 99vw;
       padding-left: 10px;
       padding-right: 10px;
       display: block;
@@ -577,7 +577,7 @@ img {
     #section-a {
       background: #333;
       display: block;
-      width: 100%;
+      width: 99vw;
       padding-top: 10px;
       padding-bottom: 10px;
       margin-left: auto;
@@ -632,7 +632,7 @@ img {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      width: 100%;
+      width: 99vw;
       margin-left: auto;
       margin-right: auto;
     }
