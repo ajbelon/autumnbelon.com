@@ -356,6 +356,9 @@ template {
 /* universal styles */
 main {
   width: 100vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 body, html {
   font-family: Arial, Helvetica, sans-serif;
@@ -522,7 +525,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin: 0;
   padding: 10px;
   background-color: black;
   color: #fff;
@@ -593,7 +595,6 @@ img {
     #section-a {
       background: #333;
       display: block;
-      width: 99vw;
       padding-top: 10px;
       padding-bottom: 10px;
       margin-left: auto;
@@ -648,7 +649,6 @@ img {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      width: 99vw;
       margin-left: auto;
       margin-right: auto;
     }
