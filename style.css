@@ -502,6 +502,20 @@ img {
   width: 350px;
   display: block;
 }
+#bottomnav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#bottomnav li {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.15em;
+  padding: 15px;
+  text-align: center;
+}
 #footer {
   display: block;
   margin-left: auto;
