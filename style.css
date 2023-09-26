@@ -421,7 +421,7 @@ h4 {
 }
 p {
   font-size: 1.25rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   color: #333
 }
 ol {
@@ -476,7 +476,7 @@ mark {
 }
 .research li, .research p {
   font-size: 1.25rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   padding-bottom: 10px;
 }
 .research h3 {
@@ -506,6 +506,102 @@ mark {
   background-color: grey;
   color: white;
 }
+table.t1, 
+table.t2 {
+  margin: 1em auto;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.t1 th, .t1 td,
+.t2 th, .t2 td {
+  padding: 4px 8px;
+}
+.t1 thead th,
+.t2 thead th {
+  background: #012840;
+  text-align: left;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid black;
+}
+.t1 tr, 
+.t2 tr {
+  border-right: 1px solid black;
+}
+.t1 tbody tr:nth-child(2), .t1 tbody tr:nth-child(4), .t1 tbody tr:nth-child(6), .t1 tbody tr:nth-child(7), .t1 tbody tr:nth-child(8), .t1 tbody tr:nth-child(9), .t1 tbody tr:nth-child(10), .t1 tbody tr:nth-child(11), .t1 tbody tr:nth-child(13), .t1 tbody tr:nth-child(14) {
+  border-bottom: 1px solid black;
+}
+.t1 tbody tr,
+.t2 tbody tr {
+  background: white;
+}
+.t2 tbody td {
+  padding: 15px;
+  line-height: 2rem;
+}
+.t1 tbody th, .t1 tbody tr td,
+.t2 tbody th, .t2 tbody tr td {
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+.t2 tbody th, .t2 tbody tr td {
+  border-bottom: 1px solid grey;
+}
+.t2 tbody tr:nth-child(even) {
+  background-color:lightgrey;
+}
+.t1 tfoot th,
+.t2 tfoot th {
+  background: white;
+  text-align: left;
+  font-weight: normal;
+  font-size: 10px;
+}
+.t1 tr *:nth-child(2) {
+  text-align: center;
+  
+}
+.t1 tr *:nth-child(3) {
+  text-align: left;
+}
+.t1 img {
+  box-shadow: 0 0 20px grey;
+  margin: 10px;
+}
+.box {
+    width: 85px;
+    height: 100px;
+    background-color: black;
+    color: #fff;
+    padding: 20px 10px;
+    position: relative;
+    margin: 10px 10px 30px 10px;
+    float: left;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.box.arrow-right:after {
+  content: " ";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  border-top: 70px solid transparent;
+  border-right: none;
+  border-left: 15px solid black;
+  border-bottom: 70px solid transparent;
+}
+.clearbox:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.adobexd {
+  width: 70vw;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
 .button {
   background: rgba(0, 236, 255, 0.1);
   border-style: groove;
@@ -516,6 +612,7 @@ mark {
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
+  font-weight: 600;
   margin: 4px 2px;
   cursor: pointer;
   display: block;
