@@ -473,6 +473,8 @@ mark {
 }
 .research ul li {
   list-style-type: square;
+  padding-left: 0;
+  margin-left: 0;
 }
 .research li, .research p {
   font-size: 1.25rem;
@@ -487,6 +489,11 @@ mark {
 }
 .research h5 {
   font-size: 1.25rem;
+}
+.processoverview {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-left: 40px;
 }
 .table1 {
   border-collapse: collapse;
@@ -523,7 +530,7 @@ table.t2 {
   font-size: 20px;
   color: #fff;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 .t1 tr, 
 .t2 tr {
@@ -581,6 +588,16 @@ table.t2 {
     text-align: center;
     font-size: 1.1rem;
 }
+.box.arrow-left:after {
+  content: " ";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  border-top: 70px solid transparent;
+  border-left: none;
+  border-right: 15px solid black;
+  border-bottom: 70px solid transparent;
+}
 .box.arrow-right:after {
   content: " ";
   position: absolute;
@@ -603,16 +620,18 @@ table.t2 {
   padding: 0;
 }
 .button {
-  background: rgba(0, 236, 255, 0.1);
+  background: #012840;
+  color: white;
   border-style: groove;
   border-width: 2px;
   border-radius: 5px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 600;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
   margin: 4px 2px;
   cursor: pointer;
   display: block;
@@ -810,7 +829,7 @@ table.t2 {
       width: 35vw;
       border: 3px solid white;
       box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-      margin: 20px;
+      margin: 20px 0;
     }
 
     /* Styles the lightbox, removes it from sight and adds the fade-in transition */
