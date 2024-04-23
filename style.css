@@ -357,100 +357,35 @@ template {
 #page {
   margin: 0;
   padding: 0;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 main {
-  width: 100vw;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  margin: 0;
+  margin: 15px;
 }
 body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
-.header {
-  text-align: center;
-  margin: 0;
-  padding: .1rem;
-  text-align: center;
-  display: block;
-}
-#background-image {
-  background-image: url(images/background.jpg);
-  background-attachment: fixed;
-  background-position: 50% 70%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header a {
-  text-decoration: none;
-}
-.header h1 {
+.grid-container h2 {
   font-size: 3rem;
-  font-family: 'Handlee', cursive;
-  color: black;
-  padding: 0;
-  margin: 1rem 0 0 0;
-}
-.header h2 {
-  font-size: 2rem;
-  color: black;
-  padding: 0;
-  margin: 0 0 10rem 0;
-}
-.pagecontent {
-  margin: 0;
-  padding: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70vw;
-}
-.pagecontent img {
-  float: right;
-  width: 300px;
-  border-radius: 25px;
-  margin: 25px;
-}
-.pagecontent h2 {
-  font-size: 2rem;
-  padding: 0;
+  padding: 15px 0 0 0;
   margin: 0;
   color: #6B4945;
 }
-.pagecontent p {
-  font-size: 1.5rem;
+.grid-container p {
+  font-size: 1.15rem;
 }
-.grid-container {
-  clear: both;
-  width: 70vw;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid: 50px / auto auto auto;
-  grid-gap: 10px;
-}
-
 @media (max-width: 699px) {
-    #page {
-      margin: 0;
-      padding: 0;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .header {
-      height: 100px;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-    .header h1 {
-      padding-top: 25px;
-    }
+  .item1 img {
+    width: 250px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
     #footer {
       clear: both;
       display: block;
@@ -461,29 +396,20 @@ body, html {
       background-color: black;
       color: #fff;
       text-align: center;
-      position: fixed;
-      bottom: 0;
       width: 100vw;
-      height: 50px;
-      overflow: hidden;
     }
     #footer ul {
-      display: inline-flex;
-      align-content: center;
-      align-items: center;
-      align-self: center;
+      display: block;
       list-style-type: none;
       margin-left: auto;
       margin-right: auto;
       margin: 0;
       padding: 0;
-      overflow: hidden;
     }
     #footer li {
-      font-size: 1rem;
-      margin: 2px 10px;
-      padding: 0;
-      overflow: hidden;
+      font-size: 1.25rem;
+      margin: 5px 10px;
+      padding: 5px;
     }
     #footer a {
       color: #fff;
@@ -496,43 +422,83 @@ body, html {
 }
 
 @media (min-width: 700px) {
-    .header {
-      max-height: 225px;
-    }
-    .header h1 {
-      padding: 0.25rem;
-      font-size: 5rem;
-      font-family: 'Handlee', cursive;
-      color: black;
-      text-shadow: 2px 2px 4px white;
-      z-index: 1;
-    }
-    #footer {
+    .grid-container {
       clear: both;
-      display: block;
+      position: inherit;
+      width: 75vw;
       margin-left: auto;
       margin-right: auto;
-      margin: 0;
-      padding: 10px;
+      display: grid;
+      gap: 5px;
+      
+    }
+    .grid-item {
+      text-align: left;
+      padding: 5px;
+    }
+    .item1 {
+      grid-column: 1;
+      grid-row: 1 / span 3;
+    }
+    .item2 {
+      grid-column: 2 / span 2;
+      grid-row: 1;
+    }
+    .item3 {
+      grid-column: 2 / span 2;
+      grid-row: 2 / span 2;
+    }
+    .item4 {
+      grid-column: 1;
+      grid-row: 4 / span 3;
+      margin-bottom: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .item5 {
+      grid-column: 2;
+      grid-row: 4 / span 3;
+      margin-bottom: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .item6 {
+      grid-column: 3;
+      grid-row: 4 / span 3;
+      margin-bottom: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .item7 {
+      grid-column: 1 / span 3;
+      grid-row: 7;
+    }
+    .item8 {
+      grid-column: 1 / span 3;
+      grid-row: 8 / span 2;
+    }
+    .item1 img {
+      width: 250px;
+      border-radius: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      margin: 25px 0 100px 0;
+    }
+    #footer {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      margin: 50px 0 0 0;
+      padding: 5px;
       background-color: black;
       color: #fff;
       text-align: center;
-      position: fixed;
-      bottom: 0;
       width: 100vw;
-      height: 50px;
-      overflow: hidden;
+      position: relative;
     }
     #footer ul {
-      display: inline-flex;
-      align-content: center;
-      align-items: center;
-      align-self: center;
+      display: inline;
       list-style-type: none;
-      margin-left: auto;
-      margin-right: auto;
-      margin: 0;
-      padding: 0;
     }
     #footer li {
       font-size: 1rem;
