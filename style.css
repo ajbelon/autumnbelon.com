@@ -396,7 +396,7 @@ table li {
   text-indent: -2em;
 
 }
-@media (max-width: 699px) {
+@media (max-width: 1199px) {
     p {
       font-size: 1.25rem;
     }
@@ -444,7 +444,7 @@ table li {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
     .grid-container {
       clear: both;
       position: inherit;
