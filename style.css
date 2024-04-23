@@ -379,6 +379,13 @@ body, html {
   text-align: center;
   display: block;
 }
+#background-image {
+  background-image: url(images/background.jpg);
+  background-attachment: fixed;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .header a {
   text-decoration: none;
 }
@@ -387,13 +394,13 @@ body, html {
   font-family: 'Handlee', cursive;
   color: black;
   padding: 0;
-  margin: 0;
+  margin: 1rem 0 0 0;
 }
 .header h2 {
   font-size: 2rem;
   color: black;
   padding: 0;
-  margin: 0;
+  margin: 0 0 10rem 0;
 }
 .pagecontent {
   margin: 0;
@@ -402,6 +409,25 @@ body, html {
   margin-left: auto;
   margin-right: auto;
   width: 70vw;
+}
+.pagecontent img {
+  float: left;
+}
+.pagecontent h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: #6B4945;
+}
+.pagecontent p {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(208, 194,176,.50);
+  border-radius: 25px;
+  width: 70vw;
+}
+.contentvideos {
+  column-count: 3;
 }
 #footer {
   display: block;
@@ -432,16 +458,6 @@ body, html {
   margin: 0 10px 0 0;
 }
 @media (max-width: 699px) {
-    /*lightbox styles - mobile */
-    a.lightbox img {
-      width: 95vw;
-      margin: 5px;
-      pointer-events: none;
-    }
-    .lightbox-target, .lightbox-close {
-      visibility: hidden;
-      display: none;
-    }
     #page {
       margin: 0;
       padding: 0;
@@ -456,13 +472,6 @@ body, html {
     }
     .header h1 {
       padding-top: 25px;
-    }
-    #background-image {
-      background-image: url(images/background.jpg);
-      background-attachment: fixed;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: contain;
     }
 
     #footer {
@@ -489,12 +498,6 @@ body, html {
       text-shadow: 2px 2px 4px white;
       z-index: 1;
     }
-    #background-image {
-      background-image: url(images/background.jpg);
-      background-attachment: fixed;
-      background-position: 50% 70%;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+
    
 }
