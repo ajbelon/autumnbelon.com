@@ -369,12 +369,9 @@ main {
 body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
-h2 {
+a {
+  padding: 5px;
   color: #6B4945;
-  font-size: 2rem;
-}
-.grid-item {
-  padding: 35px 0;
 }
 .item3 img {
   width: 250px;
@@ -391,23 +388,44 @@ h2 {
   text-align: center;
   padding: 40px 0;
 }
-li, table {
-  line-height: 150%;
-  font-size: 1.15rem;
+.card {
+  background-color: #6B4945;
+  color: white;
+  padding: 25px 25px 25px 25px;
+  border-radius: 5px;
+  width: 350px;
+  margin: 15px;
 }
-table tr td:nth-child(1) {
-  text-align: right;
-  padding-right: .5rem;
+.card h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  background-color: 	rgba(255,255,255,0.75);
+  color: #6B4945;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin: 0;
 }
-table ul {
-  list-style-type: none;
-  list-style: none;
+.card h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: rgba(255,255,255,0.75);;
+  color: #6B4945;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 0;
 }
-table li {
-  text-indent: -2em;
-
+.card li {
+    list-style-type: none;
+    list-style: none;
+    line-height: 125%;
+    font-size: 1.25rem;
 }
 @media (max-width: 1199px) {
+  h2 {
+    color: #6B4945;
+    font-size: 2rem;
+    padding: 25px 0 0 0;
+  }
     p {
       font-size: 1.25rem;
     }
@@ -421,7 +439,14 @@ table li {
       margin-right: auto;
     }
     .item12, .item13 {
-      padding-left: 25px;
+      padding-left: 35px;
+      display: inline-block;
+    }
+    .item10 li, .item15 li, .item22 li {
+      padding: 10px;
+      font-size: 1.25rem;
+      list-style-type: none;
+      list-style: none;
     }
     #footer {
       clear: both;
@@ -429,11 +454,11 @@ table li {
       margin-left: auto;
       margin-right: auto;
       margin: 0;
-      padding: 10px;
+      padding: 0;
       background-color: black;
       color: #fff;
       text-align: center;
-      width: 100vw;
+      width: 98vw;
     }
     #footer ul {
       display: block;
@@ -471,14 +496,14 @@ table li {
     .grid-container h2 {
       font-size: 3rem;
       padding: 0;
-      margin: 0;
+      margin: 35px 0 0 0;
       color: #6B4945;
     }
     .grid-container p {
       font-size: 1.25rem;
     }
     .item1 {
-      grid-column: 1 /span 2;
+      grid-column: 1 / span 2;
       grid-row: 1;
       text-align: center;
     }
@@ -541,17 +566,67 @@ table li {
       grid-column: 3;
       grid-row: 11;
     }
-    
+    .item14 {
+      grid-column: 1;
+      grid-row: 12;
+    }
+    .item15 {
+      grid-column: 2 / span 2;
+      grid-row: 12;
+    }
+    .item16 {
+      grid-column: 1;
+      grid-row: 13;
+    }
+    .item17 {
+      grid-column: 2;
+      grid-row: 13;
+    }
+    .item18 {
+      grid-column: 3;
+      grid-row: 13;
+    }
+    .item19 {
+      grid-column: 2;
+      grid-row: 14;
+    }
+    .item20 {
+      grid-column: 3;
+      grid-row: 14;
+    }
+    .item21 {
+      grid-column: 1;
+      grid-row: 15;
+    }
+    .item22 {
+      grid-column: 2 / span 2;
+      grid-row: 15;
+    }
+    .item3 img {
+      margin-top: 45px;
+    }
+    .item10 li {
+      line-height: 225%;
+      font-weight: bold;
+      font-size: 1.5rem
+    }
+    .item15 li, .item22 li {
+      line-height: 225%;
+      list-style-type: none;
+      list-style: none;
+      text-indent: -2em;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
     #footer {
-      display: inline-block;
+      display: block;
       margin-left: auto;
       margin-right: auto;
       margin: 50px 0 0 0;
-      padding: 5px;
       background-color: black;
       color: #fff;
       text-align: center;
-      width: 100vw;
+      width: 99vw;
       position: relative;
     }
     #footer ul {
