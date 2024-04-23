@@ -369,6 +369,10 @@ main {
 body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
+h2 {
+  color: #6B4945;
+  font-size: 2rem;
+}
 .item3 img {
   width: 250px;
   border-radius: 25px;
@@ -393,6 +397,18 @@ table li {
 
 }
 @media (max-width: 699px) {
+    p {
+      font-size: 1.25rem;
+    }
+    .item1 h2 {
+      display: block;
+      text-align: center;
+    }
+    .item3 img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     #footer {
       clear: both;
       display: block;
@@ -448,7 +464,7 @@ table li {
       color: #6B4945;
     }
     .grid-container p {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
     }
     .item1 {
       grid-column: 1 /span 2;
@@ -458,7 +474,8 @@ table li {
     .item2 {
       grid-column: 1 / span 2;
       grid-row: 2;
-      text-align: right;
+      text-align: left;
+      padding: 0 100px;
     }
     .item3 {
       grid-column: 3;
