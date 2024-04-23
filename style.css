@@ -373,12 +373,23 @@ h2 {
   color: #6B4945;
   font-size: 2rem;
 }
+.grid-item {
+  padding: 35px 0;
+}
 .item3 img {
   width: 250px;
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+}
+.item12 p, .item13 p {
+  background-color: #6B4945;
+  border-radius: 500px;
+  width: 150px;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
 }
 li, table {
   line-height: 150%;
@@ -408,6 +419,9 @@ table li {
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+    .item12, .item13 {
+      padding-left: 25px;
     }
     #footer {
       clear: both;
@@ -453,9 +467,6 @@ table li {
       margin-right: auto;
       display: grid;
       gap: 5px;
-    }
-    .grid-item {
-      margin: 25px 0 0 0;
     }
     .grid-container h2 {
       font-size: 3rem;
@@ -523,7 +534,11 @@ table li {
       grid-row: 11;
     }
     .item12 {
-      grid-column: 2 / span 2;
+      grid-column: 2;
+      grid-row: 11;
+    }
+    .item13 {
+      grid-column: 3;
       grid-row: 11;
     }
     
