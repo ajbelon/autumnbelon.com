@@ -413,8 +413,7 @@ a {
   margin: 0;
 }
 .card li {
-    list-style-type: none;
-    list-style: none;
+    list-style-type: square;
     line-height: 125%;
     font-size: 1.25rem;
 }
