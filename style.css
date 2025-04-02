@@ -389,7 +389,8 @@ a {
   background-color: #518EA6;
   border-radius: 500px;
   box-shadow: 2px 2px 5px #000000;
-  width: 200px;
+  width: 300px;
+  height: 300px;
   color: white;
   text-align: center;
   padding: 40px 0;
