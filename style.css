@@ -67,7 +67,7 @@ h1, h2, h3 { color: #9E4F3B; }
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     text-align: center;
-    padding: 30PX 0;
+    padding: 30px 0;
 }
 
 .metrics strong {
@@ -90,10 +90,9 @@ h1, h2, h3 { color: #9E4F3B; }
     padding: 60px 20px;
 }
 
-/* container to limit width */
 .portfolio .container {
-    max-width: 900px; /* same as other sections */
-    margin: 0 auto;   /* center it */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .portfolio h2 {
@@ -120,9 +119,9 @@ h1, h2, h3 { color: #9E4F3B; }
 /* PORTFOLIO ITEMS - IMAGE ABOVE TEXT */
 .portfolio-item {
     display: flex;
-    flex-direction: column; /* stack image above text */
-    align-items: center;    /* center everything horizontally */
-    gap: 15px;              /* spacing between image and text */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     padding: 20px;
     border-radius: 15px;
     border: 2px solid #9E4F3B;
@@ -133,17 +132,16 @@ h1, h2, h3 { color: #9E4F3B; }
 
 .portfolio-item img {
     width: 100%;
-    max-width: 300px;       /* adjust size as needed */
-    height: auto;           /* maintain aspect ratio */
+    max-width: 300px;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .portfolio-details {
-    max-width: 100%;        /* allow full width below image */
-    text-align: left;     /* center text below image */
+    max-width: 100%;
+    text-align: left;
 }
-
 
 .portfolio-details p {
     margin: 6px 0;
@@ -163,6 +161,61 @@ h1, h2, h3 { color: #9E4F3B; }
 .portfolio-item a:hover img {
     transform: scale(1.03);
     box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* WEB DESIGN & DIGITAL EXPERIENCE CARDS */
+.web-design {
+    padding: 60px 20px;
+}
+
+.web-design h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.web-project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    background: #FFF3EE;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    align-items: center;
+}
+
+.web-project img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.web-project-details {
+    max-width: 900px;
+    text-align: left;
+    width: 100%;
+}
+
+.web-project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.web-project-details p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.web-project-details .micro-callout {
+    background: #FDF1ED;
+    border-left: 4px solid #9E4F3B;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    margin: 10px 0;
 }
 
 /* SERVICES / CARDS */
@@ -227,6 +280,7 @@ h1, h2, h3 { color: #9E4F3B; }
     font-size: 0.9rem;
     color: #555;
 }
+
 /* Upgrade CTA banner */
 .upgrade-cta {
     background: #FDF1ED;
@@ -269,8 +323,8 @@ h1, h2, h3 { color: #9E4F3B; }
 }
 
 .cta-link {
-    display: inline;           /* keep link inline */
-    padding: 0 2px;            /* tiny horizontal padding for easier clicking */
+    display: inline;
+    padding: 0 2px;
     color: #fff;
     font-weight: bold;
     text-decoration: underline;
@@ -306,5 +360,9 @@ footer {
     .portfolio-item img {
         width: 100%;
         max-width: 250px;
+    }
+
+    .web-project-details {
+        text-align: center;
     }
 }
