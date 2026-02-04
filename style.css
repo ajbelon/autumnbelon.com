@@ -117,10 +117,12 @@ h1, h2, h3 { color: #9E4F3B; }
     justify-items: center;
 }
 
+/* PORTFOLIO ITEMS - IMAGE ABOVE TEXT */
 .portfolio-item {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column; /* stack image above text */
+    align-items: center;    /* center everything horizontally */
+    gap: 15px;              /* spacing between image and text */
     padding: 20px;
     border-radius: 15px;
     border: 2px solid #9E4F3B;
@@ -130,16 +132,18 @@ h1, h2, h3 { color: #9E4F3B; }
 }
 
 .portfolio-item img {
-    width: 180px;
-    height: 160px;  /* compact height */
+    width: 100%;
+    max-width: 300px;       /* adjust size as needed */
+    height: auto;           /* maintain aspect ratio */
     border-radius: 10px;
     object-fit: cover;
 }
 
 .portfolio-details {
-    flex: 1;
-    max-width: 300px; /* smaller text section */
+    max-width: 100%;        /* allow full width below image */
+    text-align: left;     /* center text below image */
 }
+
 
 .portfolio-details p {
     margin: 6px 0;
