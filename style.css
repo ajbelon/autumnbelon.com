@@ -40,7 +40,11 @@ img {
 ========================= */
 
 .site-header {
-  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: #fff; /* REQUIRED so content doesn’t show through */
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -726,9 +730,201 @@ nav {
   border-radius: 8px;
   font-size: 1.1rem;
 }
+/* =========================
+   Mobile: Stack Problem ↓ Solution
+========================= */
+@media (max-width: 768px) {
+
+  .ps-arrow {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .ps-arrow .arrow-problem,
+  .ps-arrow .solution {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+@media (max-width: 768px) {
+  .ps-arrow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .ps-arrow-down {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #9E4F3B;
+    margin: 0.25rem 0;
+  }
+
+  .ps-arrow .arrow-problem {
+    clip-path: none !important;
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 1rem;
+    font-size: 1.05rem;
+    background: linear-gradient(90deg, #9e4f3b 0%, #3b9e7b 100%) !important;
+  }
+
+  .ps-arrow .solution {
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #3b9e7b;
+  }
+}
+
+}
+/* =========================
+   Mobile: Gradient intact, remove arrow shape
+========================= */
+@media (max-width: 768px) {
+
+  .ps-arrow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  /* Problem box — remove clip-path but keep gradient */
+  .ps-arrow .arrow-problem {
+    clip-path: none;           /* remove desktop arrow shape */
+    border-radius: 10px;       /* rounded corners for mobile */
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.05rem;
+  }
+
+  /* Solution box — keep gradient or solid color */
+  .ps-arrow .solution {
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+/* =========================
+   Mobile: Problem → Solution stacked, remove arrow shapes
+========================= */
+@media (max-width: 768px) {
+
+  .ps-arrow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  /* Remove clip-path from problem box, keep gradient */
+  .ps-arrow .arrow-problem {
+    clip-path: none !important;     /* force removal of desktop arrow shape */
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 1rem;
+    font-size: 1.05rem;
+    background: linear-gradient(90deg, #9e4f3b 0%, #3b9e7b 100%) !important;
+  }
+
+  /* Solution box styling */
+  .ps-arrow .solution {
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #3b9e7b;
+  }
+
+}
+@media (max-width: 768px) {
+  /* Make ps-arrow stack vertically */
+  .ps-arrow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  /* Down arrow between problem & solution */
+  .ps-arrow-down {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #9E4F3B;
+    margin: 0.25rem 0;
+  }
+
+  /* Remove desktop arrow shape from problem box */
+  .ps-arrow .arrow-problem {
+    clip-path: none !important;
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 1rem;
+    font-size: 1.05rem;
+    background: linear-gradient(90deg, #9e4f3b 0%, #3b9e7b 100%) !important;
+  }
+
+  .ps-arrow .solution {
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #3b9e7b;
+  }
+  /* Default: hide the arrow */
+.ps-arrow-down {
+  display: none;
+}
+
+/* Mobile only: show arrow */
+@media (max-width: 768px) {
+  .ps-arrow {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .ps-arrow .arrow-problem,
+  .ps-arrow .solution {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .ps-arrow-down {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #9E4F3B;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Desktop: keep problem → solution horizontal, no arrow shown */
+@media (min-width: 769px) {
+  .ps-arrow {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .ps-arrow-down {
+    display: none; /* explicitly hide on desktop */
+  }
+}
+
+}
 
 /* Responsive */
 @media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
   .ps-arrow {
     flex-direction: column;
     align-items: stretch;
@@ -737,6 +933,45 @@ nav {
     clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
     width: 100%;
   }
+}
+
+/* Arrow-style section headings */
+.arrow-heading {
+  position: relative;
+  display: inline-block;
+  margin: 3rem 0 2rem;
+  padding: 1rem 2.5rem 1.5rem;
+  background: linear-gradient(135deg, #9E4F3B, #C46A52);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Arrow tip */
+.arrow-heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #C46A52;
+}
+
+/* Center arrows in the section */
+.case-study-visuals {
+  text-align: center;
+}
+
+.case-study-visuals img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 3rem;
 }
 
 /* FOOTER */
