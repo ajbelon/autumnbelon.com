@@ -661,6 +661,40 @@ nav {
   );
   z-index: 1;
 }
+/* Mobile: remove arrows, put boxes around text */
+@media (max-width: 768px) {
+  .workflow {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .flow-step {
+    flex: 1 1 100%;
+    height: auto; /* adjust height */
+  }
+
+  .arrow-shape {
+    display: none; /* hide arrows on mobile */
+  }
+
+  .flow-content {
+    background: #9e4f3b; /* brown box */
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .flow-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .flow-content p {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
 
 .flow-content {
   position: relative;
@@ -717,7 +751,7 @@ nav {
   font-size: 1.2rem;
   clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
   flex-shrink: 0;
-  text-align: center;
+  text-align: left;
   width: 300px;
 }
 
@@ -753,13 +787,6 @@ nav {
     align-items: stretch;
     gap: 0.5rem;
     text-align: center;
-  }
-
-  .ps-arrow-down {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #9E4F3B;
-    margin: 0.25rem 0;
   }
 
   .ps-arrow .arrow-problem {
@@ -851,14 +878,6 @@ nav {
     text-align: center;
   }
 
-  /* Down arrow between problem & solution */
-  .ps-arrow-down {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #9E4F3B;
-    margin: 0.25rem 0;
-  }
-
   /* Remove desktop arrow shape from problem box */
   .ps-arrow .arrow-problem {
     clip-path: none !important;
@@ -876,10 +895,6 @@ nav {
     font-size: 1rem;
     background-color: #3b9e7b;
   }
-  /* Default: hide the arrow */
-.ps-arrow-down {
-  display: none;
-}
 
 /* Mobile only: show arrow */
 @media (max-width: 768px) {
@@ -897,13 +912,6 @@ nav {
     font-size: 1rem;
   }
 
-  .ps-arrow-down {
-    display: block;
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #9E4F3B;
-    margin: 0.5rem 0;
-  }
 }
 
 /* Desktop: keep problem → solution horizontal, no arrow shown */
@@ -913,11 +921,7 @@ nav {
     align-items: center;
     gap: 20px;
   }
-  .ps-arrow-down {
-    display: none; /* explicitly hide on desktop */
-  }
 }
-
 }
 
 /* Responsive */
