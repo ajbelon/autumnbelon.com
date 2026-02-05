@@ -93,7 +93,7 @@
     </div>
 </section>
 
-<!-- WEB DESIGN & DIGITAL EXPERIENCE -->
+<!-- Custom Web Design & Digital Marketing for Small Businesses and Nonprofits -->
 <section class="web-design">
   <div class="container">
     <h2>Custom Web Design & Digital Marketing for Small Businesses and Nonprofits</h2>
@@ -156,7 +156,7 @@
         <!-- WEB DESIGN & DIGITAL EXPERIENCE -->
         <section class="web-design">
         <div class="container">
-            <h2>Custom Web Design Services & Digital Experiences</h2>
+            <h3>Custom Web Design Services & Digital Experiences</h>
 
             <p>
             I design clean, strategic websites for brands and nonprofits that need clarity, usability, and results — not just a visual refresh.
@@ -170,7 +170,7 @@
         <!-- Nonprofit Project -->
         <div class="web-project">
             <h3 id="burrito-brigade">Nonprofit Website Redesign</h3>
-            <a href="https://www.nonprofitwebsite.org" target="_blank">
+            <a href="https://www.burritobrigade.org" target="_blank">
                 <img loading="lazy" src="nonprofit-redesign-screenshot.png" alt="Nonprofit Website Redesign Example">
             </a>
             <div class="web-project-details">
@@ -197,6 +197,7 @@
         </section>
 
         <!-- TikTok & UGC -->
+        <section class="tiktok-ugc">
         <h3 class="portfolio-category">TikTok & Influencer Content</h3>
         <div class="portfolio-list tiktok-grid">
             <div class="portfolio-item">
@@ -231,6 +232,7 @@
         </div>
         </div>
         </section>
+        </section>
 
         
 
@@ -238,32 +240,135 @@
 <section class="why-work-with-me">
     <div class="container">
         <h2 id="contact">Why Work With Me</h2>
-        <ul>
-            <li>Proven results across social commerce and influencer platforms</li>
-            <li>Web design experience beyond templates — structure, usability, and clarity</li>
-            <li>Accessible design is not just best practice — it’s required by law. Organizations have faced lawsuits for inaccessible websites, such as the landmark <a href="https://www.boia.org/blog/the-robles-v.-dominos-settlement-and-why-it-matters" target="_blank" rel="noopener noreferrer">Domino’s Pizza case</a>, highlighting the importance of compliance with accessibility standards.</li>
-            <li>Experience bridging social content and web design to support full-funnel conversion</li>
-            <li>Clear scope, transparent pricing, and no long-term lock-ins</li>
+        <p class="section-intro">
+            Strategy-first design that connects content, usability, and compliance—so your site actually works.
+        </p>
+
+        <ul class="benefits-list">
+            <li>
+                <h3>Proven Social & Influencer Results</h3>
+                <p>
+                    Hands-on experience driving performance across social commerce and influencer platforms—not just theory.
+                </p>
+            </li>
+
+            <li>
+                <h3>Web Design Beyond Templates</h3>
+                <p>
+                    Thoughtful structure, usability, and clarity—so your website supports real user behavior, not just aesthetics.
+                </p>
+            </li>
+
+            <li>
+                <h3>Accessibility Isn’t Optional</h3>
+                <p>
+                    Accessible design isn’t just best practice—it’s legally required. Organizations have faced lawsuits for
+                    inaccessible websites, including the
+                    <a href="https://www.boia.org/blog/the-robles-v.-dominos-settlement-and-why-it-matters"
+                       target="_blank" rel="noopener noreferrer">
+                        Domino’s Pizza case
+                    </a>.
+                </p>
+            </li>
+
+            <li>
+                <h3>Full-Funnel Thinking</h3>
+                <p>
+                    I bridge social content and web design to support awareness, engagement, and conversion—end to end.
+                </p>
+            </li>
+
+            <li>
+                <h3>Clear, Transparent Engagements</h3>
+                <p>
+                    Defined scope, straightforward pricing, and no long-term lock-ins.
+                </p>
+            </li>
         </ul>
     </div>
 </section>
 
-<!-- CONTACT -->
+
+<!-- CONTACT SECTION -->
 <section class="cta">
-    <div class="container">
-        <h2 id=>Contact Me</h2>
-        <p>
-            If you’re ready to create engaging content and grow your brand, <a href="mailto:ajbelon@gmail.com" class="cta-link">the best way to reach me is via email</a>.
-        </p>
-        <p>
-            I help brands with UGC, social media management, web design, and graphic design — all designed to grow your audience and strengthen your online presence.
-        </p>
-    </div>
+  <div class="container">
+    <h2 id="contactme">Contact Me</h2>
+    <p>
+      If you’re ready to create engaging content and grow your brand, let’s start the conversation.
+    </p>
+
+    <!-- Formspree Form -->
+    <form action="https://formspree.io/f/mojnavjb" method="POST">
+      <!-- Honeypot for spam protection -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Project details</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="New website inquiry">
+
+      <button type="submit" class="btn-primary">Send message</button>
+
+      <!-- Status messages -->
+      <div class="form-status" aria-live="polite" tabindex="-1"></div>
+    </form>
+
+    <p>
+      I help brands with UGC, social media management, web design, and graphic design — all designed to grow your audience and strengthen your online presence.
+    </p>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Autumn Belon | All rights reserved</p>
+  <p>© 2026 Autumn Belon | All rights reserved</p>
 </footer>
+
+<!-- SCRIPT -->
+<script>
+const form = document.querySelector('.cta form');
+const status = document.querySelector('.form-status');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      status.textContent = "Thanks! I’ll be in touch soon.";
+      status.classList.remove('error');
+      status.classList.add('success');
+      form.reset();
+      status.focus(); // accessibility for screen readers
+    } else {
+      status.textContent = "Oops! There was a problem submitting your form.";
+      status.classList.remove('success');
+      status.classList.add('error');
+    }
+  } catch (error) {
+    status.textContent = "Oops! There was a problem submitting your form.";
+    status.classList.remove('success');
+    status.classList.add('error');
+  }
+});
+</script>
 
 </body>
 </html>
