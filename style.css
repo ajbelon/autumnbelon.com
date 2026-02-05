@@ -493,6 +493,14 @@ img {
 .form-status.success { color: #2E7D32; }
 .form-status.error { color: #C62828; }
 
+.form-trust-note {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
 /* FOOTER */
 footer {
   background: #333;
