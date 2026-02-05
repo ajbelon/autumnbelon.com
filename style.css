@@ -1,3 +1,4 @@
+/* RESET */
 * { box-sizing: border-box; }
 
 body {
@@ -8,24 +9,30 @@ body {
 }
 
 a { color: #9E4F3B; text-decoration: none; }
+
 h1, h2, h3 { color: #9E4F3B; }
+
 a:focus, button:focus {
     outline: 3px solid #9E4F3B;
     outline-offset: 2px;
 }
-img {
-    background-color: #fff;             /* optional: background behind image */
-    border-radius: 8px;                 /* optional: rounded corners */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* raised effect */
-    transition: transform 0.3s, box-shadow 0.3s; /* smooth hover effect */
-}
 
+img {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
 /* CONTAINER */
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+}
+
+.container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 /* HERO */
@@ -88,12 +95,12 @@ img {
 
 /* WEB DESIGN & DIGITAL EXPERIENCE */
 .web-design {
-    padding: 60px 20px;
-    background: #fff8f5; /* subtle section background */
+    padding: 20px 20px 40px 20px;
+    background: #ded8d5;
 }
 
 .web-design h2 {
-    text-align: left;
+    text-align: center;
     font-size: 2.2rem;
     margin-bottom: 40px;
     line-height: 1.2;
@@ -120,7 +127,7 @@ img {
 .web-project {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 40px;
     background: #FFF3EE;
     border-radius: 15px;
@@ -128,9 +135,9 @@ img {
     box-shadow: 0 6px 15px rgba(0,0,0,0.05);
     align-items: center;
 }
+
 .web-project h3 {
     font-size: 1.8rem;
-    margin-bottom: 12px;
     padding: 10px 20px;
     text-align: center;
     background-color: #9E4F3B;
@@ -171,23 +178,18 @@ img {
 }
 
 /* PORTFOLIO */
-.portfolio {
-    padding: 60px 20px;
-}
-
 .portfolio .container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .portfolio h2 {
-    text-align: left;
+    text-align: center;
     color: #9E4F3B;
     font-size: 2rem;
 }
 
 .portfolio-category {
-    margin-top: 40px;
     font-size: 1.5rem;
     color: #9E4F3B;
     margin-bottom: 20px;
@@ -200,7 +202,6 @@ img {
     justify-items: center;
 }
 
-/* PORTFOLIO ITEMS - IMAGE ABOVE TEXT */
 .portfolio-item {
     display: flex;
     flex-direction: column;
@@ -247,6 +248,11 @@ img {
     box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
+.tiktok-ugc {
+    background: #ded8d5;
+    padding: 20px;
+}
+
 /* SERVICES / CARDS */
 .services {
     background: #FFF3EE;
@@ -268,7 +274,7 @@ img {
 
 .service-card.highlight {
     border: 2px solid #9E4F3B;
-    background: #fff8f5;
+    background: #ded8d5;
 }
 
 .service-meta {
@@ -313,7 +319,7 @@ img {
 /* Upgrade CTA banner */
 .upgrade-cta {
     background: #FDF1ED;
-    border: 2px dashed #9E4F3B;
+    border: 2px solid #9E4F3B;
     text-align: center;
     padding: 30px 20px;
     margin: 40px 0;
@@ -326,117 +332,183 @@ img {
     line-height: 1.5;
 }
 
-/* CTA / CONTACT */
+/* WHY WORK WITH ME */
+.why-work-with-me {
+    padding: 4rem 1.5rem;
+    background-color: #f7f5f3;
+    color: #2b2b2b;
+}
+
+.why-work-with-me h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.section-intro {
+    max-width: 720px;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.75rem;
+}
+
+.benefits-list li {
+    background: #ffffff;
+    padding: 1.75rem;
+    border-radius: 12px;
+    border: 3px solid #e6e2de;
+}
+
+.benefits-list h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    color: #9E4F3B;
+}
+
+.benefits-list p {
+    margin: 0;
+    line-height: 1.65;
+    color: #333;
+}
+
+.benefits-list a {
+    color: #9E4F3B;
+    text-decoration: underline;
+}
+
+.benefits-list a:hover {
+    text-decoration: none;
+}
+
+/* CTA / CONTACT FORM */
 .cta {
-    background: #9E4F3B;
-    color: #fff;
-    padding: 40px 20px;
-    border-radius: 15px;
-    max-width: 900px;
-    margin: 60px auto;
+  background-color: #f7f5f3;
+  color: #2b2b2b;
+  padding: 40px 20px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 60px auto;
 }
 
 .cta h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #2b2b2b;
+  text-align: left;
 }
 
 .cta p {
-    margin: 20px 0;
-    font-size: 1.15rem;
-    line-height: 1.6;
-    text-align: left;
+  margin: 20px 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: left;
 }
 
-.cta-link {
-    display: inline;
-    padding: 0 2px;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: underline;
-    transition: background 0.2s;
+/* FORM STYLING */
+.cta form {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
-.cta-link:hover {
-    background: rgba(255,255,255,0.1);
-    border-radius: 5px;
+.form-group {
+  margin-bottom: 1.5rem;
 }
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #2b2b2b;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #2b2b2b;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #9E4F3B;
+  box-shadow: 0 0 0 3px rgba(158, 79, 59, 0.2);
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+.btn-primary {
+  background-color: #9E4F3B;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* STATUS MESSAGES */
+.form-status {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #2b2b2b;
+}
+
+.form-status.success { color: #2E7D32; }
+.form-status.error { color: #C62828; }
 
 /* FOOTER */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .portfolio-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-
-    .portfolio-item img {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .web-project-details {
-        text-align: left;
-    }
-    /* Stack metrics on smaller devices */
-    .metrics-grid {
-        grid-template-columns: 1fr;
-        gap: 20px; /* Optional: smaller gap on mobile */
-    }
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .hero h1 {
-        font-size: 2rem;
-        line-height: 2.2rem;
-    }
-    .hero p {
-        text-align: left;
-    }
-
-    .hero-image img {
-        width: 80%;          /* shrink image to 80% of container */
-        max-width: 250px;    /* optional hard cap */
-        margin: 0 auto;      /* center it */
-        border-radius: 20px; /* keep the rounded corners */
-    }
-
-    .metrics-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .portfolio-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-
-    .portfolio-item img {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .web-project-details {
-        text-align: left;
-    }
-
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .portfolio-item { flex-direction: column; align-items: center; text-align: left; }
+    .portfolio-item img { width: 100%; max-width: 250px; }
+    .web-project-details { text-align: left; }
+    .metrics-grid { grid-template-columns: 1fr; gap: 20px; }
+    .hero h1 { font-size: 2rem; line-height: 2.2rem; }
+    .hero p { text-align: left; }
+    .hero-image img { width: 80%; max-width: 250px; margin: 0 auto; border-radius: 20px; }
+    .cta { padding: 30px 15px; }
+    .cta form { padding: 1.5rem; }
 }
