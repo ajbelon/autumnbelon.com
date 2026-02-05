@@ -52,11 +52,24 @@
 
 <body>
 
+<header class="site-header">
+  <div class="container nav-container">
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+         <li><a href="/" class="active">Home</a></li>
+        <li><a href="/case-studies/nonprofit-redesign.html">Case Study</a></li>
+        <li><a href="/#contactme">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 <!-- HERO -->
 <section class="hero">
     <div class="container hero-grid">
         <div class="hero-content">
-            <h1>Web & Digital Content Strategy for Small Businesses & Nonprofits</h1>
+            <h1>Autumn Belon</h1>
+            <h2>Web Design & Digital Strategy for Small Businesses & Nonprofits</h2>
             <p class="hero-lead">
                I help small businesses and nonprofit organizations grow with accessibility-focused web design, high-impact UGC & social content, and conversion optimization that turns visitors into customers. With hands-on experience in TikTok, Amazon influencer campaigns, and strategic site redesigns, I build digital experiences that drive measurable traffic, engagement, and sales.
             </p>
@@ -118,7 +131,7 @@
     <div class="container">
         <h2>Custom Web Design & Digital Marketing for Small Businesses and Nonprofits</h2>
 
-        <div class="web-design-grid">
+    <div class="web-design-grid">
         <div class="web-design-item">
             <p class="credibility">
             Most small business and nonprofit websites struggle not because of visual design, but because of unclear structure, inaccessible layouts, and content that doesn’t match how real users navigate a site. My work focuses on correcting those issues through intentional information architecture, accessibility-informed design decisions, and performance-driven content structure.
@@ -129,7 +142,7 @@
                 My approach emphasizes information architecture, user flow, and content clarity so websites are usable, inclusive, and aligned with real user behavior. Accessibility is treated as a foundational design requirement—not an afterthought.
             </p>
 
-      <div class="web-design-item">
+    <div class="web-design-item">
         <h3>Recent Projects</h3>
         <p>
             Recent work includes a full nonprofit website redesign with updated color systems, layout and navigation restructuring, logo and graphic refinement, new page development, and page consolidation to improve usability and reduce friction for users.
@@ -138,16 +151,16 @@
             This nonprofit redesign improved accessibility by following WCAG 2.1 guidelines (<a href="#burrito-brigade">see project details</a>), making the website usable for a broader audience and reducing potential legal risk.
         </p>
 
-      </div>
+    </div>
 
-      <div class="web-design-item">
+    <div class="web-design-item">
         <h3>SEO & Analytics</h3>
         <p>
           Beyond design, I integrate <strong>SEO best practices</strong> and <strong>analytics tracking</strong> — including Google Site Tagging and performance analysis — to ensure your website not only looks great but drives measurable traffic and conversions.
         </p>
-      </div>
+    </div>
 
-      <div class="web-design-item accessibility-note">
+    <div class="web-design-item accessibility-note">
         <h3>Accessibility & Compliance-Aware Design</h3>
         <p>
             All web design work is informed by <strong>WCAG 2.1 accessibility standards</strong> (<a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener noreferrer">W3C guidelines</a>), including readable color contrast, semantic heading structure, keyboard-accessible navigation, and clear content hierarchy.
@@ -159,7 +172,7 @@
             <p><a href="https://www.ecomback.com/ada-website-lawsuits-recap-report/2025-mid-year-ada-website-lawsuit-report" target="_blank" rel="noopener noreferrer">
         ADA website accessibility lawsuits surged in 2025</a>
         </p>
-        </div>
+    </div>
 
     </div>
   </div>
@@ -344,7 +357,9 @@
 
         <!-- Trust / privacy note -->
         <p class="form-trust-note">
-            Your information is safe with me — I will never sell or share your data.
+        Your information is safe with me — I will never sell or share your data.
+        <br>
+        <a href="/privacy-policy.html">View Privacy Policy</a>
         </p>
 
       <!-- Status messages -->
@@ -358,7 +373,10 @@
 </section>
 
 <footer>
-  <p>© 2026 Autumn Belon | All rights reserved</p>
+  <p>
+    © 2026 Autumn Belon | 
+    <a href="/privacy-policy.html">Privacy Policy</a>
+  </p>
 </footer>
 
 <!-- SCRIPT -->
@@ -394,6 +412,17 @@ form.addEventListener('submit', async (e) => {
     status.classList.add('error');
   }
 });
+</script>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav-list a');
+  const currentURL = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentURL) {
+      link.classList.add('active');
+    }
+  });
 </script>
 
 </body>
