@@ -384,7 +384,7 @@ footer {
     .portfolio-item {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .portfolio-item img {
@@ -393,7 +393,7 @@ footer {
     }
 
     .web-project-details {
-        text-align: center;
+        text-align: left;
     }
     /* Stack metrics on smaller devices */
     .metrics-grid {
@@ -427,7 +427,7 @@ footer {
     .portfolio-item {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .portfolio-item img {
@@ -436,7 +436,7 @@ footer {
     }
 
     .web-project-details {
-        text-align: center;
+        text-align: left;
     }
 
 }
