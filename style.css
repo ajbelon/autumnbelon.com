@@ -712,13 +712,13 @@ nav {
 .flow-content h4 {
   margin: 0;
   font-size: 1.2rem;
-  padding: 10px 10px 0 0;
 }
 
 .flow-content p {
   font-size: 0.9rem;
   margin: 6px 0 0 0;
   padding: 10px 10px 10px 0;
+  color: white;
 }
 
 /* CASE STUDY WORKFLOW (Approach) */
@@ -760,7 +760,7 @@ nav {
 .flow-content h4 {
   margin: 0;
   font-size: 1.2rem;
-  padding: 10px 10px 0 0;
+  padding: 10px 20px 0 0;
 }
 
 .flow-content p {
