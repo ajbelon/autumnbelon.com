@@ -855,6 +855,73 @@ nav {
   border-radius: 8px;
   font-size: 1.1rem;
 }
+/* Technical Optimization Section */
+.technical-optimization {
+  background-color: #f9f9f9;
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+  border-left: 5px solid #4CAF50;
+  border-radius: 6px;
+}
+
+.technical-optimization h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.technical-optimization h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.technical-optimization ul {
+  list-style: none; /* removes bullets */
+  padding-left: 0;   /* removes extra indentation */
+  margin-left: 0;    /* optional, keep spacing consistent */
+}
+
+ul.optimization-steps {
+  list-style-type: disc !important;  /* force solid bullets */
+  padding-left: 1.5rem !important;   /* indent bullets */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul.optimization-steps li {
+  margin-bottom: 0.5rem;            /* spacing between bullets */
+}
+
+.metrics-list {
+  list-style: none;  /* removes bullets for metrics */
+  padding-left: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.metrics-list li {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+.metrics-list .badge {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.metrics-list .highlight {
+  color: #4CAF50;
+}
+
+.performance-note {
+  font-style: italic;
+  margin-top: 1rem;
+}
 
 /* Mobile: stack problem → solution */
 @media (max-width: 1300px) {
