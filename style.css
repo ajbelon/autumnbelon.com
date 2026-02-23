@@ -26,8 +26,9 @@ img {
 
 /* CONTAINER */
 .container {
-    max-width: 1100px;
+    max-width: 1100px; /* consistent across sections */
     margin: 0 auto;
+    padding: 0 15px; /* consider adding padding for smaller screens */
 }
 
 .container h3 {
@@ -127,6 +128,16 @@ nav {
     font-weight: bolder;
     color: #9E4F3B;
 }
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .hero h2 {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+}
 
 .hero-image img {
     width: 100%;
@@ -172,6 +183,97 @@ nav {
 .metrics strong {
     display: block;
     font-size: 1.2rem;
+}
+
+/* WHAT I DO SECTION */
+/* Container Grid */
+.what-i-do-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual Card */
+.what-i-do-card {
+  background: #fff;
+  border-left: 5px solid #9E4F3B; /* accent color */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Hover effect */
+.what-i-do-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Card Headings */
+.what-i-do-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  color: #9E4F3B;
+  font-size: 1.3rem;
+}
+
+/* Card Paragraph */
+.what-i-do-card p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Grid layout for cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual service cards */
+.service-card {
+  background-color: #ffffff;
+  border-left: 5px solid #9E4F3B;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Icon styling */
+.service-card .icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Headings inside cards */
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #9E4F3B;
+  font-size: 1.4rem;
+}
+
+/* Card paragraph text */
+.service-card p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* WEB DESIGN & DIGITAL EXPERIENCE */
@@ -261,8 +363,9 @@ nav {
 
 /* PORTFOLIO */
 .portfolio .container {
-    max-width: 1100px;
+    max-width: 1100px; /* consistent across sections */
     margin: 0 auto;
+    padding: 0 15px; /* consider adding padding for smaller screens */
 }
 
 .portfolio h2 {
@@ -625,9 +728,9 @@ nav {
 }
 
 .privacy-policy .container {
-  max-width: 800px;
-  margin: 0 auto;
-}
+  max-width: 1100px; /* consistent across sections */
+    margin: 0 auto;
+    padding: 0 15px; /* consider adding padding for smaller screens */
 
 .privacy-policy h1 {
   margin-bottom: 0.5rem;
@@ -669,49 +772,55 @@ nav {
   text-decoration: underline;
 }
 
-/* CASE STUDY APPROACH */
-.case-study .workflow {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
+/* WORKFLOW / CASE STUDY */
 .workflow {
   display: flex;
-  gap: 20px;       /* space between cards */
-  flex-wrap: wrap;  /* wrap to new line if needed */
+  gap: 20px;
+  flex-wrap: wrap;      /* allow boxes to wrap */
   justify-content: center;
   margin-top: 2rem;
 }
 
 .flow-step {
-  flex: 1 1 0;     /* allow flex items to shrink/grow naturally */
-  min-width: 0;     /* prevents horizontal overflow */
-  height: auto;     /* let height adjust naturally */
-  margin-bottom: 1.5rem; /* spacing when stacked */
+  flex: 1 1 300px;      /* grow/shrink, minimum width 300px */
+  background: #9e4f3b;  /* box background */
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Optional: adjust spacing for larger screens */
-@media (min-width: 768px) {
-  .flow-step {
-    margin-bottom: 0; /* remove extra bottom spacing when side by side */
+.flow-step h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.flow-step p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.flow-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* MOBILE: stack boxes vertically */
+@media (max-width: 768px) {
+  .workflow {
+    flex-direction: column;
+    gap: 1rem;
   }
-}
-
-.arrow-shape {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: #9e4f3b;
-  clip-path: polygon(
-    0% 0%,
-    75% 0%,
-    100% 50%,
-    75% 100%,
-    0% 100%
-  );
-  z-index: 1;
+  
+  .flow-step {
+    width: 100%;
+    min-width: 0;
+  }
 }
 
 /* Mobile: remove arrows, put boxes around text */
@@ -723,90 +832,6 @@ nav {
   }
 }
 
-  .arrow-shape {
-    display: none;
-  }
-
-  .flow-content {
-    background: #9e4f3b;
-    color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .flow-content h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-
-  .flow-content p {
-    font-size: 1rem;
-    margin: 0;
-  }
-}
-
-/* Keep other flow-content styling */
-.flow-content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 0 6px;
-}
-
-.flow-content h4 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.flow-content p {
-  font-size: 0.9rem;
-  margin: 6px 0 0 0;
-  padding: 10px 10px 10px 0;
-  color: white;
-}
-
-/* CASE STUDY WORKFLOW (Approach) */
-
-
-.arrow-shape {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: #9e4f3b;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  z-index: 1;
-}
-
-.flow-content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 0 6px;
-}
-
-.flow-content h4 {
-  margin: 0;
-  font-size: 1.2rem;
-  padding: 10px 20px 0 0;
-}
-
-.flow-content p {
-  font-size: 0.9rem;
-  margin: 6px 0 0 0;
-  padding: 10px 10px 10px 0;
-}
 .case-study-approach-details {
   padding: 4rem 0;
 }
@@ -828,22 +853,43 @@ nav {
   padding: 1rem 1.5rem;
   margin-top: 1rem;
 }
+.flow-content {
+  background: #9e4f3b;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.flow-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.flow-content p {
+  font-size: 1rem;
+  margin: 0;
+}
 /* Mobile: stack workflow boxes */
 @media (max-width: 1300px) {
 }
+.workflow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .flow-step {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
   .arrow-shape {
     display: none;
   }
-  .flow-content {
-    background: #9e4f3b;
-    color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-  }
-  .flow-content h4 { font-size: 1.2rem; margin-bottom: 10px; }
-  .flow-content p { font-size: 1rem; margin: 0; }
-
 
 .ps-arrow {
   display: flex;
@@ -1053,7 +1099,6 @@ footer {
     .portfolio-item img { width: 100%; max-width: 250px; }
     .web-project-details { text-align: left; }
     .metrics-grid { grid-template-columns: 1fr; gap: 20px; }
-    .hero h1 { font-size: 2rem; line-height: 2.2rem; }
     .hero p { text-align: left; }
     .hero-image img { width: 80%; max-width: 250px; margin: 0 auto; border-radius: 20px; }
     .cta { padding: 30px 15px; }
