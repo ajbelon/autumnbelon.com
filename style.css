@@ -430,22 +430,31 @@ nav {
 
 /* PROBLEM → SOLUTION */
 .ps-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 20px;
+    grid-template-columns: 1fr; /* Mobile default */
+}@media (min-width: 768px) {
+    .ps-grid {
+        grid-template-columns: 1fr 1fr; /* 2 per row on desktop */
+    }
 }
 
 .ps-card {
-    background: #fff;
-    border-radius: 10px;
+    background-color: #9E4F3B;
     padding: 20px;
-    flex: 1 1 280px;
+    color: #fff;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .ps-card h4 {
     font-size: 1.15rem;
     margin-bottom: 12px;
+}
+.ps-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
 }
 
 /* TECHNICAL GRID */
@@ -461,6 +470,15 @@ nav {
     padding: 20px;
     flex: 1 1 280px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.technical-grid ul {
+    list-style: disc outside;
+    padding-left: 1.5rem; /* creates proper indentation */
+    margin: 0;
+}
+
+.technical-grid li {
+    margin-bottom: 10px;
 }
 
 /* Metrics badges */
