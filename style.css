@@ -685,9 +685,17 @@ nav {
 }
 
 .flow-step {
-  flex: 1 1 350px;   /* increase base width */
-  min-width: 300px;  /* prevent shrinking too much */
-  height: auto;      /* let height adjust naturally */
+  flex: 1 1 0;     /* allow flex items to shrink/grow naturally */
+  min-width: 0;     /* prevents horizontal overflow */
+  height: auto;     /* let height adjust naturally */
+  margin-bottom: 1.5rem; /* spacing when stacked */
+}
+
+/* Optional: adjust spacing for larger screens */
+@media (min-width: 768px) {
+  .flow-step {
+    margin-bottom: 0; /* remove extra bottom spacing when side by side */
+  }
 }
 
 .arrow-shape {
@@ -986,9 +994,32 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
+/* Technical grid layout */
 .technical-grid {
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  gap: 2rem; /* space between cards */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+/* Each card takes half width on desktop */
+.technical-grid .card {
+  flex: 1 1 45%; /* grow, shrink, basis */
+  min-width: 300px; /* ensures cards don’t get too narrow */
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* On mobile, stack cards vertically */
+@media (max-width: 768px) {
+  .technical-grid {
+    flex-direction: column;
+  }
+
+  .technical-grid .card {
+    flex: 1 1 100%;
+  }
 }
 
 /* Metrics badges */
