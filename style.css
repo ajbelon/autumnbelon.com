@@ -282,6 +282,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     justify-items: center;
+    margin-top: 2rem;
 }
 
 .portfolio-item {
@@ -299,10 +300,10 @@ nav {
 
 .portfolio-item img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    max-width: 300px; /* keep your max width */
+    height: 200px;     /* set a uniform height */
+    object-fit: cover; /* fills the container, cropping if necessary */
     border-radius: 10px;
-    object-fit: cover;
 }
 
 .portfolio-details {
@@ -336,6 +337,41 @@ nav {
     border-radius: 5px;
 }
 
+.tiktok-ugc .ugc-results {
+    margin-bottom: 2rem;
+}
+/* TikTok & UGC Campaign Highlights */
+.ugc-results {
+    background-color: #f9fafb; /* subtle light background */
+    border-left: 4px solid #ff6f61; /* highlight color accent */
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.ugc-results h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.ugc-results ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ugc-results li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.ugc-results .micro-callout {
+    font-style: italic;
+    color: #555;
+    margin-top: 1rem;
+}
 /* SERVICES / CARDS */
 .services {
     background: #FFF3EE;
@@ -948,9 +984,10 @@ ul.optimization-steps li {
 
 /* FOOTER */
 footer {
-  background: #333;
-  color: #fff;
+  background: #FDF1ED;
+  color: #2b2b2b;
   text-align: center;
+  font-size: 1.25rem;
   padding: 20px;
 }
 
