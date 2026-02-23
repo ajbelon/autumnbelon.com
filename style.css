@@ -225,6 +225,53 @@ nav {
     line-height: 1.6;
 }
 
+.portfolio {
+    background-color: #9E4F3B;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio h2, .portfolio h3, .portfolio h4, .portfolio p, .portfolio ul, .portfolio li {
+    color: #fff;
+}
+.web-project, .portfolio-item {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0 40px 0;
+    flex-wrap: wrap;
+    background-color: white;
+    color: #9E4F3B;
+    padding: 20px;
+    border-radius: 8px;
+}
+.web-project h2, .web-project h3, .web-project h4, .web-project p, .web-project ul, .web-project li, .portfolio-item h2, .portfolio-item h3, .portfolio-item h4, .portfolio-item p, .portfolio-item ul, .portfolio-item li {
+    color: #9E4F3B;
+}
+/* Mobile first — stacked */
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Desktop layout */
+@media (min-width: 992px) {
+    .portfolio-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .portfolio-item img {
+        width: 150px;
+        flex-shrink: 0;
+    }
+
+    .portfolio-details {
+        flex: 1;
+    }
+}
+
 /* =========================
    WORKFLOW / CASE STUDY
 ========================= */
@@ -566,7 +613,6 @@ nav {
 @media (max-width: 1300px) {
     body { padding: 0 10px; }
     .hero-grid { grid-template-columns: 1fr; text-align: center; }
-    .portfolio-item { flex-direction: column; align-items: center; text-align: left; }
     .portfolio-item img { width: 100%; max-width: 250px; }
     .web-project-details { text-align: left; }
     .metrics-grid { grid-template-columns: 1fr; gap: 20px; }
