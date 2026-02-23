@@ -13,7 +13,8 @@ body {
 a { color: #9E4F3B; text-decoration: none; }
 
 h1, h2, h3 { color: #9E4F3B; }
-
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
 a:focus, button:focus {
     outline: 3px solid #9E4F3B;
     outline-offset: 2px;
@@ -32,12 +33,7 @@ img {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 15px;
-}
-
-.container h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    padding: 0;
 }
 
 .container p {
@@ -402,9 +398,17 @@ nav {
 
 /* WORKFLOW STEPS */
 .workflow-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 20px;
+    background-color: #9E4F3B;
+    padding: 20px;
+    border-radius: 8px;
+    grid-template-columns: 1fr; /* Mobile default */
+}
+@media (min-width: 768px) {
+    .workflow-grid {
+        grid-template-columns: 1fr 1fr; /* 2 per row on desktop */
+    }
 }
 
 .workflow-step.card {
