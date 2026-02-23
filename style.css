@@ -223,13 +223,38 @@ nav {
 
 .portfolio {
     background-color: #9E4F3B;
-    padding-top: 20px;
+    padding: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
 }
 .portfolio h2, .portfolio h3, .portfolio h4, .portfolio p, .portfolio ul, .portfolio li {
     color: #fff;
+}
+
+.web-project-optimization-callout {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.web-project-optimization-callout ul {
+    margin-left: 20px; /* properly indents bullets */
+    list-style-type: disc;
+}
+
+.web-project-optimization-callout p.micro-callout {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .web-project-optimization-callout {
+        padding: 15px;
+    }
 }
 .web-project, .portfolio-item {
     display: flex;
