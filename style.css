@@ -102,7 +102,7 @@ img {
 }
 
 .nav-list a.active {
-    font-weight: 700;
+    color: black;
     text-decoration: underline;
 }
 
