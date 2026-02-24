@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MTK308VTHG"></script>
 <script>
+function loadAnalytics() {
+  if (window.gtagLoaded) return;
+  window.gtagLoaded = true;
+
+  // Load gtag script
+  var script = document.createElement("script");
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-MTK308VTHG";
+  script.defer = true;
+  document.head.appendChild(script);
+
+  // Initialize dataLayer
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  window.gtag = gtag;
 
+  gtag('js', new Date());
   gtag('config', 'G-MTK308VTHG');
+}
+
+// Load after first user interaction
+window.addEventListener("scroll", loadAnalytics, { once: true });
+window.addEventListener("click", loadAnalytics, { once: true });
+window.addEventListener("keydown", loadAnalytics, { once: true });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
