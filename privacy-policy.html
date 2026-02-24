@@ -38,9 +38,10 @@
     <!-- Navigation -->
     <nav aria-label="Main navigation">
       <ul class="nav-list">
-         <li><a href="/">Home</a></li>
-         <li><a href="/case-studies/nonprofit-redesign.html">Case Study</a></li>
-         <li><a href="/#contactme">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
+        <li><a href="/case-studies/portfolio-case-study.html">Performance Case Study</a></li>
+        <li><a href="/#contactme">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -176,6 +177,17 @@
       link.classList.add('active');
     }
   });
+</script>
+
+<script>
+const navLinks = document.querySelectorAll('.nav-list a');
+const currentURL = window.location.pathname;
+
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentURL) {
+    link.classList.add('active');
+  }
+});
 </script>
 
 </body>

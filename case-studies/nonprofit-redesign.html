@@ -45,18 +45,20 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 <header class="site-header">
   <div class="container nav-container">
     <!-- Logo -->
-    <a href="/" class="site-logo">
+    <a href="/" class="site-logo" aria-label="Autumn Belon Home">
       <img src="/images/logo.png" alt="Autumn Belon Logo">
     </a>
 
     <!-- Navigation -->
-    <nav aria-label="Main navigation">
-      <ul class="nav-list">
-         <li><a href="/">Home</a></li>
-         <li><a href="/case-studies/nonprofit-redesign.html" class="active">Case Study</a></li>
-         <li><a href="/#contactme">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Navigation -->
+<nav aria-label="Main navigation">
+  <ul class="nav-list">
+     <li><a href="/">Home</a></li>
+     <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
+     <li><a href="/case-studies/portfolio-case-study.html">Performance Case Study</a></li>
+     <li><a href="/#contactme">Contact</a></li>
+  </ul>
+</nav>
   </div>
 </header>
 
@@ -328,6 +330,17 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
     <a href="/privacy-policy.html">Privacy Policy</a>
   </div>
 </footer>
+
+<script>
+const navLinks = document.querySelectorAll('.nav-list a');
+const currentURL = window.location.pathname;
+
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentURL) {
+    link.classList.add('active');
+  }
+});
+</script>
 
 </body>
 </html>
