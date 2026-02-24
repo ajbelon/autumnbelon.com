@@ -20,18 +20,31 @@
 
 <header class="site-header">
   <div class="container nav-container">
+    
+    <!-- Logo (optional on mobile, hidden via CSS if needed) -->
     <a href="/" class="site-logo" aria-label="Autumn Belon Home">
       <img src="/images/logo.png" alt="Autumn Belon Logo">
     </a>
 
-    <nav aria-label="Main navigation">
-      <ul class="nav-list">
-         <li><a href="/">Home</a></li>
-         <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
-         <li><a href="/case-studies/portfolio-case-study.html" class="active">Performance Case Study</a></li>
-         <li><a href="/#contactme">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Nav wrapper for toggling mobile menu -->
+    <div class="nav-wrapper">
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
+          <li><a href="/case-studies/portfolio-case-study.html" class="active">Performance Case Study</a></li>
+          <li><a href="/#contactme">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hamburger button (hidden on desktop, appears on scroll on mobile) -->
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
   </div>
 </header>
 
@@ -166,13 +179,54 @@
   </div>
 </footer>
 
+<!-- =========================
+     SCRIPTS
+========================= -->
 <script>
-const navLinks = document.querySelectorAll('.nav-list a');
-const currentURL = window.location.pathname;
+document.addEventListener('DOMContentLoaded', () => {
+  /* -------------------------
+     HIGHLIGHT CURRENT NAV LINK
+  ------------------------- */
+  const navLinks = document.querySelectorAll('.nav-list a');
+  const currentURL = window.location.pathname;
 
-navLinks.forEach(link => {
-  if (link.getAttribute('href') === currentURL) {
-    link.classList.add('active');
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentURL) {
+      link.classList.add('active');
+    }
+  });
+
+  /* -------------------------
+     MOBILE HAMBURGER TOGGLE
+  ------------------------- */
+  const hamburger = document.querySelector('.hamburger');
+  const navWrapper = document.querySelector('.nav-wrapper');
+
+  if (hamburger && navWrapper) {
+    hamburger.addEventListener('click', () => {
+      navWrapper.classList.toggle('active');
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+    });
+  }
+
+  /* -------------------------
+     STICKY HEADER ON SCROLL (DESKTOP ONLY)
+  ------------------------- */
+  const header = document.querySelector('.site-header');
+
+  if (header) {
+    window.addEventListener('scroll', () => {
+      // Apply sticky behavior only for screens wider than 768px
+      if (window.innerWidth >= 768) {
+        if (window.scrollY > 150) {
+          header.classList.add('sticky-hamburger');
+        } else {
+          header.classList.remove('sticky-hamburger');
+          if (navWrapper) navWrapper.classList.remove('active');
+        }
+      }
+    });
   }
 });
 </script>

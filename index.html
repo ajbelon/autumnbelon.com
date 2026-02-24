@@ -90,6 +90,7 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 
 <body>
 
+<!-- Navigation / Header -->
 <header class="site-header">
   <div class="container nav-container">
     <!-- Logo -->
@@ -98,14 +99,19 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
     </a>
 
     <!-- Navigation -->
-<nav aria-label="Main navigation">
-  <ul class="nav-list">
-    <li><a href="/">Home</a></li>
-    <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
-    <li><a href="/case-studies/portfolio-case-study.html">Performance Case Study</a></li>
-    <li><a href="/#contactme">Contact</a></li>
-  </ul>
-</nav>
+    <nav aria-label="Main navigation" class="nav-wrapper">
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+      <ul class="nav-list">
+         <li><a href="/">Home</a></li>
+         <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
+         <li><a href="/case-studies/portfolio-case-study.html">Performance Case Study</a></li>
+         <li><a href="/#contactme">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
@@ -466,41 +472,51 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 </footer>
 
 <!-- SCRIPT -->
+<!-- =========================
+     SCRIPTS
+========================= -->
 <script>
-const form = document.querySelector('.cta form');
-const status = document.querySelector('.form-status');
+document.addEventListener('DOMContentLoaded', () => {
+  /* -------------------------
+     FORM SUBMISSION
+  ------------------------- */
+  const form = document.querySelector('.cta form');
+  const status = document.querySelector('.form-status');
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const formData = new FormData(form);
+  if(form && status) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
 
-  try {
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: { 'Accept': 'application/json' }
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          status.textContent = "Thanks! I’ll be in touch soon.";
+          status.classList.remove('error');
+          status.classList.add('success');
+          form.reset();
+          status.focus();
+        } else {
+          status.textContent = "Oops! There was a problem submitting your form.";
+          status.classList.remove('success');
+          status.classList.add('error');
+        }
+      } catch (error) {
+        status.textContent = "Oops! There was a problem submitting your form.";
+        status.classList.remove('success');
+        status.classList.add('error');
+      }
     });
-
-    if (response.ok) {
-      status.textContent = "Thanks! I’ll be in touch soon.";
-      status.classList.remove('error');
-      status.classList.add('success');
-      form.reset();
-      status.focus(); // accessibility for screen readers
-    } else {
-      status.textContent = "Oops! There was a problem submitting your form.";
-      status.classList.remove('success');
-      status.classList.add('error');
-    }
-  } catch (error) {
-    status.textContent = "Oops! There was a problem submitting your form.";
-    status.classList.remove('success');
-    status.classList.add('error');
   }
-});
-</script>
 
-<script>
+  /* -------------------------
+     HIGHLIGHT CURRENT NAV LINK
+  ------------------------- */
   const navLinks = document.querySelectorAll('.nav-list a');
   const currentURL = window.location.pathname;
 
@@ -509,6 +525,37 @@ form.addEventListener('submit', async (e) => {
       link.classList.add('active');
     }
   });
+
+  /* -------------------------
+     HAMBURGER ON SCROLL
+  ------------------------- */
+  const header = document.querySelector('.site-header');
+  const hamburger = document.querySelector('.hamburger');
+  const navWrapper = document.querySelector('.nav-wrapper');
+
+  if(header && hamburger && navWrapper) {
+    let scrolled = false;
+
+    window.addEventListener('scroll', () => {
+    if (window.innerWidth <= 768) { // only mobile
+        if(window.scrollY > 150 && !scrolled) {
+        header.classList.add('sticky-hamburger');
+        scrolled = true;
+        } else if(window.scrollY <= 150 && scrolled) {
+        header.classList.remove('sticky-hamburger');
+        navWrapper.classList.remove('active'); // close menu
+        scrolled = false;
+        }
+    }
+    });
+
+    hamburger.addEventListener('click', () => {
+      navWrapper.classList.toggle('active');
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+    });
+  }
+});
 </script>
 
 </body>

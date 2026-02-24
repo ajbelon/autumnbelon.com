@@ -49,7 +49,14 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
       <img src="/images/logo.png" alt="Autumn Belon Logo">
     </a>
 
-<nav aria-label="Main navigation">
+<nav aria-label="Main navigation" class="nav-wrapper">
+  <!-- Hamburger button -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
   <ul class="nav-list">
      <li><a href="/">Home</a></li>
      <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
@@ -57,6 +64,7 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
      <li><a href="/#contactme">Contact</a></li>
   </ul>
 </nav>
+
   </div>
 </header>
 
@@ -340,12 +348,36 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 </footer>
 
 <script>
-const navLinks = document.querySelectorAll('.nav-list a');
-const currentURL = window.location.pathname;
+document.addEventListener('DOMContentLoaded', () => {
+  const navWrapper = document.querySelector('.nav-wrapper');
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelectorAll('.nav-list a');
+  const currentURL = window.location.pathname;
 
-navLinks.forEach(link => {
-  if (link.getAttribute('href') === currentURL) {
-    link.classList.add('active');
+  // Highlight active link
+  navLinks.forEach(link => {
+    if(link.getAttribute('href') === currentURL) {
+      link.classList.add('active');
+    }
+  });
+
+  // Hamburger toggle
+  if(hamburger && navWrapper) {
+    hamburger.addEventListener('click', () => {
+      navWrapper.classList.toggle('active');
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+    });
+
+    // Optional: close menu when link clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if(navWrapper.classList.contains('active')) {
+          navWrapper.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', false);
+        }
+      });
+    });
   }
 });
 </script>
