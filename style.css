@@ -10,7 +10,15 @@ body {
     line-height: 1.6;
 }
 
-a { color: #9E4F3B; text-decoration: none; }
+a {
+  color: #9E4F3B;
+  border-bottom: 2px solid #9E4F3B; /* visual indicator */
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  border-bottom-color: #7a3928;
+}
 
 h1, h2, h3 { color: #9E4F3B; }
 h2 { font-size: 2rem; }
