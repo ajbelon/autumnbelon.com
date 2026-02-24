@@ -365,60 +365,15 @@ nav {
 /* =========================
    CASE STUDY SECTIONS ONLY
 ========================= */
-.case-study-about,
-.case-study-challenges,
-.case-study-approach,
-.case-study-problems,
-.case-study-technical,
-.case-study-results,
-.case-study-reflection {
-    padding: 60px 0;
+.case-study-intro {
+    background-color: #FDF1ED;
+    padding: 30px 20px;
+    margin-bottom: 30px;
 }
-
-.case-study-about h2,
-.case-study-challenges h2,
-.case-study-approach h2,
-.case-study-problems h2,
-.case-study-technical h2,
-.case-study-results h2,
-.case-study-reflection h2 {
-    font-size: 2rem;
-    margin-bottom: 24px;
-}
-
-.case-study-challenges h3,
-.case-study-approach h3,
-.case-study-technical h3 {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-}
-
-.case-study-about p,
-.case-study-challenges p,
-.case-study-approach p,
-.case-study-problems p,
-.case-study-technical p,
-.case-study-results p,
-.case-study-reflection p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 16px;
-}
-
-.case-study-challenges ul,
-.case-study-approach ul,
-.case-study-technical ul,
-.case-study-results ul {
-    list-style: disc inside;
+.case-study-results .container {
+    border-left: 5px solid #9E4F3B;
+    border-radius: 6px;
     padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.case-study-challenges li,
-.case-study-approach li,
-.case-study-technical li,
-.case-study-results li {
-    margin-bottom: 8px;
 }
 
 /* WORKFLOW STEPS */
@@ -490,7 +445,7 @@ nav {
 }
 
 .technical-grid .card {
-    background: #fff;
+    background: #FDF1ED;
     border-radius: 10px;
     padding: 20px;
     flex: 1 1 280px;
