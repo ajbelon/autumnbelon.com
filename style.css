@@ -409,32 +409,44 @@ nav {
 }
 
 /* PROBLEM → SOLUTION */
-.ps-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr; /* Mobile default */
-}@media (min-width: 768px) {
-    .ps-grid {
-        grid-template-columns: 1fr 1fr; /* 2 per row on desktop */
-    }
+.case-study-problems {
+  padding: 4rem 0;
+  background: #fafafa; /* subtle separation from other sections */
 }
 
-.ps-card {
-    background-color: #9E4F3B;
-    padding: 20px;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+.ps-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e5e5e5;
+  color: #777;
 }
 
-.ps-card h4 {
-    font-size: 1.15rem;
-    margin-bottom: 12px;
+.ps-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
 }
-.ps-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #fff;
+
+.ps-problem {
+  font-weight: 600;
+  color: #222;
+  padding-left: 1.5rem;
+  border-left: 3px solid #9E4F3B; /* brand accent line */
+}
+
+.ps-solution {
+  color: #444;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 /* TECHNICAL GRID */
@@ -490,7 +502,6 @@ nav {
     }
 
     .workflow-step.card,
-    .ps-card,
     .technical-grid .card {
         width: 100%;
     }
