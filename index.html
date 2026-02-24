@@ -140,6 +140,7 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
             <source srcset="self.webp" type="image/webp">
             <img src="self.jpg"
                 alt="Autumn Belon, small business and nonprofit web designer"
+                width="500" height="500"
                 style="max-width:100%; height:auto; display:inline-block;"
                 loading="eager">
         </picture>
@@ -471,19 +472,19 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
   </div>
 </footer>
 
-<!-- SCRIPT -->
 <!-- =========================
      SCRIPTS
 ========================= -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+
   /* -------------------------
      FORM SUBMISSION
   ------------------------- */
   const form = document.querySelector('.cta form');
   const status = document.querySelector('.form-status');
 
-  if(form && status) {
+  if (form && status) {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const formData = new FormData(form);
@@ -524,37 +525,55 @@ document.addEventListener('DOMContentLoaded', () => {
     if (link.getAttribute('href') === currentURL) {
       link.classList.add('active');
     }
+
+    // Close mobile menu when a link is clicked
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        navWrapper.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', false);
+      }
+    });
   });
 
   /* -------------------------
-     HAMBURGER ON SCROLL
+     HAMBURGER & STICKY HEADER
   ------------------------- */
   const header = document.querySelector('.site-header');
   const hamburger = document.querySelector('.hamburger');
   const navWrapper = document.querySelector('.nav-wrapper');
 
-  if(header && hamburger && navWrapper) {
-    let scrolled = false;
+  if (header && hamburger && navWrapper) {
 
-    window.addEventListener('scroll', () => {
-    if (window.innerWidth <= 768) { // only mobile
-        if(window.scrollY > 150 && !scrolled) {
-        header.classList.add('sticky-hamburger');
-        scrolled = true;
-        } else if(window.scrollY <= 150 && scrolled) {
-        header.classList.remove('sticky-hamburger');
-        navWrapper.classList.remove('active'); // close menu
-        scrolled = false;
-        }
-    }
-    });
-
+    // Hamburger toggle
     hamburger.addEventListener('click', () => {
       navWrapper.classList.toggle('active');
       const expanded = hamburger.getAttribute('aria-expanded') === 'true';
       hamburger.setAttribute('aria-expanded', !expanded);
     });
+
+    // Sticky header on scroll (throttled)
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (window.innerWidth > 768) return; // only mobile
+
+      const scrollY = window.scrollY;
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (scrollY > 150) {
+            header.classList.add('sticky-hamburger');
+          } else {
+            header.classList.remove('sticky-hamburger');
+            navWrapper.classList.remove('active'); // close menu
+            hamburger.setAttribute('aria-expanded', false);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
   }
+
 });
 </script>
 
