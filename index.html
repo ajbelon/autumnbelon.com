@@ -129,7 +129,13 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
             </div>
         </div>
         <div class="hero-image">
-            <img src="self.jpg" alt="Autumn Belon, small business and nonprofit web designer">
+        <picture>
+            <!-- WebP for modern browsers -->
+            <source srcset="self.webp" type="image/webp">
+
+            <!-- Fallback to JPEG -->
+            <img src="self.jpg" alt="Autumn Belon, small business and nonprofit web designer" loading="eager">
+        </picture>
         </div>
     </div>
 </section>
