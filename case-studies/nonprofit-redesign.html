@@ -39,7 +39,7 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
 </head>
 <body>
-
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <!-- Navigation -->
 
 <header class="site-header">
@@ -85,7 +85,7 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
     <div class="hero-image">
       <picture>
         <source srcset="/nonprofit-redesign-homepage.webp" type="image/webp">
-        <img src="/nonprofit-redesign-homepage.png" alt="Screenshot of Burrito Brigade Website Redesign">
+        <img src="/nonprofit-redesign-homepage.png" alt="Screenshot of Burrito Brigade Website Redesign" width="1200" height="675" loading="eager" style="width:100%;height:auto;">
       </picture>
     </div>
   </div>
@@ -290,7 +290,10 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
           <li><span class="badge">SEO:</span> 30/30</li>
           <li><span class="badge">Mobile:</span> 30/30</li>
           <li><span class="badge">Security:</span> 10/10</li>
-          <li><span class="badge highlight">Performance:</span> 7 → 11/30 after optimizations</li>
+          <li>
+            <span class="badge highlight" aria-label="Performance score">Performance:</span>
+            <span>7 → 11 out of 30 after optimizations</span>
+          </li>
         </ul>
         <p class="metrics-source">
           <em>Metrics sourced from <a href="https://website.grader.com" target="_blank">HubSpot Website Grader</a>.</em>
@@ -335,15 +338,17 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 </main>
 
 <footer>
-  <p>
-    Interested in a website redesign that’s accessible, engaging, and built for results?
-    <a href="/#contactme">Get in touch</a> to start your project.
-  </p>
+  <div class="container">
+    <p>
+      Interested in a website redesign that’s accessible, engaging, and built for results?
+      <a href="/#contactme">Get in touch</a> to start your project.
+    </p>
 
-  <div class="footer-meta">
-    <span>© 2026 Autumn Belon</span>
-    <a href="/">Home</a>
-    <a href="/privacy-policy.html">Privacy Policy</a>
+    <div class="footer-meta">
+      <span>© 2026 Autumn Belon</span>
+      <a href="/">Home</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </div>
   </div>
 </footer>
 
