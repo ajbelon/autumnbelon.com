@@ -433,6 +433,28 @@ img {
   justify-content: center;
   font-weight: bold;
 }
+.web-project h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* tighter spacing below heading */
+}
+
+.web-project .pull-quote {
+    margin: 0.5rem 0; 
+}
+
+.web-project p {
+    margin: 0.5rem 0; /* shrink paragraph spacing */
+}
+
+.web-project ul {
+    margin: 0.5rem 0 0.5rem 1.25rem; /* smaller vertical spacing */
+    padding-left: 1.25rem;
+}
+
+.web-project .micro-callout {
+    margin: 0.25rem 0 0.5rem 0; /* keep subtle, tighter */
+}
+
 /* =========================
    WORKFLOW / CASE STUDY
 ========================= */
