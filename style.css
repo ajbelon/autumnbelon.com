@@ -48,7 +48,6 @@ img {
     font-size: 1.05rem;
     line-height: 1.6;
     color: #333;
-    padding: 10px 0;
 }
 
 /* =========================
@@ -353,8 +352,9 @@ img {
 .web-project-optimization-callout p.micro-callout {
     font-size: 0.95rem;
     color: #555;
-    margin-top: 10px;
+    margin: 0.25em 0 0.5em 0;
 }
+
 
 @media (max-width: 768px) {
     .web-project-optimization-callout {
@@ -398,6 +398,41 @@ img {
     }
 }
 
+.timeline {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ddd;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 60px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #9E4F3B;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
 /* =========================
    WORKFLOW / CASE STUDY
 ========================= */
