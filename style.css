@@ -69,7 +69,20 @@ img {
     display: block;
     height: auto;
 }
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+}
 
+.skip-link:focus {
+  top: 0;
+}
 /* =========================
    SITE NAVIGATION
 ========================= */
@@ -225,7 +238,6 @@ img {
     line-height: 1.3;
     text-align: left;
     padding: 10px 0;
-    font-weight: 800;
 }
 
 .hero h2 {
@@ -289,22 +301,86 @@ img {
    WHAT I DO CARDS
 ========================= */
 .what-i-do-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
+/* Base card styles */
 .what-i-do-card {
-    background: #fff;
-    border-left: 5px solid #9E4F3B;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  flex: 1 1 220px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+/* Individual card colors with text overrides */
+.what-i-do-card:nth-child(1) {
+  background: #9E4F3B; /* brown */
+  color: #fff;
+}
+.what-i-do-card:nth-child(1) h3,
+.what-i-do-card:nth-child(1) p {
+  color: #fff;
+}
+
+.what-i-do-card:nth-child(2) {
+  background: #4B9E9B; /* teal */
+  color: #fff;
+}
+.what-i-do-card:nth-child(2) h3,
+.what-i-do-card:nth-child(2) p {
+  color: #fff;
+}
+
+.what-i-do-card:nth-child(3) {
+  background: #B37A1F; /* gold */
+  color: #fff;
+}
+.what-i-do-card:nth-child(3) h3,
+.what-i-do-card:nth-child(3) p {
+  color: #fff;
+}
+
+.what-i-do-card:nth-child(4) {
+  background: #9E4B88; /* purple */
+  color: #fff;
+}
+.what-i-do-card:nth-child(4) h3,
+.what-i-do-card:nth-child(4) p {
+  color: #fff;
+}
+
+/* Hover effect */
+.what-i-do-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.what-i-do-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.what-i-do-card p {
+  margin: 0;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .what-i-do-card {
+        flex: 1 1 calc(50% - 1rem); /* 2 cards per row on tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .what-i-do-card {
+        flex: 1 1 100%;             /* 1 card per row on mobile */
+    }
 }
 
 .what-i-do-card:hover {
@@ -312,17 +388,64 @@ img {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.what-i-do-card h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.75rem;
-    color: #9E4F3B;
-    font-size: 1.3rem;
+/* =========================
+   Timeline Step Colors Matching Cards
+========================= */
+
+/* web-design → Card 1 (Brown) */
+#web-design .timeline-marker {
+    background-color: #9E4F3B;
+    color: #fff;
+    font-size: 1.25rem;
 }
 
-.what-i-do-card p {
-    margin: 0;
-    color: #333;
-    line-height: 1.6;
+/* ugc-content → Card 2 (Teal) */
+#ugc-content .timeline-marker {
+    background-color: #4B9E9B;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+/* digital-strategy → Card 3 (Gold) */
+#digital-strategy .timeline-marker {
+    background-color: #B37A1F;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+/* graphic-design → Card 4 (Purple) */
+#graphic-design .timeline-marker {
+    background-color: #9E4B88;
+    color: #fff;
+    font-size: 1.25rem;
+}
+/* =========================
+   Timeline & Headings Colors Matching Cards
+   with rounded corners and padding
+========================= */
+
+/* Web Design → Card 1 (Brown) */
+#web-design h2,
+#web-design h3 {
+    color: #9E4F3B;
+}
+
+/* UGC Content → Card 2 (Teal) */
+#ugc-content h2,
+#ugc-content h3 {
+    color: #4B9E9B;
+}
+
+/* Full-Funnel Digital Strategy → Card 3 (Dark Gold) */
+#digital-strategy h2,
+#digital-strategy h3 {
+    color: #B37A1F;
+}
+
+/* Graphic Design → Card 4 (Purple) */
+#graphic-design h2,
+#graphic-design h3 {
+    color: #9E4B88;
 }
 
 .portfolio {
@@ -374,6 +497,7 @@ img {
 .web-project h2, .web-project h3, .web-project h4, .web-project p, .web-project ul, .web-project li, .portfolio-item h2, .portfolio-item h3, .portfolio-item h4, .portfolio-item p, .portfolio-item ul, .portfolio-item li {
     color: #9E4F3B;
 }
+
 /* Mobile first — stacked */
 .portfolio-item {
     display: flex;
