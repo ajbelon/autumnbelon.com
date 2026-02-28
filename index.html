@@ -27,9 +27,16 @@ window.addEventListener("scroll", loadAnalytics, { once: true });
 window.addEventListener("click", loadAnalytics, { once: true });
 window.addEventListener("keydown", loadAnalytics, { once: true });
 </script>
+
+<noscript>
+  <div style="display:none;">
+    <img src="https://www.googletagmanager.com/ns.html?id=G-MTK308VTHG" alt="Analytics tracking pixel">
+  </div>
+</noscript>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design & UGC Content for Small Business | Autumn Belon</title>
+    <title>Accessibility-Focused Web Design for Nonprofits & Small Businesses | Autumn Belon</title>
     <link rel="canonical" href="https://autumnbelon.com/">
 
     <!-- Favicon -->
@@ -38,15 +45,15 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
 
     <!-- Meta Description -->
-    <meta name="description" content="Accessibility-aware web design, UGC content creation & conversion strategy for small businesses and nonprofits. Drive engagement, traffic & measurable growth.">
+    <meta name="description" content="Accessibility-focused web design, SEO optimization, and UGC marketing services for nonprofits and small businesses. Built for usability, search visibility, and measurable growth.">
 
     <!-- Open Graph / Social Sharing -->
-    <meta property="og:title" content="Professional Web Design & Digital Services | Autumn Belon">
+    <meta property="og:title" content="Accessibility-Focused Web Design for Nonprofits & Small Businesses | Autumn Belon">
     <meta property="og:description" content="Custom web design, branding, and digital marketing services for small businesses and nonprofits. See Autumn Belon’s portfolio of successful websites, TikTok campaigns, and influencer content.">
     <meta property="og:image" content="https://autumnbelon.com/self.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="1200">
-    <meta property="og:url" content="https://autumnbelon.com">
+    <meta property="og:url" content="https://autumnbelon.com/">
     <meta property="og:type" content="website">
 
     <!-- Optional Twitter Fallback -->
@@ -81,15 +88,69 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
         "name": "Autumn Belon",
         "url": "https://autumnbelon.com"
     },
-    "areaServed": "United States",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
     "description": "Accessibility-focused web design services for small businesses and nonprofit organizations, including WCAG-informed design, SEO optimization, and conversion-focused structure."
     }
     </script>
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is accessibility-first web design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Accessibility-first web design means building websites that are usable by everyone, including people with disabilities. It follows WCAG 2.1 guidelines and ensures proper color contrast, semantic HTML structure, keyboard navigation, and screen reader compatibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does UGC increase sales for small businesses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "User-generated content increases trust and engagement by showcasing real-world product use. When optimized with SEO-conscious captions, trending audio, and analytics tracking, UGC can drive measurable conversions and product sales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is SEO important for nonprofit websites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO increases search visibility for nonprofits, helping them attract donors, volunteers, and supporters. Proper site structure, optimized content, and technical improvements improve discoverability and usability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a nonprofit website redesign cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Website redesign costs vary based on scope, accessibility requirements, SEO integration, and content restructuring. Nonprofit projects typically include UX audits, accessibility improvements, SEO optimization, and analytics setup to ensure measurable growth."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://autumnbelon.com/"
+      }]
+    }
+    </script>
 </head>
 
 <body>
-
+ <a href="#main-content" class="skip-link">Skip to main content</a>
 <!-- Navigation / Header -->
 <header class="site-header">
   <div class="container nav-container">
@@ -121,8 +182,11 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 <section class="hero">
     <div class="container hero-grid">
         <div class="hero-content">
-            <h1>Autumn Belon</h1>
-            <h2>Web Design, Digital Strategy & Social Content for Small Businesses & Nonprofits</h2>
+            <h1>Strategic Web Design for Small Businesses and Nonprofits</h1>
+            <h2>Accessibility-First, Standards-Aligned Websites Built for Growth and Protection</h2>
+            <p class="hero-brand">
+              Led by Autumn Belon — Web Designer & Digital Strategist with a Master’s in Graphic Information Technology.
+            </p>
             <p class="hero-lead">
                Driving growth for small businesses and nonprofits through accessibility-first web design, strategic UGC and social content, and impact-driven digital experiences.
             </p>
@@ -148,25 +212,43 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
             </div>
         </section>
 
+<section id="accessibility-specialty" class="accessibility-specialty">
+  <div class="container">
+    <h2>Accessibility-First Web Design & Risk Mitigation</h2>
+    <p>
+      I specialize in building websites that are not only visually engaging but also fully accessible, WCAG-compliant, and designed to reduce potential legal risk. This approach ensures your nonprofit or small business can serve all users, meet grant or funding requirements, and demonstrate professionalism at every level.
+    </p>
+    <p>
+      By integrating accessibility standards into the design process, your site becomes more usable, more discoverable, and more defensible—protecting your organization while supporting growth.
+    </p>
+  </div>
+</section>
+
 <section class="what-i-do">
   <div class="container">
-    <h2>What I Do</h2>
+    <h2>Website Design, SEO, and UGC Marketing Services</h2>
 
     <div class="what-i-do-grid">
-      <div class="what-i-do-card">
-        <h3>Accessibility-First Design</h3>
-        <p>Custom websites and redesigns for small businesses and nonprofits, built with UX design, usability, accessibility, and SEO from the start.</p>
-      </div>
+        <a href="#web-design" class="what-i-do-card">
+          <h3>Accessibility-First Design</h3>
+          <p>Custom websites and redesigns for small businesses and nonprofits, built with UX design, usability, accessibility, and SEO from the start.</p>
+        </a>
 
-      <div class="what-i-do-card">
-        <h3>UGC & Social Media Content</h3>
-        <p>Short-form video, TikTok, and influencer content designed to drive engagement and measurable sales.</p>
-      </div>
+        <a href="#ugc-content" class="what-i-do-card">
+          <h3>UGC & Social Media Content</h3>
+          <p>Short-form video, TikTok, and influencer content designed to drive engagement and measurable sales.</p>
+        </a>
 
-      <div class="what-i-do-card">
-        <h3>Full-Funnel Digital Strategy</h3>
-        <p>Strategic alignment between UX, SEO, content, website structure, and analytics to support awareness through conversion.</p>
-      </div>
+        <a href="#digital-strategy" class="what-i-do-card">
+          <h3>Full-Funnel Digital Strategy</h3>
+          <p>Strategic alignment between UX, SEO, content, website structure, and analytics to support awareness through conversion.</p>
+        </a>
+
+        <a href="#graphic-design" class="what-i-do-card">
+          <h3>Graphic Design & Visual Content</h3>
+          <p>Cohesive, high-impact graphics for web, social media, and marketing campaigns that capture attention, enhance your messaging, and engage your audience.</p>
+        </a>
+
     </div>
   </div>
 </section>
@@ -184,19 +266,37 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
         </div>
         <div>
             <strong>UGC · Web · Accessibility</strong>
-            <span>Results That Work</span>
+            <span>SEO, Accessibility & Conversion-Focused Results</span>
         </div>
     </div>
 </section>
 
+<section class="case-study-highlight">
+  <div class="container">
+    <h2>Proven Results with Accessibility and Strategy</h2>
+    <p>
+      Recent projects showcase measurable improvements in usability, performance, and reach. For example, a nonprofit website redesign improved WCAG 2.1 compliance, reduced user friction, and increased engagement—all without a full rebuild.
+    </p>
+    <ul class="project-metrics">
+      <li>✔ 100% WCAG-compliant content and navigation</li>
+      <li>⚡ 40% faster page load times with optimized assets</li>
+      <li>🎯 Measurable traffic and engagement gains within 90 days</li>
+      <li>🛠️ Risk reduction by aligning with ADA best practices</li>
+    </ul>
+    <p>
+      <a href="/case-studies/nonprofit-redesign.html" class="btn secondary">View Full Case Study →</a>
+    </p>
+  </div>
+</section>
+
 <!-- Custom Web Design & Digital Marketing for Small Businesses and Nonprofits -->
-<section class="web-design">
+<section id="web-design" class="web-design">
   <div class="container">
 
-    <h2>Web Design & Digital Marketing for Small Businesses and Nonprofits</h2>
+    <h2>Website Redesign & Accessibility Optimization Process</h2>
 
     <p class="timeline-intro">
-      Here’s how I transform underperforming websites into structured, accessible, search-optimized digital assets:
+      Transforming underperforming websites into structured, accessible, search-optimized digital assets:
     </p>
 
     <div class="timeline">
@@ -232,7 +332,10 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
             Recent work includes a full nonprofit website redesign with updated color systems, layout and navigation restructuring, logo and graphic refinement, new page development, and page consolidation to improve usability and reduce friction for users.
           </p>
           <p>
-            This nonprofit redesign improved accessibility by following WCAG 2.1 guidelines (<a href="#burrito-brigade">see project details</a>), making the website usable for a broader audience and reducing potential legal risk.
+            This nonprofit redesign improved accessibility by following WCAG 2.1 AA-informed design standards aligned with current ADA litigation trends, making the website usable for a broader audience and reducing potential legal risk.</p>
+            <p><a href="/case-studies/nonprofit-redesign.html">
+                View the full nonprofit website redesign case study →
+                </a>
           </p>
         </div>
       </div>
@@ -279,11 +382,282 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
   </div>
 </section>
 
+<!-- UGC & Social Media Content -->
+<section id="ugc-content" class="ugc-content">
+  <div class="container">
+
+    <h2>TikTok UGC Marketing & Short-Form Video Strategy for Brands</h2>
+
+    <p class="timeline-intro">
+      I craft high-impact social content and campaigns that capture attention, expand reach, and deliver measurable results for small businesses and nonprofits.
+    </p>
+
+    <div class="timeline">
+
+      <!-- STEP 01 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">01</div>
+        <div class="timeline-content">
+          <h3>Audience & Platform Research</h3>
+          <p class="credibility">
+            I analyze target demographics, competitors, and platform trends to identify the content formats and messaging that will resonate most with your audience.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">02</div>
+        <div class="timeline-content">
+          <h3>Creative Concepting & Storyboarding</h3>
+          <p>
+            Every video and campaign is planned with a clear narrative and visual strategy, ensuring brand consistency and audience engagement from the first frame.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">03</div>
+        <div class="timeline-content">
+          <h3>Content Production</h3>
+          <p>
+            I produce TikTok, Instagram Reels, and influencer content that balances authenticity, entertainment, and brand messaging to maximize attention and trust.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 04 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">04</div>
+        <div class="timeline-content">
+          <h3>Optimization & Posting Strategy</h3>
+          <p>
+            Posts are optimized for reach and engagement through hashtags, captions, trending audio, and posting cadence. I continuously monitor performance and adjust content strategy based on real-time analytics.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 05 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">05</div>
+        <div class="timeline-content">
+          <h3>Analytics & Measurable Results</h3>
+          <p>
+            Engagement, reach, conversions, and sales are tracked across all campaigns. Each project comes with actionable insights and data to improve future performance.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Full-Funnel Digital Strategy -->
+<section id="digital-strategy" class="digital-strategy">
+  <div class="container">
+
+    <h2>Full-Funnel Digital Marketing Strategy & Conversion Optimization</h2>
+
+    <p class="timeline-intro">
+      I create end-to-end digital strategies that align UX, SEO, content, website structure, and analytics to move users from awareness to conversion.
+    </p>
+
+    <div class="timeline">
+
+      <!-- STEP 01 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">01</div>
+        <div class="timeline-content">
+          <h3>Audit & Diagnose Gaps</h3>
+          <p class="credibility">
+            I review existing websites, analytics, and content to identify structural, UX, and SEO gaps that prevent conversions and impact performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">02</div>
+        <div class="timeline-content">
+          <h3>UX & SEO-Driven Architecture</h3>
+          <p>
+            I design information architecture, user flows, and content strategies optimized for both usability and search discoverability to maximize conversion opportunities.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">03</div>
+        <div class="timeline-content">
+          <h3>Content & Campaign Alignment</h3>
+          <p>
+            Website content, social campaigns, and influencer messaging are synchronized for consistent branding, SEO impact, and measurable audience engagement.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 04 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">04</div>
+        <div class="timeline-content">
+          <h3>Analytics & Tracking</h3>
+          <p>
+            Google Tag Manager, conversion tracking, and KPI monitoring are implemented to capture user behavior at every stage of the funnel and inform strategy decisions.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 05 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">05</div>
+        <div class="timeline-content">
+          <h3>Continuous Optimization</h3>
+          <p>
+            Campaigns, content, and site architecture are iteratively refined based on real-time data to improve conversions, engagement, and ROI over time.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Graphic Design & Visual Content -->
+<section id="graphic-design" class="graphic-design">
+  <div class="container">
+
+    <h2>Graphic Design & Visual Branding for Web and Social Media</h2>
+
+    <p class="timeline-intro">
+      I create visually cohesive graphics for web, social, and marketing campaigns that enhance brand recognition and drive audience engagement.
+    </p>
+
+    <div class="timeline">
+
+      <!-- STEP 01 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">01</div>
+        <div class="timeline-content">
+          <h3>Visual Audit & Style Alignment</h3>
+          <p class="credibility">
+            I review existing visual assets to ensure consistency across all digital touchpoints, identifying opportunities for a cohesive and polished look.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">02</div>
+        <div class="timeline-content">
+          <h3>Create Custom Graphics</h3>
+          <p>
+            I design engaging visuals for social media, website elements, and marketing campaigns that are visually striking and optimized for the platform.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">03</div>
+        <div class="timeline-content">
+          <h3>Platform Optimization</h3>
+          <p>
+            Every graphic is tailored to its intended platform, balancing resolution, aspect ratios, accessibility, and brand tone for maximum impact.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 04 -->
+      <div class="timeline-step">
+        <div class="timeline-marker">04</div>
+        <div class="timeline-content">
+          <h3>Performance & Engagement Tracking</h3>
+          <p>
+            I monitor which visuals resonate best with audiences and optimize future assets based on engagement data, ensuring your graphics are not just beautiful, but effective.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="authority-risk">
+  <div class="container">
+    <h2>Trusted by Boards, Nonprofits, and Growth-Focused Businesses</h2>
+    <p>
+      I help organizations meet professional, legal, and accessibility standards while building engaging websites and digital experiences. Whether your goal is to satisfy grant requirements, minimize exposure to ADA-related risk, or create a polished online presence that impresses stakeholders, my work delivers both compliance and impact.
+    </p>
+    <p>
+      By combining WCAG-informed design, SEO optimization, and measurable performance metrics, your website becomes a strategic asset—not just a digital brochure.
+    </p>
+  </div>
+</section>
+
     <!-- FEATURED WORK -->
     <section class="portfolio">
       <div class="container">
         <h2 id="work">Featured Work</h2>
         <p>Selected projects demonstrating design, accessibility, performance, and measurable engagement.</p>
+        <!-- TikTok & UGC -->
+
+        <div class="portfolio-list tiktok-grid">
+
+          <!-- Dog Puzzle Feeder -->
+          <div class="portfolio-item">
+
+            <a href="https://www.tiktok.com/@autumnfarms/video/7353129410205125919" target="_blank">
+              <picture>
+                <source srcset="Dogpuzzlefeeder.webp" type="image/webp">
+                <img src="Dogpuzzlefeeder.png" alt="TikTok UGC video showing Dog Puzzle Feeder engagement for small business marketing" loading="lazy">
+              </picture>
+            </a>
+            <div class="portfolio-details">
+              <h3>Dog Puzzle Feeder — TikTok & UGC</h3>
+              <p>Developed a series of short-form TikTok videos showcasing real-life product use. Each video highlighted the product in a playful, relatable context, emphasizing its functionality and appeal for dog owners.</p>
+              <p>Applied SEO-conscious captions, trending hashtags, and an optimized posting schedule to maximize reach and discoverability. Engagement was monitored closely to adjust content strategy in real time.</p>
+              <p><strong>Results:</strong> 305 tracked sales, strong user engagement (likes, shares, comments), and increased brand visibility on TikTok.</p>
+              <p class="micro-callout">Strategy included audience segmentation, trend alignment, and iterative testing to refine video content and captions for maximum performance.</p>
+            </div>
+          </div>
+
+          <!-- Jean Miss Perfume -->
+          <div class="portfolio-item">
+            <a href="https://www.tiktok.com/@autumnfarms/video/7440617341400042798" target="_blank">
+              <picture>
+                <source srcset="jeanmiss.webp" type="image/webp">
+                <img src="jeanmiss.png" alt="Jean Miss Eau de Parfum TikTok UGC" loading="lazy">
+              </picture>
+            </a>
+            <div class="portfolio-details">
+              <h3>Jean Miss Perfume — TikTok & UGC</h3>
+              <p>Produced a series of lifestyle and product demonstration videos to showcase the perfume in real-world scenarios. Focused on storytelling that highlighted scent, packaging, and brand personality.</p>
+              <p>Optimized video captions, hashtags, and posting times for maximum engagement and discoverability on TikTok. A/B tested content formats to determine which style resonated best with the target audience.</p>
+              <p><strong>Results:</strong> Several hundred tracked sales, significant growth in organic brand awareness, and increased follower engagement.</p>
+              <p class="micro-callout">Creative strategy emphasized visual appeal, clear product messaging, and analytics-driven refinement to maintain consistent ROI and audience growth.</p>
+            </div>
+          </div>
+
+          <!-- Women's Lightweight Sweater -->
+          <div class="portfolio-item">
+            <a href="https://www.amazon.com/vdp/0c2ad7b06269485aa9fcff5ba652954d?product=B019UN75AK&ref=cm_sw_cp_r_ib_dt_qbvNeE3vbKepI" target="_blank">
+              <picture>
+                <source srcset="sampeell.webp" type="image/webp">
+                <img src="sampeell.png" alt="Women's Long Sleeve Lightweight Sweater" loading="lazy">
+              </picture>
+            </a>
+            <div class="portfolio-details">
+              <h3>Women's Lightweight Sweater — Amazon Influencer Content</h3>
+              <p>Created influencer content showing seasonal and lifestyle use of the sweater. Videos and images were crafted to appeal to target demographics, demonstrating versatility, comfort, and styling options.</p>
+              <p>Optimized copy, hashtags, and Amazon listing content to boost visibility and drive engagement. Performance was tracked to continuously adjust content and maximize ROI.</p>
+              <p><strong>Results:</strong> Hundreds of tracked sales, increased click-through rates, saves, and shares, with improved overall engagement across social platforms.</p>
+              <p class="micro-callout">Strategy combined lifestyle storytelling, trend alignment, and analytics to refine content cadence and maintain strong discoverability and audience trust.</p>
+            </div>
+          </div>
+
+        </div> <!-- /tiktok-grid -->
 
         <!-- Nonprofit Website Redesign -->
         <div class="web-project">
@@ -349,65 +723,6 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
           </p>
         </div>
 
-      </div>
-
-
-    <!-- TikTok & UGC -->
-<div class="container">
-  <div class="portfolio-list tiktok-grid">
-
-    <!-- Dog Puzzle Feeder -->
-    <div class="portfolio-item">
-      <a href="https://www.tiktok.com/@autumnfarms/video/7353129410205125919" target="_blank">
-        <picture>
-          <source srcset="Dogpuzzlefeeder.webp" type="image/webp">
-          <img src="Dogpuzzlefeeder.png" alt="Dog Puzzle Feeder TikTok UGC video for small business marketing" loading="lazy">
-        </picture>
-      </a>
-      <div class="portfolio-details">
-        <p class="pull-quote"><strong>Dog Puzzle Feeder</strong> — TikTok & UGC</p>
-        <p>Developed a series of short-form TikTok videos showcasing real-life product use. Each video highlighted the product in a playful, relatable context, emphasizing its functionality and appeal for dog owners.</p>
-        <p>Applied SEO-conscious captions, trending hashtags, and an optimized posting schedule to maximize reach and discoverability. Engagement was monitored closely to adjust content strategy in real time.</p>
-        <p><strong>Results:</strong> 305 tracked sales, strong user engagement (likes, shares, comments), and increased brand visibility on TikTok.</p>
-        <p class="micro-callout">Strategy included audience segmentation, trend alignment, and iterative testing to refine video content and captions for maximum performance.</p>
-      </div>
-    </div>
-
-    <!-- Jean Miss Perfume -->
-    <div class="portfolio-item">
-      <a href="https://www.tiktok.com/@autumnfarms/video/7440617341400042798" target="_blank">
-        <picture>
-          <source srcset="jeanmiss.webp" type="image/webp">
-          <img src="jeanmiss.png" alt="Jean Miss Eau de Parfum TikTok UGC" loading="lazy">
-        </picture>
-      </a>
-      <div class="portfolio-details">
-        <p class="pull-quote"><strong>Jean Miss Perfume</strong> — TikTok & UGC</p>
-        <p>Produced a series of lifestyle and product demonstration videos to showcase the perfume in real-world scenarios. Focused on storytelling that highlighted scent, packaging, and brand personality.</p>
-        <p>Optimized video captions, hashtags, and posting times for maximum engagement and discoverability on TikTok. A/B tested content formats to determine which style resonated best with the target audience.</p>
-        <p><strong>Results:</strong> Several hundred tracked sales, significant growth in organic brand awareness, and increased follower engagement.</p>
-        <p class="micro-callout">Creative strategy emphasized visual appeal, clear product messaging, and analytics-driven refinement to maintain consistent ROI and audience growth.</p>
-      </div>
-    </div>
-
-    <!-- Women's Lightweight Sweater -->
-    <div class="portfolio-item">
-      <a href="https://www.amazon.com/vdp/0c2ad7b06269485aa9fcff5ba652954d?product=B019UN75AK&ref=cm_sw_cp_r_ib_dt_qbvNeE3vbKepI" target="_blank">
-        <picture>
-          <source srcset="sampeell.webp" type="image/webp">
-          <img src="sampeell.png" alt="Women's Long Sleeve Lightweight Sweater" loading="lazy">
-        </picture>
-      </a>
-      <div class="portfolio-details">
-        <p class="pull-quote"><strong>Women's Lightweight Sweater</strong> — Amazon Influencer Content</p>
-        <p>Created influencer content showing seasonal and lifestyle use of the sweater. Videos and images were crafted to appeal to target demographics, demonstrating versatility, comfort, and styling options.</p>
-        <p>Optimized copy, hashtags, and Amazon listing content to boost visibility and drive engagement. Performance was tracked to continuously adjust content and maximize ROI.</p>
-        <p><strong>Results:</strong> Hundreds of tracked sales, increased click-through rates, saves, and shares, with improved overall engagement across social platforms.</p>
-        <p class="micro-callout">Strategy combined lifestyle storytelling, trend alignment, and analytics to refine content cadence and maintain strong discoverability and audience trust.</p>
-      </div>
-    </div>
-
-  </div> <!-- /tiktok-grid -->
 </div> <!-- /container -->
 
     </div>
@@ -428,32 +743,32 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 
       <div class="form-group">
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name" required>
+        <input id="name" name="name" type="text" placeholder="Your name" required aria-required="true">
       </div>
 
       <div class="form-group">
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true">
       </div>
 
       <div class="form-group">
         <label for="message">Project details</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required aria-required="true"></textarea>
       </div>
 
       <input type="hidden" name="_subject" value="New website inquiry">
 
       <button type="submit" class="btn-primary">Send message</button>
 
-        <!-- Trust / privacy note -->
-        <p class="form-trust-note">
+      <!-- Trust / privacy note -->
+      <p class="form-trust-note">
         Your information is safe with me — I will never sell or share your data.
         <br>
         <a href="/privacy-policy.html">View Privacy Policy</a>
-        </p>
+      </p>
 
       <!-- Status messages -->
-      <div class="form-status" aria-live="polite" tabindex="-1"></div>
+      <div class="form-status" aria-live="polite" role="status" tabindex="-1"></div>
     </form>
 
     <p>
