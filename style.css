@@ -497,6 +497,13 @@ img {
 .web-project h2, .web-project h3, .web-project h4, .web-project p, .web-project ul, .web-project li, .portfolio-item h2, .portfolio-item h3, .portfolio-item h4, .portfolio-item p, .portfolio-item ul, .portfolio-item li {
     color: #9E4F3B;
 }
+.web-project img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 /* Mobile first — stacked */
 .portfolio-item {
