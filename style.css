@@ -69,6 +69,18 @@ img {
     display: block;
     height: auto;
 }
+/* Ensure the logo reserves correct space to prevent layout shifts */
+.site-logo picture {
+  display: block;
+  width: 79px;           /* exact width of your logo */
+  aspect-ratio: 79 / 76; /* width / height ratio */
+}
+
+.site-logo img {
+  display: block;        /* remove inline gaps */
+  width: 100%;           /* fill container width */
+  height: 100%;          /* maintain aspect ratio */
+}
 .skip-link {
   position: absolute;
   top: -40px;
