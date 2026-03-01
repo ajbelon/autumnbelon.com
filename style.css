@@ -737,6 +737,14 @@ img {
     border-radius: 6px;
     padding-left: 20px;
 }
+.case-study-about {
+    background-color: #9E4F3B;
+    color: #fff;
+    padding: 3rem 0;
+}
+.case-study-about h2, .case-study-about h3, .case-study-about p {
+    color: #fff;
+}
 
 /* WORKFLOW STEPS */
 .workflow-grid {
