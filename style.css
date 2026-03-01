@@ -331,7 +331,7 @@ img {
 }
 
 .what-i-do-card:nth-child(2) {
-  background: #4B9E9B; /* teal */
+  background: #162848; /* teal */
   color: #fff;
 }
 .what-i-do-card:nth-child(2) h3,
@@ -340,7 +340,7 @@ img {
 }
 
 .what-i-do-card:nth-child(3) {
-  background: #B37A1F; /* gold */
+  background: #2E5E4A; /* gold */
   color: #fff;
 }
 .what-i-do-card:nth-child(3) h3,
@@ -401,14 +401,14 @@ img {
 
 /* ugc-content → Card 2 (Teal) */
 #ugc-content .timeline-marker {
-    background-color: #4B9E9B;
+    background-color: #162848;
     color: #fff;
     font-size: 1.25rem;
 }
 
 /* digital-strategy → Card 3 (Gold) */
 #digital-strategy .timeline-marker {
-    background-color: #B37A1F;
+    background-color: #2E5E4A;
     color: #fff;
     font-size: 1.25rem;
 }
@@ -433,13 +433,13 @@ img {
 /* UGC Content → Card 2 (Teal) */
 #ugc-content h2,
 #ugc-content h3 {
-    color: #4B9E9B;
+    color: #162848;
 }
 
 /* Full-Funnel Digital Strategy → Card 3 (Dark Gold) */
 #digital-strategy h2,
 #digital-strategy h3 {
-    color: #B37A1F;
+    color: #2E5E4A;
 }
 
 /* Graphic Design → Card 4 (Purple) */
