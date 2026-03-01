@@ -161,13 +161,10 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
   <div class="container nav-container">
     <!-- Logo -->
     <a href="/" class="site-logo" aria-label="Autumn Belon Home">
-      <img 
-        src="/images/logo.png"
-        width="45"
-        height="70"
-        alt="Autumn Belon Logo"
-        decoding="async"
-      >
+      <picture>
+        <source srcset="/images/logocolor.webp" type="image/webp">
+        <img src="/images/logocolor.jpg" alt="Autumn Belon Logo" width="45" height="76" decoding="async" loading="eager">
+      </picture>
     </a>
 
     <!-- Navigation -->
