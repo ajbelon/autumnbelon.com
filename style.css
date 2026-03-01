@@ -258,19 +258,26 @@ img {
 }
 
 .hero-image {
-    position: relative;
     width: 100%;
-    max-width: 600px;       /* optional: limit hero image size */
-    margin: 0 auto;         /* center horizontally */
+    max-width: 600px;           /* optional max width */
+    aspect-ratio: 549 / 935;    /* reserve space for desktop/mobile */
+    margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
 }
 
 .hero-image img {
     width: 100%;
-    height: auto;           /* preserves original aspect ratio */
+    height: 100%;               /* fill container space */
+    object-fit: cover;
     display: block;
-    object-fit: cover;      /* fills container if needed */
+}
+
+/* Optional: ensure mobile images scale correctly */
+@media (max-width: 768px) {
+    .hero-image {
+        aspect-ratio: 549 / 935;  /* same ratio as desktop to prevent CLS */
+    }
 }
 
 .hero-lead {
