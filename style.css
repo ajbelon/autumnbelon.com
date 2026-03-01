@@ -257,9 +257,20 @@ img {
     color: #9E4F3B;
 }
 
+.hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 600px;       /* optional: limit hero image size */
+    margin: 0 auto;         /* center horizontally */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .hero-image img {
     width: 100%;
-    border-radius: 20px;
+    height: auto;           /* preserves original aspect ratio */
+    display: block;
+    object-fit: cover;      /* fills container if needed */
 }
 
 .hero-lead {
@@ -971,7 +982,6 @@ img {
     .web-project-details { text-align: left; }
     .metrics-grid { grid-template-columns: 1fr; gap: 20px; }
     .hero p { text-align: left; }
-    .hero-image img { width: 80%; max-width: 250px; margin: 0 auto; border-radius: 20px; }
     .cta { padding: 30px 15px; }
     .cta form { padding: 1.5rem; }
     .workflow { flex-direction: column; gap: 1rem; }
