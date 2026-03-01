@@ -75,14 +75,18 @@
       <!-- HERO IMAGE -->
         <div class="hero-image">
           <picture>
+            <!-- Mobile -->
             <source media="(max-width:768px)" srcset="/self-mobile.webp" type="image/webp">
+            <!-- Desktop -->
             <source srcset="/self-desktop.webp" type="image/webp">
-            <img src="/self.jpg"
+            <!-- Fallback & LCP image -->
+            <img src="/self-desktop.webp"
                 alt="Autumn Belon, small business and nonprofit web designer"
                 width="549"
                 height="935"
                 loading="eager"
-                decoding="async">
+                decoding="async"
+                fetchpriority="high">
           </picture>
         </div>
     </div>
