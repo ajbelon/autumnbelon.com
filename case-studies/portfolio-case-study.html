@@ -71,16 +71,11 @@
       </div>
       <div class="hero-image" style="text-align:center; aspect-ratio:1/1;">
         <picture>
-            <source srcset="/self.webp" type="image/webp">
-            <img 
-              src="self.jpg"
-              width="934"
-              height="934"
-              alt="Autumn Belon, small business and nonprofit web designer"
-              loading="eager"
-              decoding="async"
-              style="max-width:100%; height:auto;"
-            >
+          <source media="(max-width:768px)" srcset="/self-mobile.webp" type="image/webp">
+          <source srcset="/self-desktop.webp" type="image/webp">
+          <img src="/self.jpg" alt="Autumn Belon, small business and nonprofit web designer"
+              width="549" height="935" loading="eager" decoding="async"
+              style="max-width:100%; height:auto;">
         </picture>
         </div>
     </div>
