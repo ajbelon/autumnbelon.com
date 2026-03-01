@@ -39,7 +39,7 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
     <!-- Preconnect to Google Analytics early -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <!-- Preload hero image for faster LCP -->
-    <link rel="preload" as="image" href="/self.webp">
+    <link rel="preload" as="image" href="/self-desktop.webp" imagesrcset="/self-desktop.webp" imagesizes="100vw">
     <title>Accessibility-Focused Web Design for Nonprofits & Small Businesses | Autumn Belon</title>
     <link rel="canonical" href="https://autumnbelon.com/">
 
@@ -193,40 +193,51 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 
 <!-- HERO -->
 <section class="hero">
-    <div class="container hero-grid">
-        <div class="hero-content">
-            <h1>Strategic Web Design for Small Businesses and Nonprofits</h1>
-            <h2>Accessibility-First, Standards-Aligned Websites Built for Growth and Protection</h2>
-            <p class="hero-brand">
-              Led by Autumn Belon — Web Designer & Digital Strategist with a Master’s in Graphic Information Technology.
-            </p>
-            <p class="hero-lead">
-               Driving growth for small businesses and nonprofits through accessibility-first web design, strategic UGC and social content, and impact-driven digital experiences.
-            </p>
-            <p class="hero-lead">
-               With a <strong>Master’s degree in Graphic Information Technology</strong> (4.0 GPA) and a <strong>BAS in Internet and Web Development</strong> (Summa Cum Laude) from Arizona State University, I combine technical expertise, design skill, and data-driven strategy to deliver measurable results across web, social, and influencer campaigns. My work includes TikTok and Amazon influencer campaigns, full website redesigns, and digital marketing content that drives engagement, traffic, and tracked sales.
-            </p>
+  <div class="container hero-grid">
 
-            <div class="hero-actions">
-                <a href="#work" class="btn primary">View My Work</a>
-                <a href="#why-work-with-me" class="btn secondary">Work With Me</a>
-            </div>
-        </div>
-        <!-- HERO IMAGE -->
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+      <h1>Strategic Web Design for Small Businesses and Nonprofits</h1>
+      <h2>Accessibility-First, Standards-Aligned Websites Built for Growth and Protection</h2>
+
+      <p class="hero-brand">
+        Led by Autumn Belon — Web Designer & Digital Strategist with a Master’s in Graphic Information Technology.
+      </p>
+
+      <p class="hero-lead">
+        Driving growth for small businesses and nonprofits through accessibility-first web design, strategic UGC and social content, and impact-driven digital experiences.
+      </p>
+
+      <p class="hero-lead">
+        With a <strong>Master’s degree in Graphic Information Technology</strong> (4.0 GPA) and a <strong>BAS in Internet and Web Development</strong> (Summa Cum Laude) from Arizona State University, I combine technical expertise, design skill, and data-driven strategy to deliver measurable results across web, social, and influencer campaigns. My work includes TikTok and Amazon influencer campaigns, full website redesigns, and digital marketing content that drives engagement, traffic, and tracked sales.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn primary">View My Work</a>
+        <a href="#why-work-with-me" class="btn secondary">Work With Me</a>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE -->
         <div class="hero-image">
           <picture>
+            <!-- Mobile -->
             <source media="(max-width:768px)" srcset="/self-mobile.webp" type="image/webp">
+            <!-- Desktop -->
             <source srcset="/self-desktop.webp" type="image/webp">
-            <img src="/self.jpg"
+            <!-- Fallback & LCP image -->
+            <img src="/self-desktop.webp"
                 alt="Autumn Belon, small business and nonprofit web designer"
                 width="549"
                 height="935"
                 loading="eager"
-                decoding="async">
+                decoding="async"
+                fetchpriority="high">
           </picture>
         </div>
-            </div>
-        </section>
+
+      </div>
+    </section>
 
 <section id="accessibility-specialty" class="accessibility-specialty">
   <div class="container">
