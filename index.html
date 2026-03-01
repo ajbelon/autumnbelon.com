@@ -36,6 +36,10 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect to Google Analytics early -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <!-- Preload hero image for faster LCP -->
+    <link rel="preload" as="image" href="/self.webp">
     <title>Accessibility-Focused Web Design for Nonprofits & Small Businesses | Autumn Belon</title>
     <link rel="canonical" href="https://autumnbelon.com/">
 
@@ -62,7 +66,8 @@ window.addEventListener("keydown", loadAnalytics, { once: true });
     <meta name="twitter:description" content="Custom web design, branding, and digital marketing services for small businesses and nonprofits. See my portfolio of successful websites, TikTok campaigns, and influencer content.">
     <meta name="twitter:image" content="https://autumnbelon.com/self.jpg">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 
     <!-- Person Structured Data -->
      <script type="application/ld+json">
