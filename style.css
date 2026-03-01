@@ -504,7 +504,52 @@ img {
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* =========================
+   Portfolio Item Images - Clean Responsive Setup
+========================= */
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;       /* wrap on small screens */
+    gap: 30px;
+    align-items: flex-start; /* prevent stretching */
+}
 
+.portfolio-item img {
+    width: auto;          /* use intrinsic width */
+    max-width: 150px;     /* cap size */
+    height: auto;         /* maintain aspect ratio */
+    aspect-ratio: 466 / 835; /* optional, matches your original image */
+    object-fit: contain;  /* ensures full image fits box */
+    display: block;
+    margin: 0 auto;       /* center horizontally */
+}
+
+/* ===== Mobile adjustments ===== */
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex-direction: column; /* stack items on small screens */
+        align-items: center;    /* center children */
+    }
+
+    .portfolio-item img {
+        max-width: 180px;       /* explicit mobile cap */
+        width: auto;
+        height: auto;           /* maintain aspect ratio */
+    }
+}
+
+/* ===== Optional: slightly larger on tablet/desktop ===== */
+@media (min-width: 769px) and (max-width: 1300px) {
+    .portfolio-item img {
+        max-width: 180px;      /* larger images on bigger screens */
+    }
+}
+
+@media (min-width: 1301px) {
+    .portfolio-item img {
+        max-width: 200px;      /* cap for large desktops */
+    }
+}
 /* Mobile first — stacked */
 .portfolio-item {
     display: flex;
@@ -519,10 +564,6 @@ img {
         align-items: flex-start;
     }
 
-    .portfolio-item img {
-        width: 150px;
-        flex-shrink: 0;
-    }
 
     .portfolio-details {
         flex: 1;
@@ -919,7 +960,6 @@ img {
 @media (max-width: 1300px) {
     body { padding: 0 10px; }
     .hero-grid { grid-template-columns: 1fr; text-align: center; }
-    .portfolio-item img { width: 100%; max-width: 250px; }
     .web-project-details { text-align: left; }
     .metrics-grid { grid-template-columns: 1fr; gap: 20px; }
     .hero p { text-align: left; }
