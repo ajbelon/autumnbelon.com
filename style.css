@@ -834,7 +834,53 @@ img {
 .technical-grid li {
     margin-bottom: 10px;
 }
+/* TECHNICAL METRICS GRID */
+.technical-metrics .technical-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.technical-metrics .technical-grid .card {
+    background: #FDF1ED;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 100%; /* full width */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.technical-metrics .card ul {
+    list-style: disc outside;
+    padding-left: 1.5rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.technical-metrics .card li {
+    margin-bottom: 10px;
+}
+
+/* Make only the bullets green */
+.technical-metrics .card li::marker {
+    color: #2E7D32; /* green like Lighthouse */
+}
+
+/* Nested UL for Core Web Vitals */
+.technical-metrics .card li ul {
+    list-style-type: circle;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+}
+
+.technical-metrics .card li ul li {
+    margin-bottom: 8px;
+}
+
+/* Nested bullet color also green */
+.technical-metrics .card li ul li::marker {
+    color: #2E7D32;
+}
 /* Metrics badges */
 .metrics-list li {
     margin-bottom: 8px;
