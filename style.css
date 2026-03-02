@@ -233,11 +233,65 @@ img {
 /* =========================
    HERO SECTION
 ========================= */
+/* HERO SECTION */
 .hero {
-    background: #FDF1ED;
-    padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: #FDF1ED;
+  padding: 60px 0;
 }
 
+.hero-content h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.hero-content h2 {
+  font-size: 1.25rem;
+  color: #4f4f4f;
+  margin-top: 0.5rem;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Optional: adjust spacing for hero paragraphs */
+.hero-brand,
+.hero-lead {
+  margin-top: 0.75rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    margin-top: 1.5rem;
+  }
+}
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -469,12 +523,6 @@ img {
 #ugc-content h2,
 #ugc-content h3 {
     color: #162848;
-}
-
-/* Full-Funnel Digital Strategy → Card 3 (Dark Gold) */
-#digital-strategy h2,
-#digital-strategy h3 {
-    color: #2E5E4A;
 }
 
 /* Graphic Design → Card 4 (Purple) */
@@ -752,7 +800,60 @@ img {
 .case-study-about h2, .case-study-about h3, .case-study-about p {
     color: #fff;
 }
+/* Base case study highlight */
+.case-study-highlight {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  border-left: 4px solid;
+  background-color: #f9f9f9;
+}
 
+.case-study-highlight h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Metrics paragraph */
+.case-study-highlight .highlight-metrics {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Section-specific highlights */
+.web-design-highlight {
+  border-color: #9E4F3B; /* brown accent matching web-design section */
+}
+
+.ugc-content-highlight{
+  border-color: #162848; /* example color matching UGC section */
+}
+.ugc-content-highlight h2 {
+  color: #162848; /* match section heading color */
+}
+/* Graphic Design Highlight */
+.graphic-design-highlight {
+  border-left: 4px solid #9E4B88; /* brown/gold tone matching graphic-design section */
+  background-color: #f9f7f2;       /* subtle background to distinguish the highlight */
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+
+.graphic-design-highlight h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #9E4B88;
+}
+
+.graphic-design-highlight .highlight-metrics {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+
+/* Button spacing */
+.case-study-highlight .btn {
+  margin-top: 1rem;
+}
 /* WORKFLOW STEPS */
 .workflow-grid {
     display: grid;
