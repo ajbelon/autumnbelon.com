@@ -78,7 +78,98 @@ img {
   width: 100%;           /* fills container */
   height: 100%;          /* respects aspect ratio */
 }
+/* =========================
+   SITE HEADER & LOGO
+========================= */
+.site-header {
+    display: flex;
+    align-items: center;          /* vertically center logo + nav */
+    justify-content: space-between; /* logo left, nav right */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 15px;
+    height: 60px;                 /* fixed header height */
+}
 
+.site-logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo picture {
+    display: block;
+    width: auto;
+    max-width: 120px;             /* cap logo size on desktop */
+    height: auto;
+}
+
+.site-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 50px;             /* prevents stretching */
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+    display: none;
+}
+
+/* =========================
+   MOBILE HEADER
+========================= */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 0 10px;
+        height: 55px;
+    }
+
+    .site-logo picture {
+        max-width: 90px;
+    }
+
+    .site-logo img {
+        max-height: 40px;
+    }
+
+    /* Hamburger visible */
+    .hamburger {
+        display: flex;
+        order: 2;                  /* keeps it on the right */
+    }
+
+    /* Nav hidden by default on mobile */
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;                 /* below header */
+        right: 0;
+        background: #fff;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        width: 200px;
+        z-index: 1050;
+    }
+
+    /* Show nav when active */
+    .nav-wrapper.active .nav-list {
+        display: flex;
+    }
+}
 .skip-link {
   position: absolute;
   top: -40px;
