@@ -287,7 +287,14 @@ img {
     margin: 20px 0;
     padding: 5px 0;
 }
-
+.accessibility-specialty {
+  background-color: #9E4F3B; /* your brown */
+  color: #ffffff;            /* ensures text is readable on dark background */
+  padding: 4rem 0;           /* optional spacing for aesthetics */
+}
+.accessibility-specialty h2, .accessibility-specialty h3, .accessibility-specialty p {
+  color: #ffffff;            /* ensures all text is white for readability */
+}
 .btn {
     display: inline-block;
     padding: 12px 20px;
