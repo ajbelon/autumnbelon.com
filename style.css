@@ -343,12 +343,33 @@ img {
     margin: 0;             /* reset any default margins */
     line-height: 1.6;      /* optional: increase line height for readability */
 }
-
-/* Optional: ensure mobile images scale correctly */
+/* =========================
+   HERO MOBILE FIX
+========================= */
 @media (max-width: 768px) {
-    .hero-image {
-        aspect-ratio: 549 / 935;  /* same ratio as desktop to prevent CLS */
-    }
+  .hero {
+      flex-direction: column;
+      text-align: left;       /* left-align hero content */
+      min-height: auto;       /* remove fixed 80vh */
+      padding: 20px 10px;     /* reduce vertical padding */
+  }
+
+  .hero-grid {
+      grid-template-columns: 1fr; /* stack text + FAQ vertically */
+      gap: 20px;                  /* reduce gap */
+  }
+
+  .hero-image {
+      margin: 0 auto;       /* remove extra top/bottom margin */
+      width: 100%;
+      max-width: 100%;      /* avoid extra horizontal space */
+      aspect-ratio: auto;   /* let image height adjust naturally */
+  }
+
+  .hero-faq ul,
+  .hero-faq li {
+      text-align: left;     /* force left alignment on mobile */
+  }
 }
 
 .hero-lead {
@@ -359,10 +380,11 @@ img {
 .accessibility-specialty {
   background-color: #9E4F3B; /* your brown */
   color: #ffffff;            /* ensures text is readable on dark background */
-  padding: 4rem 0;           /* optional spacing for aesthetics */
+  padding: 10px;           /* optional spacing for aesthetics */
 }
 .accessibility-specialty h2, .accessibility-specialty h3, .accessibility-specialty p {
   color: #ffffff;            /* ensures all text is white for readability */
+  padding: 5px;           /* optional spacing for aesthetics */
 }
 .btn {
     display: inline-block;
@@ -394,6 +416,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
+  padding: 15px;
 }
 
 .metric {
@@ -415,6 +438,29 @@ img {
   font-size: 1.25rem;
   font-weight: bold;
   color: #2c3e50;
+}
+
+/* =========================
+   METRICS STRONG/SPAN LAYOUT
+========================= */
+.metrics-grid div {
+    display: flex;
+    flex-direction: column; /* stack strong above span */
+    align-items: center;    /* optional: center horizontally */
+    text-align: center;     /* center text */
+    gap: 0.25rem;           /* spacing between strong and span */
+}
+
+.metrics-grid div strong {
+    display: block;         /* ensures strong is block above span */
+    font-size: 1.25rem;     /* adjust as needed */
+    font-weight: bold;
+}
+
+.metrics-grid div span {
+    display: block;         /* ensures span is below strong */
+    font-size: 0.95rem;
+    color: #fff;            /* match metrics text color */
 }
 
 /* =========================
@@ -485,10 +531,12 @@ img {
 
 .what-i-do-card h3 {
   margin-bottom: 0.5rem;
+  padding: 5px;
 }
 
 .what-i-do-card p {
   margin: 0;
+  padding: 5px;
 }
 /* Responsive adjustments */
 @media (max-width: 1024px) {
@@ -830,6 +878,7 @@ img {
 }
 .case-study-about h2, .case-study-about h3, .case-study-about p {
     color: #fff;
+    padding: 5px;
 }
 /* Base case study highlight */
 .case-study-highlight {
