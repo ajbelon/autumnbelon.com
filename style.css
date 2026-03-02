@@ -66,7 +66,9 @@ img {
 .site-header img {
     height: 40px;
 }
-
+.site-logo {
+    flex-shrink: 0;  /* prevents logo from being stretched or squished */
+}
 .site-logo picture {
   display: block;
   width: 79px;           /* container width */
@@ -126,6 +128,16 @@ img {
 
     .nav-wrapper.active .nav-list {
         display: flex;
+    }
+    .site-logo picture {
+        width: 60px;             /* smaller on mobile */
+        aspect-ratio: auto;      /* let height scale naturally */
+    }
+
+    .site-logo img {
+        width: 100%;
+        height: auto;            /* maintain natural ratio */
+        object-fit: contain;     /* prevent stretching */
     }
 }
 .skip-link {
