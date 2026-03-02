@@ -1,7 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <!-- Essential Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
 
   <!-- Page Title & SEO -->
   <title>Autumn Belon | Accessibility-First Web Design & Digital Strategy</title>
@@ -30,33 +33,29 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<header class="site-header">
-  <div class="container nav-container">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Nav wrapper for toggling mobile menu -->
-    <div class="nav-wrapper">
-      <nav aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
-          <li><a href="/case-studies/portfolio-case-study.html">Portfolio Case Study</a></li>
-          <li><a href="/#contactme">Contact</a></li>
-        </ul>
-      </nav>
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <div class="nav-wrapper">
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/case-studies/nonprofit-redesign.html">Nonprofit Case Study</a></li>
+            <li><a href="/case-studies/portfolio-case-study.html">Portfolio Case Study</a></li>
+            <li><a href="/#contactme">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </header>
 
-    <!-- Hamburger button (hidden on desktop, appears on scroll on mobile) -->
-    <button class="hamburger" aria-label="Menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-  </div>
-</header>
-
-<main id="main-content">
+<main id="main-content" role="main">
 
 <!-- HERO -->
 <section class="hero">
@@ -625,7 +624,7 @@
 
 </main>
 
-<footer>
+<footer role="contentinfo">
   <div class="container">
     <p>Interested in a website redesign that’s accessible, engaging, and built for results? <a href="/#contactme">Get in touch</a> to start your project.</p>
     <div class="footer-meta"><a href="/"><span>© 2026 Autumn Belon</span></a></div>
@@ -675,5 +674,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 </script>
+
 </body>
 </html>

@@ -66,34 +66,20 @@ img {
 .site-header img {
     height: 40px;
 }
-.site-logo {
-    flex-shrink: 0;  /* prevents logo from being stretched or squished */
-}
-.site-logo picture {
-  display: block;
-  width: 79px;           /* container width */
-  aspect-ratio: 79 / 76; /* reserve vertical space */
-}
-
-.site-logo img {
-  display: block;        /* remove inline gap */
-  width: 100%;           /* fills container */
-  height: 100%;          /* respects aspect ratio */
-}
 /* =========================
-   DESKTOP HEADER: logo left, nav right
+   DESKTOP HEADER LAYOUT
 ========================= */
 .site-header {
     display: flex;
-    align-items: center;           /* vertically center */
-    justify-content: space-between; /* logo left, nav/hamburger right */
+    align-items: center;
+    justify-content: space-between;
     padding: 0 15px;
 }
 
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* logo left, nav right */
+    justify-content: space-between;
     width: 100%;                     /* take full header width */
     max-width: 1100px;               /* optional: keep your container limit */
     margin: 0 auto;                  /* centers the container inside header */
@@ -128,16 +114,6 @@ img {
 
     .nav-wrapper.active .nav-list {
         display: flex;
-    }
-    .site-logo picture {
-        width: 60px;             /* smaller on mobile */
-        aspect-ratio: auto;      /* let height scale naturally */
-    }
-
-    .site-logo img {
-        width: 100%;
-        height: auto;            /* maintain natural ratio */
-        object-fit: contain;     /* prevent stretching */
     }
 }
 .skip-link {

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +9,26 @@
   <link rel="canonical" href="https://autumnbelon.com/case-studies/portfolio-case-study.html">
   <meta name="description" content="Portfolio case study showcasing Autumn Belon's web design, accessibility, and performance optimization work, including process, workflow, and results.">
 
-  <!-- Favicon & Apple Touch Icon -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/images/logocolor.webp">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/logocolor.webp">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/logocolor.webp">
 
-  <!-- Preload Hero Image for Faster Rendering -->
-  <link rel="preload" as="image" href="/self-desktop.webp" 
-        imagesrcset="/self-desktop.webp" 
-        imagesizes="100vw" 
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="/self-desktop.webp"
+        imagesrcset="/self-desktop.webp"
+        imagesizes="100vw"
         media="(min-width: 769px)">
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
+
 <header class="site-header">
   <div class="container nav-container">
 
-    <!-- Nav wrapper for toggling mobile menu -->
     <div class="nav-wrapper">
       <nav aria-label="Main navigation">
         <ul class="nav-list">
@@ -39,7 +40,6 @@
       </nav>
     </div>
 
-    <!-- Hamburger button (hidden on desktop, appears on scroll on mobile) -->
     <button class="hamburger" aria-label="Menu" aria-expanded="false">
       <span></span>
       <span></span>
@@ -51,18 +51,21 @@
 
 <main id="main-content">
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
         <h1>Portfolio Case Study</h1>
         <h2>High-Performance Web Design & Digital Strategy for Small Businesses & Nonprofits</h2>
+
         <p class="hero-lead">
           This project demonstrates a results-driven approach to web design, combining accessibility, performance optimization, and strategic layout to help organizations reach their audiences effectively.
         </p>
+
         <p class="hero-lead">
           By integrating WCAG-informed accessibility, SEO best practices, responsive design, and fast load times, this site delivers a user-centered digital experience that balances clarity, usability, and measurable growth.
         </p>
+
         <p class="hero-lead">
           Leveraging a Master’s in Graphic Information Technology and a BAS in Internet & Web Development, I design websites that not only look professional but also convert visitors into customers or supporters through strategic content placement and technical optimization.
         </p>
@@ -73,33 +76,13 @@
           <source media="(max-width:768px)" srcset="/self-mobile.webp" type="image/webp">
           <source srcset="/self-desktop.webp" type="image/webp">
           <img src="/self-desktop.webp"
-              alt="Autumn Belon, small business and nonprofit web designer"
-              width="549"
-              height="935"
-              loading="eager"
-              decoding="async"
-              fetchpriority="high">
+               alt="Autumn Belon, small business and nonprofit web designer"
+               width="549"
+               height="935"
+               loading="eager"
+               decoding="async"
+               fetchpriority="high">
         </picture>
-      </div>
-    </div>
-  </section>
-
-  <!-- KEY HIGHLIGHTS -->
-  <section class="portfolio">
-    <div class="container"> 
-      <div class="portfolio-item">
-        <div class="portfolio-details">
-          <h2>Key Highlights & Outcomes</h2>
-          <ul>
-            <li><strong>Performance:</strong> PageSpeed Insights scores of 100 across Performance, Accessibility, Best Practices, and SEO; first contentful paint under 1s for mobile.</li>
-            <li><strong>Accessibility:</strong> Full WCAG 2.1 compliance including semantic markup, ARIA attributes, keyboard navigation, and optimized color contrast for readability.</li>
-            <li><strong>Responsive Design:</strong> Optimized layouts for mobile, tablet, and desktop devices ensuring a consistent user experience across all screen sizes.</li>
-            <li><strong>Content & Media Optimization:</strong> All images compressed, delivered in WebP format, lazy-loaded for performance, and structured content to guide users effectively.</li>
-            <li><strong>Analytics Integration:</strong> Google Site Tag implemented for real-time tracking of user interactions, engagement, and conversion metrics.</li>
-            <li><strong>SEO & Metadata:</strong> Semantic HTML, structured data, meta descriptions, and headings aligned to target keywords to improve search engine visibility.</li>
-            <li><strong>Conversion-Focused Design:</strong> Strategically placed CTAs, intuitive navigation, and clear content hierarchy to improve lead generation or user engagement.</li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>
@@ -108,19 +91,20 @@
   <section class="case-study-intro">
     <div class="container">
       <h2>Project Overview & Strategic Approach</h2>
+
       <p>
         The goal of this project was to design a digital presence that is both visually appealing and functionally robust. I prioritized speed, accessibility, and clear information hierarchy to ensure visitors can easily find the information they need.
       </p>
-      <p>
-        Key strategies included:
-        <ul>
-          <li>Implementing responsive design to ensure usability across all devices.</li>
-          <li>Optimizing images, fonts, and scripts to achieve high performance scores.</li>
-          <li>Integrating accessibility features in accordance with WCAG 2.1 standards.</li>
-          <li>Structuring content for readability and search engine optimization.</li>
-          <li>Deploying analytics and tracking for data-driven decision-making.</li>
-        </ul>
-      </p>
+
+      <p><strong>Key strategies included:</strong></p>
+      <ul>
+        <li>Implementing responsive design to ensure usability across all devices.</li>
+        <li>Optimizing images, fonts, and scripts to achieve high performance scores.</li>
+        <li>Integrating accessibility features in accordance with WCAG 2.1 standards.</li>
+        <li>Structuring content for readability and search engine optimization.</li>
+        <li>Deploying analytics and tracking for data-driven decision-making.</li>
+      </ul>
+
       <p>
         The result is a website that performs exceptionally well in both user experience and technical performance, reinforcing the client’s brand and credibility online.
       </p>
@@ -252,15 +236,22 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Form submission
+
   const form = document.querySelector('.cta form');
   const status = document.querySelector('.form-status');
+
   if(form && status){
     form.addEventListener('submit', async (e)=>{
       e.preventDefault();
       const formData = new FormData(form);
+
       try{
-        const response = await fetch(form.action,{method: form.method,body:formData,headers:{'Accept':'application/json'}});
+        const response = await fetch(form.action,{
+          method: form.method,
+          body:formData,
+          headers:{'Accept':'application/json'}
+        });
+
         if(response.ok){
           status.textContent="Thanks! I’ll be in touch soon.";
           status.classList.remove('error');
@@ -280,18 +271,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Hamburger toggle
-  const header=document.querySelector('.site-header');
   const hamburger=document.querySelector('.hamburger');
   const navWrapper=document.querySelector('.nav-wrapper');
-  if(header && hamburger && navWrapper){
+
+  if(hamburger && navWrapper){
     hamburger.addEventListener('click',()=>{
       navWrapper.classList.toggle('active');
       const expanded = hamburger.getAttribute('aria-expanded') === 'true';
       hamburger.setAttribute('aria-expanded', !expanded);
     });
   }
+
 });
 </script>
+
 </body>
 </html>
