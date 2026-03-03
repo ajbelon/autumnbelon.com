@@ -275,7 +275,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
   background: #FDF1ED;
   padding: 60px 0;
 }
@@ -290,10 +289,6 @@ img {
   font-size: 1.25rem;
   color: #4f4f4f;
   margin-top: 0.5rem;
-}
-
-.hero-actions {
-  margin-top: 1rem;
 }
 
 .btn {
@@ -323,10 +318,6 @@ img {
 
   .hero-content h2 {
     font-size: 1rem;
-  }
-
-  .hero-actions {
-    margin-top: 1.5rem;
   }
 }
 
@@ -413,6 +404,66 @@ img {
     font-size: 1.1rem;
     margin: 20px 0;
     padding: 5px 0;
+}
+
+  .hero-content h1 { font-size:2rem; color:#1a1a1a; margin:0; }
+  .hero-content h2 { font-size:1.25rem; color:#4f4f4f; margin-top:0.5rem; }
+  .btn { padding:0.5rem 1rem; text-decoration:none; display:inline-block; }
+
+/* =========================
+   CASE STUDY HERO — UGC CONTENT
+========================= */
+/* ---------------- HERO SECTION ---------------- */
+
+.hero-ugc-content h1 {
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-ugc-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.hero-ugc-content p {
+    max-width: 700px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+
+    .case-study-ugc-content .hero-ugc-content h1 {
+        font-size: 2rem;
+    }
+
+    .case-study-ugc-content .hero-ugc-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .case-study-ugc-content .hero-ugc-content .btn {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+.hero-strategy-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px 0;
+}
+.hero-strategy-list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 10px;
+}
+.hero-strategy-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #9E4B88; /* your accent color */
 }
 .accessibility-specialty {
   background-color: #9E4F3B; /* your brown */
@@ -677,6 +728,142 @@ img {
     margin: 0.25em 0 0.5em 0;
 }
 
+
+/* ---------------- OVERALL IMPACT ---------------- */
+.overall-impact .impact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 60px 0;
+}
+
+.overall-impact .impact-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overall-impact .impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.overall-impact .impact-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.overall-impact .impact-label {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ---------------- PROJECT GRID & METRIC CARDS ---------------- */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    margin: 60px 0;
+}
+
+.project-content {
+    flex: 1 1 400px;
+    min-width: 280px;
+}
+
+.project-visuals {
+    flex: 1 1 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+}
+
+.metric-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.metric-number {
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.metric-change {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.metric-change.positive {
+    color: #27ae60;
+}
+
+.metric-change.negative {
+    color: #e74c3c;
+}
+
+/* Alternate background for sections */
+.project.alt-bg {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+/* ---------------- CTA SECTION ---------------- */
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    padding: 14px 32px;
+    font-size: 1rem;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project-visuals {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
 
 @media (max-width: 768px) {
     .web-project-optimization-callout {
@@ -1178,7 +1365,6 @@ img {
 .technical-optimization li {
     margin-bottom: 0.5rem;
 }
-
 /* =========================
    CTA / CONTACT FORM
 ========================= */
