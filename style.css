@@ -798,7 +798,18 @@ img {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
+@media (max-width: 768px) {
 
+    .project-visuals {
+        grid-template-columns: 1fr;   /* force single column */
+        justify-items: center;        /* center cards horizontally */
+    }
+
+    .metric-card {
+        width: 100%;
+        max-width: 320px;             /* controls visual width */
+    }
+}
 .metric-number {
     font-weight: 700;
     font-size: 1.3rem;
