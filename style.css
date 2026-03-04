@@ -801,14 +801,34 @@ img {
 }
 @media (max-width: 768px) {
 
-    .project-visuals {
-        grid-template-columns: 1fr;   /* force single column */
-        justify-items: center;        /* center cards horizontally */
+    /* Stack the grid vertically and center children */
+    .project-grid {
+        flex-direction: column !important; /* stack content + visuals */
+        align-items: center !important;    /* center both content and visuals */
     }
 
+    /* Make visuals full-width but center cards inside */
+    .project-visuals {
+        display: flex !important;
+        flex-direction: column !important; /* stack metric cards vertically */
+        align-items: center !important;    /* center horizontally */
+        width: 100%;                        /* take full available width */
+        max-width: 350px;                   /* optional max width */
+        gap: 15px;                           /* spacing between cards */
+    }
+
+    /* Ensure each metric-card is constrained and centered */
     .metric-card {
-        width: 100%;
-        max-width: 320px;             /* controls visual width */
+        width: 100%;       /* fills the parent width */
+        max-width: 250px;  /* prevents stretching too wide */
+        margin: 0 auto;    /* centers inside parent */
+    }
+
+    /* Optional: make project-content full width for stacking */
+    .project-content {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 .metric-number {
