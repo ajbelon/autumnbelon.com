@@ -389,7 +389,7 @@ img {
 
   .hero-image {
       margin: 0 auto;       /* remove extra top/bottom margin */
-      width: 100%;
+      width: 70%;
       max-width: 100%;      /* avoid extra horizontal space */
       aspect-ratio: auto;   /* let image height adjust naturally */
   }
@@ -485,6 +485,7 @@ img {
     background: #9E4F3B;
     color: #fff;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .btn.secondary {
@@ -498,15 +499,19 @@ img {
     background: #9E4F3B;
     color: #fff;
 }
-
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr; 
+  gap: 2rem;
   margin-top: 1rem;
   padding: 15px;
 }
-
+@media (min-width: 768px) {
+    .metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    }
+}
 .metric {
   background-color: #f2f2f2;
   border-radius: 0.5rem;
@@ -1534,7 +1539,6 @@ img {
 @media (max-width: 1300px) {
     .hero-grid { grid-template-columns: 1fr; text-align: center; }
     .web-project-details { text-align: left; }
-    .metrics-grid { grid-template-columns: 1fr; gap: 20px; }
     .hero p { text-align: left; }
     .cta { padding: 30px 15px; }
     .cta form { padding: 1.5rem; }
