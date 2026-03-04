@@ -800,36 +800,36 @@ img {
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 @media (max-width: 768px) {
+  /* Stack project content and visuals vertically */
+  .project-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;  /* center everything horizontally */
+  }
 
-    /* Stack the grid vertically and center children */
-    .project-grid {
-        flex-direction: column !important; /* stack content + visuals */
-        align-items: center !important;    /* center both content and visuals */
-    }
+  /* Make visuals take full width but center cards */
+  .project-visuals {
+    display: flex !important;
+    flex-direction: column !important; /* stack cards vertically */
+    align-items: center !important;    /* center cards horizontally */
+    width: 100% !important;
+    max-width: 350px;                  /* optional max width */
+    margin: 20px 0;                     /* spacing from content */
+  }
 
-    /* Make visuals full-width but center cards inside */
-    .project-visuals {
-        display: flex !important;
-        flex-direction: column !important; /* stack metric cards vertically */
-        align-items: center !important;    /* center horizontally */
-        width: 100%;                        /* take full available width */
-        max-width: 350px;                   /* optional max width */
-        gap: 15px;                           /* spacing between cards */
-    }
+  /* Make each metric card fill container but not overflow */
+  .metric-card {
+    width: 100% !important;
+    max-width: 280px;  /* prevents stretching too wide */
+    margin: 0 auto;    /* centers in parent */
+  }
 
-    /* Ensure each metric-card is constrained and centered */
-    .metric-card {
-        width: 100%;       /* fills the parent width */
-        max-width: 250px;  /* prevents stretching too wide */
-        margin: 0 auto;    /* centers inside parent */
-    }
-
-    /* Optional: make project-content full width for stacking */
-    .project-content {
-        width: 90%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
+  /* Optional: content also full width */
+  .project-content {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+  }
 }
 .metric-number {
     font-weight: 700;
