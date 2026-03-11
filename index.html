@@ -361,6 +361,24 @@
       });
     });
   });
+  document.addEventListener("focusin", (event) => {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+
+    const headerHeight = header.offsetHeight;
+    const el = event.target;
+
+    // Get element's position relative to viewport
+    const rect = el.getBoundingClientRect();
+
+    // If top is hidden behind sticky header, scroll it into view
+    if (rect.top < headerHeight) {
+      window.scrollBy({
+        top: rect.top - headerHeight - 10, // 10px padding
+        behavior: "smooth"
+      });
+    }
+  });
 </script>
 </body>
 </html>
