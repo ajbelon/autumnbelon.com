@@ -272,7 +272,8 @@
       <input type="hidden" name="_subject" value="New website inquiry">
       <button type="submit" class="btn-primary">Send message</button>
       <p class="form-trust-note">Your information is safe with me — I will never sell or share your data. <a href="/privacy-policy.html">View Privacy Policy</a></p>
-      <div class="form-status" aria-live="polite" role="status" tabindex="-1"></div>
+      <!-- Accessible status container, initially hidden from screen readers -->
+      <div id="form-status" class="form-status visually-hidden" aria-live="polite" role="status" aria-hidden="true"></div>
     </form>
   </div>
 </section>
@@ -330,6 +331,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 </script>
+<script>
+  function updateStatus(message) {
+  const status = document.querySelector('.form-status');
 
+    // Reveal to screen readers
+    status.setAttribute('aria-hidden', 'false');
+    status.textContent = message;
+
+    // Optional: hide again after a short delay so it doesn't linger unnecessarily
+    setTimeout(() => {
+      status.setAttribute('aria-hidden', 'true');
+      status.textContent = '';
+    }, 5000); // 5 seconds
+  }
+
+  // Example usage: after form submission
+  document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    updateStatus("Form submitted successfully!");
+  });
+</script>
 </body>
 </html>
