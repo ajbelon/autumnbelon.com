@@ -2,7 +2,10 @@
    RESET & BASE STYLES
 ========================= */
 * { box-sizing: border-box; }
-
+/* Ensure anchor/focus targets are visible below sticky header */
+section[id], h2[id] {
+  scroll-margin-top: 80px; /* Adjust to match your header height */
+}
 body {
     margin: 0;
     padding: 0 10px;   /* move here */
